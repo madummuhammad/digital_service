@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Atoze Capital</title>
-  <meta content="" name="description">
-
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="<?php echo base_url() ?>assets/img/logo.png" rel="icon">
-  <link href="<?php echo base_url() ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="<?php echo base_url() ?>assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>assets/css/custom.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/vendor/toastr/css/toastr.min.css">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Digital marketing agency, Digital marketing company, Digital marketing services, sass, software company">
+  <meta name="description" content="vCamp Creative Personal Service HTML Template designed for personal service.">
+  <meta property="og:site_name" content="vCamp">
+  <meta property="og:url" content="https://heloshape.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="vCamp-Creative Agency & Portfolio HTML5 Template">
+  <meta name='og:image' content='<?php echo base_url('') ?>assets/images/assets/ogg.png'>
+  <!-- For IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- For Resposive Device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- For Window Tab Color -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#202020">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#202020">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
+  <title><?php echo $title ?></title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="56x56" href="<?php echo base_url('') ?>assets/images/fav-icon/icon.png">
+  <!-- Main style sheet -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/style.css" media="all">
+  <!-- responsive style sheet -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/responsive.css" media="all">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/custom.css" media="all">
 </head>
-
 <body>
+  <div class="main-page-wrapper">
+      <!-- ===================================================
+        Loading Transition
+        ==================================================== -->
+        <section>
+          <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+              <div class="animation-preloader">
+                <div class="icon"><img src="<?php echo base_url('') ?>assets/images/logo/vCamp.svg" alt="" class="m-auto d-block"> <span></span></div>
+                <div class="txt-loading mt-4">
+                  <span data-text-preloader="C" class="letters-loading">
+                    C
+                  </span>
+                  <span data-text-preloader="A" class="letters-loading">
+                    A
+                  </span>
+                  <span data-text-preloader="M" class="letters-loading">
+                    M
+                  </span>
+                  <span data-text-preloader="P" class="letters-loading">
+                    P
+                  </span>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </section>

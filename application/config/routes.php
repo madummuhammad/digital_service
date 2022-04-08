@@ -53,6 +53,15 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['service/website_dan_toko_online']='website_dan_toko_online';
+$route['service/apps']='apps';
+$route['service/landing_page']='landing_page';
+$route['service/promo_digital_marketing']='promo_digital_marketing';
+
+$route['pricing/website_dan_toko_online']='website_dan_toko_online/pricing';
+$route['pricing/apps']='apps/pricing';
+$route['pricing/landing_page']='landing_page/pricing';
+
 $route['adminsystem']='admin/dashboard/index';
 $route['adminsystem/admin']='admin/auth/admin';
 $route['website/indonesia']='admin/website/indonesia';
