@@ -1,7 +1,133 @@
+/*Font Size*/
 .fs-7 {
   font-size: 0.8rem !important;
 }
 
 .fs-8 {
   font-size: 0.6rem !important;
+}
+
+/*Display*/
+
+.d-block-pc{
+  display: block;
+}
+
+.d-none-pc{
+  display: none;
+}
+
+/*Padding*/
+
+.p-mobile-0 {
+  padding: 0 !important;
+}
+
+.p-mobile-1 {
+  padding: 0.25rem !important;
+}
+
+.p-mobile-2 {
+  padding: 0.5rem !important;
+}
+
+.p-mobile-3 {
+  padding: 1rem !important;
+}
+
+.p-mobile-4 {
+  padding: 1.5rem !important;
+}
+
+.p-mobile-5 {
+  padding: 3rem !important;
+}
+
+.py-mobile-1{
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.px-mobile-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.px-mobile-1 {
+  padding-right: 0.25rem !important;
+  padding-left: 0.25rem !important;
+}
+
+.px-mobile-2 {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.px-mobile-3 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.px-mobile-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.px-mobile-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.py-mobile-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-mobile-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.py-mobile-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-mobile-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.py-mobile-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.py-mobile-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.pe-mobile-0 {
+  padding-right: 0 !important;
+}
+
+.pe-mobile-1 {
+  padding-right: 0.25rem !important;
+}
+
+.pe-mobile-2 {
+  padding-right: 0.5rem !important;
+}
+
+.pe-mobile-3 {
+  padding-right: 1rem !important;
+}
+
+.pe-mobile-4 {
+  padding-right: 1.5rem !important;
+}
+
+.pe-mobile-5 {
+  padding-right: 3rem !important;
 }

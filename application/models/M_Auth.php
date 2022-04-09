@@ -20,9 +20,8 @@ class M_Auth extends CI_Model {
 			'name'=>$nama,
 			'email'=>$email,
 			'password'=>$passwordHash,
-			'created_at'=>time(),
-			'updated_at'=>time(),
-			'role_id'=>1
+			'role_id'=>1,
+			'gambar'=>'default.png'
 		];
 
 		$validasi=$this->form_validation->set_rules(rules($rules));

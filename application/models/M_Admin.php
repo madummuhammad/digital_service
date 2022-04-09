@@ -16,7 +16,7 @@ class M_Admin extends CI_Model {
 		$email=$this->input->post('email');
 		$password=$this->input->post('password');
 		$role=form('role');
-		if ($role!==1) {
+		if ($role==NULL) {
 			$role=3;
 		}
 		$passwordHash=password_hash($password, PASSWORD_DEFAULT);
@@ -31,8 +31,6 @@ class M_Admin extends CI_Model {
 			'name'=>$nama,
 			'email'=>$email,
 			'password'=>$passwordHash,
-			'created_at'=>time(),
-			'updated_at'=>time(),
 			'role_id'=>$role,
 			'gambar'=>'default.png'
 		];
@@ -71,28 +69,20 @@ class M_Admin extends CI_Model {
 		$email=$this->input->post('email');
 		$role=form('role');
 		if ($role==1) {
+			$data=[
+				'name'=>$nama,
+				'email'=>$email,
+				'role_id'=>$role,
+			];
+		} else{
 			$role=3;
 			$data=[
 				'name'=>$nama,
 				'email'=>$email,
-				'updated_at'=>time(),
 				'role_id'=>$role,
-			];
-		} elseif ($role==3) {
-			$role=1;
-			$data=[
-				'name'=>$nama,
-				'email'=>$email,
-				'updated_at'=>time(),
-				'role_id'=>$role,
-			];
-		} else {
-			$data=[
-				'name'=>$nama,
-				'email'=>$email,
-				'updated_at'=>time()
 			];
 		}
+
 		$rules=[
 			rules_array('nama','required'),
 			rules_array('email','required|valid_email'),

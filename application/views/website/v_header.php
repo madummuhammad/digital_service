@@ -28,6 +28,7 @@
   <!-- responsive style sheet -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/responsive.css" media="all">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/custom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/css/mobile.css" media="all">
 </head>
 <body>
   <div class="main-page-wrapper">

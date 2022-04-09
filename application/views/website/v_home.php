@@ -470,13 +470,20 @@
     <div class="vcamp-text-block-five mt-170 lg-mt-120">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-6 ms-auto px-5">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-block-mobile d-none-pc mb-40">
+            <div class="text-wrapper">
+              <div class="title-style-five">
+                <h2 class="title">Mengapa memilih kami?</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 ms-auto px-5 px-mobile-3">
             <div class="text-wrapper">
               <h4 class="fw-bold">Kami spesialis. Hanya Fokus pada Website & Apps</h4>
               <p class="meta-info-text-two py-1">Kami membatasi jumlah klien yang kami terima setiap tahun untuk memastikan setiap klien memiliki customer experience yang baik. Kami siap merespon dengan cepat kebutuhan Anda.</p>
             </div>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-none-mobile">
             <div class="text-wrapper">
               <div class="title-style-five">
                 <h2 class="title">Mengapa memilih kami?</h2>

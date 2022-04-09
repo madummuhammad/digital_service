@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Login - Atoze Capital</title>
+	<title>Login</title>
 	<!-- Favicon icon -->
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() ?>assets/admin/images/favicon.png">
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/vendor/toastr/css/toastr.min.css">
@@ -22,7 +22,7 @@
 						<div class="row no-gutters">
 							<div class="col-xl-12">
 								<div class="auth-form">
-									<h4 class="text-center mb-4">Selamat datang di Atoze Capital</h4>
+									<h4 class="text-center mb-4">Selamat datang Admin</h4>
 									<p class="text-center">Silahkan login.</p>
 									<form action="<?php echo admin_url('login') ?>" method="POST">
 										<?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>

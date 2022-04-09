@@ -57,7 +57,7 @@ Content body start
                                             <div class="form-group">
                                                 <div class="custom-control custom-switch">
                                                    <input type="checkbox" class="custom-control-input" id="superadmin" value="1" name="role">
-                                                   <label class="custom-control-label" for="superadmin">Superadmin</label>
+                                                   <label class="custom-control-label" for="superadmin">Admin</label>
                                                </div>
                                            </div>
                                        </div>
@@ -93,10 +93,10 @@ Content body start
                             </td>
                             <td>
                                 <?php if ($value['role_id']==1): ?>
-                                    Super Admin
+                                    Admin
                                 <?php endif ?>
                                 <?php if ($value['role_id']==3): ?>
-                                    Admin
+                                    User
                                 <?php endif ?>
                             </td>
                             <td>
@@ -149,10 +149,10 @@ Content body start
                             </div>
                             <div class="form-group">
                                 <div class="custom-control custom-switch">
-                                    <input type="checkbox" name="role" class="custom-control-input" id="superadmin<?php echo $value['id'] ?>" value="<?php echo $value['role_id'] ?>" <?php if ($value['role_id']==1): ?>
+                                    <input type="checkbox" name="role" class="custom-control-input" id="superadmin<?php echo $value['id'] ?>" value="1" <?php if ($value['role_id']==1): ?>
                                     <?php echo 'checked' ?>
                                     <?php endif ?>>
-                                    <label class="custom-control-label" for="superadmin<?php echo $value['id'] ?>">Superadmin</label>
+                                    <label class="custom-control-label" for="superadmin<?php echo $value['id'] ?>">Admin</label>
                                 </div>
                             </div>
                         </div>

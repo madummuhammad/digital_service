@@ -14,7 +14,7 @@
 				<div class="hero-banner-one md-mt-140 mt-60">
 					<div class="partner-slider-one md-mt-80">
 						<div class="container">
-							<p class="text-center">Sudah lebih dari 100 brand menggunakan jasa Landing Page kami</p>
+							<p class="text-center">Agency Partner Kami yang akan membersamai tumbuhnya bisnis Anda</p>
 							<div class="partnerSliderOne">
 								<div class="item">
 									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-1.png" alt=""></div>
