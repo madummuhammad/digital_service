@@ -62,6 +62,12 @@ $route['pricing/website_dan_toko_online']='website_dan_toko_online/pricing';
 $route['pricing/apps']='apps/pricing';
 $route['pricing/landing_page']='landing_page/pricing';
 
+$route['adminsystem/website']='admin/home/index';
+$route['adminsystem/website/klien']='admin/home/klien';
+$route['adminsystem/website/tentang_kami']='admin/tentang_kami/index';
+$route['adminsystem/website/tentang_kami/partner']='admin/tentang_kami/partner';
+$route['adminsystem/website/portofolio']='admin/portofolio/index';
+
 $route['adminsystem']='admin/dashboard/index';
 $route['adminsystem/admin']='admin/auth/admin';
 $route['website/indonesia']='admin/website/indonesia';
@@ -72,7 +78,6 @@ $route['forgotpassword']='member/auth/forgot';
 $route['adminsystem/website']='admin/home/index';
 $route['adminsystem/website/about']='admin/home/about';
 $route['adminsystem/website/layanan']='admin/home/layanan';
-$route['adminsystem/website/portofolio']='admin/home/portofolio';
 $route['adminsystem/website/team']='admin/home/team';
 $route['adminsystem/website/partner']='admin/home/partner';
 $route['adminsystem/website/kontak']='admin/home/kontak';

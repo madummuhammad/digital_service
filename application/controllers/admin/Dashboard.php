@@ -20,11 +20,10 @@ class Dashboard extends CI_Controller {
 		} elseif ($this->input->post('_update') !== NULL) {
 			$this->M_Order->cancel();
 		} else {
-			$data['project']=$this->M_Order->new_order();
 			$this->load->view('admin/partial/v_header');
 			$this->load->view('admin/partial/v_topbar');
 			$this->load->view('admin/partial/v_sidebar');
-			$this->load->view('admin/v_dashboard',$data);
+			$this->load->view('admin/v_dashboard');
 		}
 	}
 }

@@ -11,7 +11,7 @@ Content body start
                         <h4 class="card-title">Order Baru</h4>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
+                        <!-- <div class="table-responsive">
                             <table class="table mb-0">
                                 <thead>
                                     <tr>
@@ -24,36 +24,32 @@ Content body start
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($project as $key => $value): ?>
-                                        <tr>
-                                            <td>
-                                                <div class="round-img">
-                                                    <a href=""><img width="75" src="<?php echo base_url('assets/img/member/').$value['gambar'] ?>" alt="<?php echo $value['gambar'] ?>"></a>
-                                                </div>
-                                            </td>
-                                            <td><?php echo $value['name'] ?> </td>
-                                            <td><?php echo $value['id_order'].'-'.$value['nama_project'] ?></td>
-                                            <td><span><?php echo $value['jml'] ?></span></td>
-                                            <td><span><?php echo date('Y-m-d, H:i',$value['timestamp']) ?></span></td>
-                                            <td>
-                                                <div class="custom-control custom-switch">
-                                                   <?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash()); ?>
-                                                   <input type="checkbox" data-project="<?php echo $value['id_project'] ?>" data-id="<?php echo $value['id_order'] ?>" class="custom-control-input konfirmasi" id="switch1" value="<?php echo $value['applied'] ?>" <?php if ($value['applied']==1): ?>
-                                                   <?php echo 'checked' ?>
-                                                   <?php endif ?>>
-                                                   <label class="custom-control-label" for="switch1">Konfirmasi</label>
-                                               </div>
-                                           </td>
-                                       </tr>
-                                   <?php endforeach ?>
-                               </tbody>
-                           </table>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+                                    <tr>
+                                        <td>
+                                            <div class="round-img">
+                                                <a href=""><img width="75" src="" alt=""></a>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span></span></td>
+                                        <td><span></span></td>
+                                        <td>
+                                            <div class="custom-control custom-switch">
+                                             <?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash()); ?>
+                                             <input type="checkbox" class="custom-control-input konfirmasi" id="switch1" value="">
+                                             <label class="custom-control-label" for="switch1">Konfirmasi</label>
+                                         </div>
+                                     </td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 </div>
         <!--**********************************
             Content body end

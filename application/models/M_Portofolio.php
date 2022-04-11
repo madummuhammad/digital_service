@@ -2,169 +2,106 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_Portofolio extends CI_Model {
+
+	public function index()
+	{
+		$this->db->join('portofolio_jenis','portofolio.id_jenis=portofolio_jenis.id_jenis');
+		return $this->db->get('portofolio')->result_array();
+	}
+
+	public function jenis()
+	{
+		return $this->db->get('portofolio_jenis')->result_array();
+	}
+	
 	public function create()
 	{
-		$path='./assets/img/portfolio/';
+		$path='./assets/images/portofolio/';
 		$type='jpg|png|jpeg';
 		$file_name='portofolio';
-		$this->db->where('id',1);
-		$gambar_lama=$this->db->get('portofolio_eng')->row_array();
+		$id_jenis=form('jenis');
+		$link=form('link');
 
-		$judul=$this->input->post('judul');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
 		$gambar=upload_gambar($path, $type, $file_name);
 		if ($gambar==NULL) {
-			$gambar='default.png';
-		}
-
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('content','required')
-		];
-
-		$validasi=$this->form_validation->set_rules(rules($rules));
-
-		$data=[
-			'judul'=>$judul,
-			'content'=>$content,
-			'gambar'=>$gambar
-		];
-
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'portofolio',
-				'icon'=>'error',
-				'title'=>'Tambah Section portofolio Berhasil'
+			$data=[
+				'link'=>$link,
+				'id_jenis'=>$id_jenis
 			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
 		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->insert('portofolio_ind',$data);
-				$this->db->insert('portofolio_eng',$data);
-				$toast=[
-					'request'=>'portofolio',
-					'icon'=>'success',
-					'title'=>'Edit Section portofolio Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->insert('portofolio_eng',$data);
-				$this->db->insert('portofolio_ind',$data);
-				$toast=[
-					'request'=>'portofolio',
-					'icon'=>'success',
-					'title'=>'Edit Section portofolio Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
-			}
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link,
+				'id_jenis'=>$id_jenis
+			];
 		}
+
+		if ($gambar == NULL) {
+			redirect(admin_url('website/portofolio'));
+		} else {
+			$this->db->insert('portofolio',$data);
+		}
+
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/portofolio'));
 	}
 
 	public function update()
 	{
-		$path='./assets/img/portfolio/';
+		$path='./assets/images/portofolio/';
 		$type='jpg|png|jpeg';
 		$file_name='portofolio';
-		$id=$this->input->post('id');
+		$id=form('id');
+		$link=form('link');
 		$this->db->where('id',$id);
-		$gambar_lama=$this->db->get('portofolio_eng')->row_array();
+		$gambar_lama=$this->db->get('portofolio')->row_array();
 
-		$judul=$this->input->post('judul');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
 		$gambar=upload_gambar($path, $type, $file_name);
-
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('content','required')
-		];
-
-		$validasi=$this->form_validation->set_rules(rules($rules));
 
 		if ($gambar==NULL) {
 			$data=[
-				'judul'=>$judul,
-				'content'=>$content,
+				'link'=>$link
 			];
 		} else {
 			$data=[
-				'judul'=>$judul,
-				'content'=>$content,
-				'gambar'=>$gambar
+				'gambar'=>$gambar,
+				'link'=>$link
 			];
 		}
 
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'portofolio',
-				'icon'=>'error',
-				'title'=>'Edit Section portofolio Berhasil'
-			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
-		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->where('id',$id);
-				$this->db->update('portofolio_ind',$data);
-				if ($gambar !== NULL) {
-					if ($gambar_lama['gambar'] !== 'default.png') {
-						unlink(FCPATH . 'assets/img/portfolio/'.$gambar_lama['gambar']);
-					}
-					$this->db->where('id',$id);
-					$this->db->update('portofolio_eng',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'portofolio',
-					'icon'=>'success',
-					'title'=>'Tambah Section portofolio Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->where('id',$id);
-				$this->db->update('portofolio_eng',$data);
-				if ($gambar !== NULL) {
-					if ($gambar_lama['gambar'] !== 'default.png') {
-						unlink(FCPATH . 'assets/img/portfolio/'.$gambar_lama['gambar']);
-					}
-					$this->db->where('id',$id);
-					$this->db->update('portofolio_ind',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'portofolio',
-					'icon'=>'success',
-					'title'=>'Tambah Section portofolio Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['gambar'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/portofolio/'.$gambar_lama['gambar']);
 			}
+			$this->db->where('id',$id);
+			$this->db->update('portofolio',$data);
 		}
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/portofolio'));
 	}
 
 	public function delete()
 	{
 		$id=$this->input->post('id');
-		$bahasa=$this->input->post('_bahasa');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('portofolio')->row_array();
 
 		$this->db->where('id',$id);
-		$gambar_lama=$this->db->get('portofolio_eng')->row_array();
-
-		$this->db->where('id',$id);
-		$this->db->delete('portofolio_eng');
-
-		$this->db->where('id',$id);
-		$this->db->delete('portofolio_ind');
+		$this->db->delete('portofolio');
 
 		if ($gambar_lama['gambar'] !== 'default.png') {
-			unlink(FCPATH . 'assets/img/portfolio/'.$gambar_lama['gambar']);
+			unlink(FCPATH . 'assets/images/portofolio/'.$gambar_lama['gambar']);
 		}
 		$toast=[
 			'request'=>'portofolio',
@@ -172,6 +109,6 @@ class M_Portofolio extends CI_Model {
 			'title'=>'Hapus Section portofolio Berhasil'
 		];
 		$this->session->set_flashdata($toast);
-		redirect(base_url('website/'.$bahasa));
+		redirect(admin_url('website/portofolio'));
 	}
 }

@@ -127,28 +127,22 @@
         <div class="counter-section-one mt-170 md-mt-120">
           <div class="inner-container">
             <div class="row">
-              <div class="col-lg-3 col-sm-6" data-aos="fade-up">
+              <div class="col-lg-4 col-sm-6" data-aos="fade-up">
                 <div class="counter-block-one text-center mb-45">
-                  <div class="main-count font-recoleta"><span class="counter">3.5</span>k</div>
-                  <p class="theme-mb-0">Job done successfully</p>
+                  <div class="main-count font-recoleta"><span class="counter"><?php echo $counter['satu'] ?></span></div>
+                  <p class="theme-mb-0">Website & Toko Online</p>
                 </div> <!-- /.counter-block-one -->
               </div>
-              <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="counter-block-one text-center mb-45">
-                  <div class="main-count font-recoleta"><span class="counter">20</span>million</div>
-                  <p class="theme-mb-0">3,280 avg rating</p>
+                  <div class="main-count font-recoleta"><span class="counter"><?php echo $counter['dua'] ?></span></div>
+                  <p class="theme-mb-0">Custom Apps & Software</p>
                 </div> <!-- /.counter-block-one -->
               </div>
-              <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="counter-block-one text-center mb-45">
-                  <div class="main-count font-recoleta"><span class="counter">50</span>k+</div>
-                  <p class="theme-mb-0">Contact Profile</p>
-                </div> <!-- /.counter-block-one -->
-              </div>
-              <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="counter-block-one text-center mb-45">
-                  <div class="main-count font-recoleta"><span class="counter">3,000</span>+</div>
-                  <p class="theme-mb-0">Using vCamp</p>
+                  <div class="main-count font-recoleta"><span class="counter"><?php echo $counter['tiga'] ?></span></div>
+                  <p class="theme-mb-0">Klien yang puas</p>
                 </div> <!-- /.counter-block-one -->
               </div>
             </div>
@@ -340,72 +334,53 @@
                 <a href="ui-headerV3.html" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
               </div>
             </div>
-
             <div class="row">
               <div class="col-xl-11 m-auto">
-                <div class="partent-logos">
-                  <div class="row g-0">
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-6.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-7.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-8.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-9.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-10.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-11.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-12.png" alt="" class="tran3s"></a></div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-13.png" alt="" class="tran3s"></a></div>
+                <div class="feedback_slider_seven">
+                  <?php foreach ($klien as $row => $value): ?>
+                   <div class="item">
+                    <div class="testimonial-block-one">
+                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
                     </div>
                   </div>
-                </div> <!-- /.partent-logos -->
+                <?php endforeach ?>
               </div>
             </div>
+            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klientambah"><i class="fas fa-plus"></i></button>
           </div>
-        </div> <!-- /.partner-section-two -->
+        </div>
+      </div> <!-- /.partner-section-two -->
 
-        <div class="box-layout">
-          <div class="case-study-four border-top">
-            <div class="mixitUp-container">
-              <div class="mix">
-                <div class="case-block-four position-relative" style="background: #DFF2E9;">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-xl-6 col-md-8">
-                        <div class="text-wrapper" data-aos="fade-right">
-                          <div class="icon d-flex align-items-center justify-content-center mb-20">
-                            <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
-                          </div>
-                          <blockquote>
-                            “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
-                          </blockquote>
-                          <div class="d-flex align-items-center info-meta">
-                            <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
-                            <div class="name">Rudi. <span>Asricon</span></div>
-                            <a href="portfolio-detailsV1.html" class="more"><i class="bi bi-chevron-right"></i></a>
-                          </div>
+      <div class="box-layout">
+        <div class="case-study-four border-top">
+          <div class="mixitUp-container">
+            <div class="mix">
+              <div class="case-block-four position-relative" style="background: #DFF2E9;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-6 col-md-8">
+                      <div class="text-wrapper" data-aos="fade-right">
+                        <div class="icon d-flex align-items-center justify-content-center mb-20">
+                          <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
+                        </div>
+                        <blockquote>
+                          “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
+                        </blockquote>
+                        <div class="d-flex align-items-center info-meta">
+                          <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
+                          <div class="name">Rudi. <span>Asricon</span></div>
+                          <a href="portfolio-detailsV1.html" class="more"><i class="bi bi-chevron-right"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
                 </div>
+                <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
               </div>
             </div>
           </div>
         </div>
+      </div>
 
         <!-- =============================================
         Vcamp Feature Section Three

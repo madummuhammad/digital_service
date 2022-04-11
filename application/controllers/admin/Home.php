@@ -11,89 +11,31 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->M_Home->edit_index();
-	}
-
-	public function about()
-	{
-		$this->M_Home->edit_about();
-	}
-
-	public function layanan()
-	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Layanan->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Layanan->create();
-		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Layanan->delete();
+		if ($this->input->post('_section2satu') !== NULL) {
+			$this->M_Home->section2satu();
+		} elseif ($this->input->post('_section2dua') !== NULL) {
+			$this->M_Home->section2dua();
+		} elseif ($this->input->post('_counter') !== NULL) {
+			$this->M_Home->counter_edit();
 		} else {
-			redirect(admin_url());
+			$data['counter']=$this->M_Home->counter();
+			$data['section2']=$this->M_Home->section2();
+			$data['klien']=$this->M_Home->klien();
+			$data['title']='Home';
+			$this->load->view('admin/website/v_home',$data);
 		}
 	}
 
-	public function portofolio()
+	public function klien()
 	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Portofolio->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Portofolio->create();
+		if ($this->input->post('_post') !== NULL) {
+			$this->M_Home->kliencreate();
+		} elseif ($this->input->post('_patch') !== NULL) {
+			$this->M_Home->klienedit();
 		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Portofolio->delete();
+			$this->M_Home->kliendelete();
 		} else {
-			redirect(admin_url());
-		}
-	}
-
-	public function team()
-	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Team->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Team->create();
-		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Team->delete();
-		} else {
-			redirect(admin_url());
-		}
-	}
-
-	public function partner()
-	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Partner->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Partner->create();
-		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Partner->delete();
-		} else {
-			redirect(admin_url());
-		}
-	}
-
-	public function kontak()
-	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Kontak->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Kontak->create();
-		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Kontak->delete();
-		} else {
-			redirect(admin_url());
-		}
-	}
-
-	public function footer()
-	{
-		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Footer->update();
-		} elseif ($this->input->post('_post') !== NULL) {
-			$this->M_Footer->create();
-		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Footer->delete();
-		} else {
-			redirect(admin_url());
+			redirect(admin_url('website'));
 		}
 	}
 }

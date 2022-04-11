@@ -92,23 +92,23 @@
 				<div class="counter-section-three mt-120 lg-mt-100">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4" data-aos="fade-up">
-								<div class="counter-block-three text-center mb-45">
-									<div class="main-count font-recoleta"><span class="counter">20</span>million</div>
-									<p class="theme-mb-0">3,280 avg rating</p>
-								</div> <!-- /.counter-block-three -->
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up">
+								<div class="counter-block-one text-center mb-45">
+									<div class="main-count font-recoleta"><span class="counter"><?php echo $counter['satu'] ?></span></div>
+									<p class="theme-mb-0">Website & Toko Online</p>
+								</div> <!-- /.counter-block-one -->
 							</div>
-							<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-								<div class="counter-block-three text-center mb-45">
-									<div class="main-count font-recoleta"><span class="counter">50</span>k+</div>
-									<p class="theme-mb-0">Contact Profile</p>
-								</div> <!-- /.counter-block-three -->
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+								<div class="counter-block-one text-center mb-45">
+									<div class="main-count font-recoleta"><span class="counter"><?php echo $counter['dua'] ?></span></div>
+									<p class="theme-mb-0">Custom Apps & Software</p>
+								</div> <!-- /.counter-block-one -->
 							</div>
-							<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-								<div class="counter-block-three text-center mb-45">
-									<div class="main-count font-recoleta"><span class="counter">3,000</span>+</div>
-									<p class="theme-mb-0">Using vCamp</p>
-								</div> <!-- /.counter-block-three -->
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+								<div class="counter-block-one text-center mb-45">
+									<div class="main-count font-recoleta"><span class="counter"><?php echo $counter['tiga'] ?></span></div>
+									<p class="theme-mb-0">Klien yang puas</p>
+								</div> <!-- /.counter-block-one -->
 							</div>
 						</div>
 					</div>
@@ -177,24 +177,15 @@
 					<div class="col-xl-6 col-lg-7 ms-auto">
 						<p class="info-text">Boosting up website Anda dengan layanan Digital Marketing Partner Kami</p>
 						<div class="row">
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-18.png" alt="" class="tran3s"></a></div>
-							</div>
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-19.png" alt="" class="tran3s"></a></div>
-							</div>
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-20.png" alt="" class="tran3s"></a></div>
-							</div>
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-21.png" alt="" class="tran3s"></a></div>
-							</div>
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-22.png" alt="" class="tran3s"></a></div>
-							</div>
-							<div class="col-sm-4 col-6">
-								<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/logo-23.png" alt="" class="tran3s"></a></div>
-							</div>
+							<?php foreach ($partner as $key => $value): ?>
+								<div class="col-sm-4 col-6">
+									<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+									<div class="d-flex">
+										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partner<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
+										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partnerdelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
+									</div>
+								</div>
+							<?php endforeach ?>
 						</div>
 					</div>
 				</div>

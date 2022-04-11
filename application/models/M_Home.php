@@ -5,240 +5,137 @@ class M_Home extends CI_Model {
 
 	public function index()
 	{
-		if (get_cookie('lang_is')=='in') {
-			$data=$this->db->get('home_ind')->result_array();
-			return $data;
-		} else {
-			$data=$this->db->get('home_eng')->result_array();
-			return $data;
-		}
+
 	}
 
-	public function about()
+	public function section2()
 	{
-		if (get_cookie('lang_is')=='in') {
-			$data=$this->db->get('about_ind')->result_array();
-			return $data;
-		} else {
-			$data=$this->db->get('about_eng')->result_array();
-			return $data;
-		}
+		$data=$this->db->get('home_section2')->row_array();
+		return $data;
 	}
 
-	public function service()
+	public function section2satu()
 	{
-		if (get_cookie('lang_is')=='in') {
-			$data=$this->db->get('service_ind')->result_array();
-			return $data;
-		} else {
-			$data=$this->db->get('service_eng')->result_array();
-			return $data;
-		}
-	}
+		$value=form('value');
 
-	public function portofolio()
-	{
-		if (get_cookie('lang_is')=='in') {
-			$data=$this->db->get('portofolio_ind')->result_array();
-			return $data;
-		} else {
-			$data=$this->db->get('portofolio_eng')->result_array();
-			return $data;
-		}
-	}
-
-	public function team()
-	{
-		if (get_cookie('lang_is')=='in') {
-			$data=$this->db->get('team_ind')->result_array();
-			return $data;
-		} else {
-			$data=$this->db->get('team_eng')->result_array();
-			return $data;
-		}
-	}
-
-	public function partner()
-	{
-		return $this->db->get('partner')->result_array();
-	}
-
-	public function kontak()
-	{
-		if (get_cookie('lang_is')=='in') {
-			$this->db->where('id',1);
-			$data=$this->db->get('contact_ind')->row_array();
-			return $data;
-		} else {
-			$this->db->where('id',1);
-			$data=$this->db->get('contact_eng')->row_array();
-			return $data;
-		}
-	}
-
-	public function footer()
-	{
-		if (get_cookie('lang_is')=='in') {
-			$this->db->where('id',1);
-			$data=$this->db->get('footer_ind')->row_array();
-			return $data;
-		} else {
-			$this->db->where('id',1);
-			$data=$this->db->get('footer_eng')->row_array();
-			return $data;
-		}
-	}
-
-	public function edit_index()
-	{
-		$path='./assets/img/main/';
-		$type='jpg|png|jpeg';
-		$file_name='main';
-		$this->db->where('id',1);
-		$gambar_lama=$this->db->get('home_eng')->row_array();
-
-		$judul=$this->input->post('judul');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
-		$gambar=upload_gambar($path, $type, $file_name);
-
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('content','required')
+		$data=[
+			'satu'=>$value
 		];
 
-		$validasi=$this->form_validation->set_rules(rules($rules));
+		$this->db->where('id',1);
+		$this->db->update('home_section2',$data);
 
-		if ($gambar==NULL) {
-			$data=[
-				'judul'=>$judul,
-				'content'=>$content,
-			];
-		} else {
-			$data=[
-				'judul'=>$judul,
-				'content'=>$content,
-				'gambar'=>$gambar
-			];
-		}
-
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'banner',
-				'icon'=>'error',
-				'title'=>'Edit Banner Gagal'
-			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
-		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->update('home_ind',$data);
-				if ($gambar !== NULL) {
-					unlink(FCPATH . 'assets/img/main/'.$gambar_lama['gambar']);
-					$this->db->update('home_eng',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'banner',
-					'icon'=>'success',
-					'title'=>'Edit Banner Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->update('home_eng',$data);
-				if ($gambar !== NULL) {
-					unlink(FCPATH . 'assets/img/main/'.$gambar_lama['gambar']);
-					$this->db->update('home_ind',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'banner',
-					'icon'=>'success',
-					'title'=>'Edit Banner Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
-			}
-		}
+		redirect(admin_url('website'));
 	}
 
-	public function edit_about()
+	public function section2dua()
 	{
-		$path='./assets/img/about/';
-		$type='jpg|png|jpeg';
-		$file_name='about';
-		$this->db->where('id',1);
-		$gambar_lama=$this->db->get('about_eng')->row_array();
+		$value=form('value');
 
-		$judul=$this->input->post('judul');
-		$tagline=$this->input->post('tagline');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
-		$gambar=upload_gambar($path, $type, $file_name);
-
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('tagline','required'),
-			rules_array('content','required')
+		$data=[
+			'dua'=>$value
 		];
 
-		$validasi=$this->form_validation->set_rules(rules($rules));
+		$this->db->where('id',1);
+		$this->db->update('home_section2',$data);
 
-		if ($gambar==NULL) {
-			$data=[
-				'judul'=>$judul,
-				'tagline'=>$tagline,
-				'content'=>$content,
-			];
+		redirect(admin_url('website'));
+	}
+
+	public function counter()
+	{
+		$data=$this->db->get('home_counter')->row_array();
+		return $data;
+	}
+
+	public function counter_edit()
+	{
+		$value1=form('value1');
+		$value2=form('value2');
+		$value3=form('value3');
+
+		$data=[
+			'satu'=>$value1,
+			'dua'=>$value2,
+			'tiga'=>$value3
+		];
+
+		$this->db->where('id',1);
+		$this->db->update('home_counter',$data);
+		redirect(admin_url('website'));
+	}
+
+	public function klien()
+	{
+		$data=$this->db->get('home_klien')->result_array();
+		return $data;
+	}
+
+	public function kliencreate()
+	{
+		$path='./assets/images/logo/';
+		$type='jpg|png|jpeg';
+		$file_name='logo';
+
+		$gambar=upload_gambar($path, $type, $file_name);
+		$data=[
+			'logo'=>$gambar
+		];
+
+		if ($gambar == NULL) {
+			redirect(admin_url('website'));
 		} else {
-			$data=[
-				'judul'=>$judul,
-				'tagline'=>$tagline,
-				'content'=>$content,
-				'gambar'=>$gambar
-			];
+			$this->db->insert('home_klien',$data);
 		}
 
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'about',
-				'icon'=>'error',
-				'title'=>'Edit Section About Gagal'
-			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
-		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->update('about_ind',$data);
-				if ($gambar !== NULL) {
-					unlink(FCPATH . 'assets/img/about/'.$gambar_lama['gambar']);
-					$this->db->update('about_eng',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'about',
-					'icon'=>'success',
-					'title'=>'Edit Section About Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->update('about_eng',$data);
-				if ($gambar !== NULL) {
-					unlink(FCPATH . 'assets/img/about/'.$gambar_lama['gambar']);
-					$this->db->update('about_ind',['gambar'=>$gambar]);
-				}
-				$toast=[
-					'request'=>'about',
-					'icon'=>'success',
-					'title'=>'Edit Section About Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website'));
+	}
+
+	public function klienedit()
+	{
+		$path='./assets/images/logo/';
+		$type='jpg|png|jpeg';
+		$file_name='logo';
+		$id=form('id');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('home_klien')->row_array();
+
+		$gambar=upload_gambar($path, $type, $file_name);
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['logo'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/logo/'.$gambar_lama['logo']);
 			}
+			$this->db->where('id',$id);
+			$this->db->update('home_klien',['logo'=>$gambar]);
 		}
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website'));
+	}
+
+	public function kliendelete()
+	{
+		$id=form('id');
+		$this->db->where('id',$id);
+		$this->db->delete('home_klien');
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'warning',
+			'title'=>'Hapus Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website'));
 	}
 
 }

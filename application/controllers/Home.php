@@ -5,7 +5,9 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
+		$data['klien']=$this->M_Home->klien();
 		$data['title']='Home';
+		$data['counter']=$this->M_Home->counter();
 		$this->load->view('website/v_home',$data);
 	}
 }
