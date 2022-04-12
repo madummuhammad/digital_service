@@ -28,11 +28,11 @@ class Harga extends CI_Controller {
 	public function sub_fitur($id_paket='', $id_produk='')
 	{
 		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Harga->update();
+			$this->M_Harga->sub_fitur_update();
 		} elseif ($this->input->post('_post') !== NULL) {
 			$this->M_Harga->sub_fitur_create();
 		} elseif ($this->input->post('_get') !== NULL) {
-			$this->M_Harga->delete();
+			$this->M_Harga->sub_fitur_delete();
 		} else {
 			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
 		}
@@ -41,13 +41,16 @@ class Harga extends CI_Controller {
 	public function isi_fitur($id_paket='', $id_produk='')
 	{
 		if ($this->input->post('_patch') !== NULL) {
-			$this->M_Harga->update();
+			$this->M_Harga->isi_fitur_update();
 		} elseif ($this->input->post('_post') !== NULL) {
 			$this->M_Harga->isi_fitur_create();
 		} elseif ($this->input->post('_get') !== NULL) {
 			$this->M_Harga->isi_fitur_delete();
+		} elseif ($this->input->post('_coret') !== NULL) {
+			$this->M_Harga->isi_fitur_coret();
 		} else {
 			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
 		}
 	}
+
 }

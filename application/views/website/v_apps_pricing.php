@@ -62,168 +62,78 @@
 						</div>
 
 						<ul class="nav nav-tabs justify-content-center pricing-nav-one" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#android" type="button" role="tab">Android/IOS</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#webview" type="button" role="tab">WebView</button>
-							</li>
+							<?php foreach ($this->M_Harga->produk(2) as $key => $value): ?>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link <?php if ($value['id_produk']==3): ?>
+									<?php echo 'active' ?>
+									<?php endif ?>" data-bs-toggle="tab" data-bs-target="#website<?php echo $value['id_produk'] ?> " type="button" role="tab"><?php echo $value['nama'] ?></button>
+								</li>				
+							<?php endforeach ?>
 						</ul>
 
 
 						<div class="pricing-table-area-one">
 							<div class="tab-content">
-								<div class="tab-pane fade show active" id="android">
+								<?php foreach ($this->M_Harga->produk(2) as $key => $value): ?>
+									<div class="tab-pane fade show <?php if ($value['id_produk']==3): ?>
+									<?php echo 'active' ?>
+									<?php endif ?>" id="website<?php echo $value['id_produk'] ?>">
 									<div class="row justify-content-center">
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name mb-4">Toko Online</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFF7EB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 7 Juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>E-Commerce</li>
-													<li>Grocery</li>
-													<li>Marketplace</li>
-													<li>Iklan baris</li>
-													<li>Kursus Online</li>
-													<p class="my-3">Dan sebagainya</p>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper active">
-												<div class="pack-name mb-4">Tools System</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#E2F2FD;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 10 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>Payment online system</li>
-													<li>Order System</li>
-													<li>Accounting</li>
-													<li>Kasir</li>
-													<li>CRM</li>
-													<li>ERP</li>
-													<li>HRIS</li>
-													<li>Logistik</li>
-													<li>Parking</li>
-													<p class="my-3">Dan sebagainya</p>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name mb-4">Lifestyle Apps</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFEBEB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 15 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>Tour & Travel</li>
-													<li>PPOB</li>
-													<li>Delivery Online</li>
-													<li>Dokter Online</li>
-													<li>Learning Management System</li>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
+										<?php foreach ($this->M_Harga->harga_fitur($value['id_produk']) as $key => $value): ?>
+											<div class="col-lg-4 col-md-6">
+												<div class="pr-table-wrapper">
+													<div class="pack-name"><?php echo $value['nama'] ?></div>
+													<div class="pack-details"><?php echo $value['tagline'] ?></div>
+													<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFF7EB;">
+														<p class="px-2">mulai</p>
+														<p class="fw-bolder fs-3">IDR <?php echo $value['harga'] ?></p>
+													</div>
+													<?php foreach ($this->M_Harga->sub_fitur($value['id_harga_fitur']) as $key => $value): ?>
+														<ul class="pr-feature py-3">
+															<p class="fw-bold"><?php echo $value['nama'] ?></p>
+															<?php foreach ($this->M_Harga->isi_fitur($value['id_sub_fitur']) as $key => $value): ?>
+																<li>
+																	<?php if ($value['coret']==1): ?>
+																		<?php echo '<s>' ?>
+																	<?php endif ?>
+																	<?php echo $value['isi'] ?>
+																	<?php if ($value['coret']==1): ?>
+																		<?php echo '</s>' ?>
+																	<?php endif ?>
+																</li>
+															<?php endforeach ?>
+														</ul>
+													<?php endforeach ?>
+													<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
+												</div>
+											</div>
+										<?php endforeach ?>
 									</div>
 								</div>
-								<div class="tab-pane fade show" id="webview">
-									<div class="row justify-content-center">
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name mb-4">Toko Online</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFF7EB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 3 Juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>E-Commerce</li>
-													<li>Grocery</li>
-													<li>Marketplace</li>
-													<li>Iklan baris</li>
-													<li>Kursus Online</li>
-													<p class="my-3">Dan sebagainya</p>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper active">
-												<div class="pack-name mb-4">Tools System</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#E2F2FD;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 5 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>Payment online system</li>
-													<li>Order System</li>
-													<li>Accounting</li>
-													<li>Kasir</li>
-													<li>CRM</li>
-													<li>ERP</li>
-													<li>HRIS</li>
-													<li>Logistik</li>
-													<li>Parking</li>
-													<p class="my-3">Dan sebagainya</p>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name mb-4">Lifestyle Apps</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFEBEB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 7 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Scope</p>
-													<li>Tour & Travel</li>
-													<li>PPOB</li>
-													<li>Delivery Online</li>
-													<li>Dokter Online</li>
-													<li>Learning Management System</li>
-												</ul>
-												<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> <!-- /.pricing-table-area-one -->
-					</div>
-				</div> <!-- /.pricing-section-one -->
+							<?php endforeach ?>
+						</div>
+					</div> <!-- /.pricing-table-area-one -->
+				</div>
+			</div> <!-- /.pricing-section-one -->
 
-				<div class="fancy-banner-five mt-150 lg-mt-100">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 m-auto">
-								<div class="bg-wrapper dark-bg">
-									<div class="row">
-										<div class="col-xxl-12 col-md-12 m-auto">
-											<h2 class="title font-recoleta">Apps/ Software Premium ? </h2>
-											<h2 class="title font-recoleta">Dengan Fitur & Security Terbaik.</h2>
-										</div>
-										<h4 class="text-white pb-3 font-recoleta">Data driven -  Cutting Edge Technology - Awsome Experience</h4>
+			<div class="fancy-banner-five mt-150 lg-mt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 m-auto">
+							<div class="bg-wrapper dark-bg">
+								<div class="row">
+									<div class="col-xxl-12 col-md-12 m-auto">
+										<h2 class="title font-recoleta">Apps/ Software Premium ? </h2>
+										<h2 class="title font-recoleta">Dengan Fitur & Security Terbaik.</h2>
 									</div>
-									<a href="contactV1.html" class="theme-btn-four ripple-btn">Hubungi Kami</a>
+									<h4 class="text-white pb-3 font-recoleta">Data driven -  Cutting Edge Technology - Awsome Experience</h4>
 								</div>
+								<a href="contactV1.html" class="theme-btn-four ripple-btn">Hubungi Kami</a>
 							</div>
 						</div>
 					</div>
-				</div> <!-- /.fancy-banner-five -->
+				</div>
+			</div> <!-- /.fancy-banner-five -->
 
 			<!--=====================================================
 				Vcamp Fancy Banner Three

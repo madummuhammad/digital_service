@@ -64,219 +64,44 @@
 
 						<div class="pricing-table-area-one">
 							<div class="tab-content">
-								<div class="tab-pane fade show active" id="#">
+								<?php foreach ($this->M_Harga->produk(3) as $key => $value): ?>
+									<div class="tab-pane fade show <?php if ($value['id_produk']==5): ?>
+									<?php echo 'active' ?>
+									<?php endif ?>" id="website<?php echo $value['id_produk'] ?>">
 									<div class="row justify-content-center">
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name">Basic</div>
-												<div class="pack-details">Cocok untuk UMKM/ Bisnis baru</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFF7EB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 1 Juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Core Feature</p>
-													<li>Gratis Domain (.com/.id/.net/.org)</li>
-													<li>Disk Space … GB SSD</li>
-													<li>Server</li>
-													<li>CPU</li>
-													<li>SSL Certificate (Security)</li>
-													<li>cPanel/Direct Admin</li>
-													<li>Email Bisnis</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Desain</p>
-													<li>Pilihan Desain ...Template</li>
-													<li>Responsive Mobile</li>
-													<li>Revisi Minor</li>
-													<li><s>Desain Logo</s></li>
-													<li><s>Desain Banner/Slider</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Kelola Website</p>
-													<li>Akses Halaman Admin</li>
-													<li>Multi-Admin</li>
-													<li>Akses Kelola Konten & Statistik Pengunjung</li>
-													<li>Akses Cpanel & Hosting</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Bisnis</p>
-													<li>Riset Keyword SEO</li>
-													<li>SEO On Page (Title, Meta, Image)</li>
-													<li><s>Google Analytics</s></li>
-													<li><s>Google Search Console</s></li>
-													<li><s>Google My Business (Bisnisku)</s></li>
-													<li><s>Email Newsletter</s></li>
-													<li><s>Facebook Pixel</s></li>
-													<li><s>Free 1 bulan Google Ads Mgt</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Toko Online</p>
-													<li>Integrasi WooCommerce/Shopify</li>
-													<li>Payment System</li>
-													<li>Shipping System</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Support</p>
-													<li>Share Sosmed</li>
-													<li>Integrasi Chat Online</li>
-													<li>Update Content 1x/ bulan</li>
-													<li>Tutorial General</li>
-													<li>Backup & Restore</li>
-													<li>Garansi Proyek Selesai</li>
-													<li>Free Maintenance</li>
-													<li>Optimasi Speed & Load LP</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Promo Tambahan</p>
-													<li>Diskon 10% Pembuatan Website</li>
-													<li>Promo Diskon …..% Digital Marketing</li>
-												</ul>
-												<a href="#" class="trial-button">Pilih Paket Ini</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper active">
-												<div class="pack-name">Medium</div>
-												<div class="pack-details">Bagi Anda yang sudah memiliki Website </div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#E2F2FD;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 3,8 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Core Feature</p>
-													<li>Gratis Domain (.com/.id/.net/.org)</li>
-													<li>Disk Space … GB SSD</li>
-													<li>Server</li>
-													<li>CPU</li>
-													<li>SSL Certificate (Security)</li>
-													<li>cPanel/Direct Admin</li>
-													<li>Email Bisnis</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Desain</p>
-													<li>Pilihan Desain ...Template</li>
-													<li>Responsive Mobile</li>
-													<li>Revisi Minor</li>
-													<li><s>Desain Logo</s></li>
-													<li><s>Desain Banner/Slider</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Kelola Website</p>
-													<li>Akses Halaman Admin</li>
-													<li>Multi-Admin</li>
-													<li>Akses Kelola Konten & Statistik Pengunjung</li>
-													<li>Akses Cpanel & Hosting</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Bisnis</p>
-													<li>Riset Keyword SEO</li>
-													<li>SEO On Page (Title, Meta, Image)</li>
-													<li><s>Google Analytics</s></li>
-													<li><s>Google Search Console</s></li>
-													<li><s>Google My Business (Bisnisku)</s></li>
-													<li><s>Email Newsletter</s></li>
-													<li><s>Facebook Pixel</s></li>
-													<li><s>Free 1 bulan Google Ads Mgt</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Toko Online</p>
-													<li>Integrasi WooCommerce/Shopify</li>
-													<li>Payment System</li>
-													<li>Shipping System</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Support</p>
-													<li>Share Sosmed</li>
-													<li>Integrasi Chat Online</li>
-													<li>Update Content 1x/ bulan</li>
-													<li>Tutorial General</li>
-													<li>Backup & Restore</li>
-													<li>Garansi Proyek Selesai</li>
-													<li>Free Maintenance</li>
-													<li>Optimasi Speed & Load LP</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Promo Tambahan</p>
-													<li>Diskon 10% Pembuatan Website</li>
-													<li>Promo Diskon …..% Digital Marketing</li>
-												</ul>
-												<a href="#" class="trial-button">Pilih Paket Ini</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
-										<div class="col-lg-4 col-md-6">
-											<div class="pr-table-wrapper">
-												<div class="pack-name">Pro</div>
-												<div class="pack-details">Cocok untuk Perusahaan Yang ingin Fitur Profesional</div>
-												<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFEBEB;">
-													<p class="px-2">mulai</p>
-													<p class="fw-bolder fs-3">IDR 5,5 juta</p>
-												</div> <!-- /.top-banner -->
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Core Feature</p>
-													<li>Gratis Domain (.com/.id/.net/.org)</li>
-													<li>Disk Space … GB SSD</li>
-													<li>Server</li>
-													<li>CPU</li>
-													<li>SSL Certificate (Security)</li>
-													<li>cPanel/Direct Admin</li>
-													<li>Email Bisnis</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Desain</p>
-													<li>Pilihan Desain ...Template</li>
-													<li>Responsive Mobile</li>
-													<li>Revisi Minor</li>
-													<li><s>Desain Logo</s></li>
-													<li><s>Desain Banner/Slider</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Kelola Website</p>
-													<li>Akses Halaman Admin</li>
-													<li>Multi-Admin</li>
-													<li>Akses Kelola Konten & Statistik Pengunjung</li>
-													<li>Akses Cpanel & Hosting</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Bisnis</p>
-													<li>Riset Keyword SEO</li>
-													<li>SEO On Page (Title, Meta, Image)</li>
-													<li><s>Google Analytics</s></li>
-													<li><s>Google Search Console</s></li>
-													<li><s>Google My Business (Bisnisku)</s></li>
-													<li><s>Email Newsletter</s></li>
-													<li><s>Facebook Pixel</s></li>
-													<li><s>Free 1 bulan Google Ads Mgt</s></li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Fitur Toko Online</p>
-													<li>Integrasi WooCommerce/Shopify</li>
-													<li>Payment System</li>
-													<li>Shipping System</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Support</p>
-													<li>Share Sosmed</li>
-													<li>Integrasi Chat Online</li>
-													<li>Update Content 1x/ bulan</li>
-													<li>Tutorial General</li>
-													<li>Backup & Restore</li>
-													<li>Garansi Proyek Selesai</li>
-													<li>Free Maintenance</li>
-													<li>Optimasi Speed & Load LP</li>
-												</ul>
-												<ul class="pr-feature py-3">
-													<p class="fw-bold">Promo Tambahan</p>
-													<li>Diskon 10% Pembuatan Website</li>
-													<li>Promo Diskon …..% Digital Marketing</li>
-												</ul>
-												<a href="#" class="trial-button">Pilih Paket Ini</a>
-											</div> <!-- /.pr-table-wrapper -->
-										</div>
+										<?php foreach ($this->M_Harga->harga_fitur($value['id_produk']) as $key => $value): ?>
+											<div class="col-lg-4 col-md-6">
+												<div class="pr-table-wrapper">
+													<div class="pack-name"><?php echo $value['nama'] ?></div>
+													<div class="pack-details"><?php echo $value['tagline'] ?></div>
+													<div class="top-banner d-flex justify-content-center align-items-center pb-1 pt-3" style="background:#FFF7EB;">
+														<p class="px-2">mulai</p>
+														<p class="fw-bolder fs-3">IDR <?php echo $value['harga'] ?></p>
+													</div>
+													<?php foreach ($this->M_Harga->sub_fitur($value['id_harga_fitur']) as $key => $value): ?>
+														<ul class="pr-feature py-3">
+															<p class="fw-bold"><?php echo $value['nama'] ?></p>
+															<?php foreach ($this->M_Harga->isi_fitur($value['id_sub_fitur']) as $key => $value): ?>
+																<li>
+																	<?php if ($value['coret']==1): ?>
+																		<?php echo '<s>' ?>
+																	<?php endif ?>
+																	<?php echo $value['isi'] ?>
+																	<?php if ($value['coret']==1): ?>
+																		<?php echo '</s>' ?>
+																	<?php endif ?>
+																</li>
+															<?php endforeach ?>
+														</ul>
+													<?php endforeach ?>
+													<a href="#" class="trial-button">Pilih Paket Ini</a>
+												</div>
+											</div>
+										<?php endforeach ?>
 									</div>
 								</div>
-							</div>
-						</div> <!-- /.pricing-table-area-one -->
+							<?php endforeach ?>
+						</div>
 					</div>
 				</div> <!-- /.pricing-section-one -->
 

@@ -56,6 +56,57 @@ class M_Harga extends CI_Model {
 		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
 	}
 
+	public function sub_fitur_update()
+	{
+		$sub_fitur=form('sub_fitur');
+		$id_sub_fitur=form('id_sub_fitur');
+		$id_produk=$this->uri->segment(5);
+		$id_paket=$this->uri->segment(4);
+
+		$data=[
+			'nama'=>$sub_fitur
+		];
+
+		$this->db->where('id_sub_fitur',$id_sub_fitur);
+		$this->db->update('sub_fitur',$data);
+
+		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+	}
+
+	public function isi_fitur_coret()
+	{
+		$id_isi_fitur=form('id');
+		$coret=form('coret');
+		if ($coret==0) {
+			$coret=1;
+		} else {
+			$coret=0;
+		}
+
+		$id_produk=$this->uri->segment(5);
+		$id_paket=$this->uri->segment(4);
+
+		$data=[
+			'coret'=>$coret
+		];
+
+		$this->db->where('id_isi_fitur',$id_isi_fitur);
+		$this->db->update('isi_fitur',$data);
+	}
+
+	public function sub_fitur_delete()
+	{
+		$id_sub_fitur=form('id');
+		$id_produk=$this->uri->segment(5);
+		$id_paket=$this->uri->segment(4);
+
+
+		$this->db->where('id_sub_fitur',$id_sub_fitur);
+		$this->db->delete('sub_fitur');
+
+		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+	}
+
 	public function isi_fitur_create()
 	{
 		$id_sub_fitur=form('id_sub_fitur');
@@ -73,6 +124,22 @@ class M_Harga extends CI_Model {
 		];
 
 		$this->db->insert('isi_fitur',$data);
+
+		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+	}
+
+	public function isi_fitur_update()
+	{
+		$id_isi_fitur=form('id');
+		$isi=form('isi');
+		$id_paket=$this->uri->segment(4);
+		$id_produk=$this->uri->segment(5);
+		$data=[
+			'isi'=>$isi,
+		];
+
+		$this->db->where('id_isi_fitur',$id_isi_fitur);
+		$this->db->update('isi_fitur',$data);
 
 		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
 	}
