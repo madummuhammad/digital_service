@@ -108,32 +108,96 @@
 						<div class="container">
 							<p class="text-center">Sudah lebih dari 100 brand menggunakan jasa Landing Page kami</p>
 							<div class="partnerSliderOne">
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-1.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-2.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-3.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-4.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-5.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-2.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-4.png" alt=""></div>
-								</div>
+								<?php foreach ($logo as $key => $value): ?>
+									<div class="item">
+										<div class="d-flex">
+											<button class="mx-1" data-bs-toggle="modal" data-bs-target="#klien<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
+											<button class="mx-1" data-bs-toggle="modal" data-bs-target="#kliendelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
+										</div>
+										<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['logo'] ?>" alt=""></div>
+									</div>
+								<?php endforeach ?>
+							</div>
+							<div class="d-flex justify-content-center pt-4">
+								<button class="mx-1" data-bs-toggle="modal" data-bs-target="#logotambah"><i class="fas fa-plus"></i> Tambah Logo</button>
 							</div>
 						</div>
 					</div> <!-- /.partner-slider-one -->
 				</div> <!-- /.hero-banner-one -->
-
+				<?php foreach ($logo as $row => $value): ?>
+					<div class="modal fade" tabindex="-1" id="klien<?php echo $value['id'] ?>">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<form action="<?php echo admin_url('website/layanan/landing_page_logo') ?>" method="POST" enctype="multipart/form-data">
+									<?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
+									<?php echo method('_patch') ?>
+									<?php echo get_id($value['id']) ?>
+									<div class="modal-header">
+										<h5 class="modal-title">Edit Logo</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-12">
+												<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" data-toggle="gambar">
+												<input type="file" name="gambar" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-primary">Simpan</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<form action="<?php echo admin_url('website/layanan/landing_page_logo') ?>" method="POST">
+						<div class="modal fade" id="kliendelete<?php echo $value['id'] ?>">
+							<div class="modal-dialog modal-dialog-centered">
+								<?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
+								<?php echo method('_get') ?>
+								<?php echo get_id($value['id']) ?>
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Konfirmasi Hapus</h4>
+										<a type="button" class="close" data-bs-dismiss="modal">&times;</a>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-outline-primary">Hapus</button>
+										<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Batal</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				<?php endforeach ?>
+				<div class="modal fade" tabindex="-1" id="logotambah">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<form action="<?php echo admin_url('website/layanan/landing_page_logo') ?>" method="POST" enctype="multipart/form-data">
+								<?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
+								<?php echo method('_post') ?>
+								<div class="modal-header">
+									<h5 class="modal-title">Tambah Klien</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-12">
+											<img data-toggle="gambar" class="img-fluid w-25 mb-4" src="<?php echo base_url('') ?>assets/images/logo/default.png" alt="">
+											<input type="file" class="form-control" name="gambar">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-primary">Simpan</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div class="vcamp-feature-section-four mt-150 lg-mt-150 md-mt-120">
 					<img src="<?php echo base_url('') ?>assets/images/shape/shape_05.svg" alt="" class="shapes shape-one">
 					<div class="container">

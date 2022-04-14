@@ -39,7 +39,7 @@
                       <li><a href="<?php echo base_url('adminsystem/website/layanan/landing_page') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='landing_page'): ?>
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Landing Page</span></a></li>
-                      <li><a href="<?php echo base_url('service/promo_digital_marketing') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='promo_digital_marketing'): ?>
+                      <li><a href="<?php echo base_url('adminsystem/website/layanan/digital_marketing') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='promo_digital_marketing'): ?>
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Promo Digital Marketing</span></a></li>
                     </ul>
