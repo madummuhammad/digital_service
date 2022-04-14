@@ -16,27 +16,11 @@
 						<div class="container">
 							<p class="text-center">Agency Partner Kami yang akan membersamai tumbuhnya bisnis Anda</p>
 							<div class="partnerSliderOne">
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-1.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-2.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-3.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-4.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-5.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-2.png" alt=""></div>
-								</div>
-								<div class="item">
-									<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/logo-4.png" alt=""></div>
-								</div>
+								<?php foreach ($logo as $key => $value): ?>
+									<div class="item">
+										<div class="img-meta d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['logo'] ?>" alt=""></div>
+									</div>
+								<?php endforeach ?>
 							</div>
 						</div>
 					</div> <!-- /.partner-slider-one -->
@@ -136,56 +120,18 @@
 
 				<div class="vcamp-feature-section-five mt-100 lg-mt-80">
 					<div class="feature_slider_one">
-						<div class="item">
-							<div class="card-style-five">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_41.jpg" alt="" class="img-meta">
-								<div class="hover-content">
-									<h3 class="font-recoleta title"><a>Google Ads Management</a></h3>
-									<p>by Agency XX. </p>
-									<p>Dapatkan diskon s/d 30%</p>
-								</div>
-							</div> <!-- /.card-style-five -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="card-style-five">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_42.jpg" alt="" class="img-meta">
-								<div class="hover-content">
-									<h3 class="font-recoleta title"><a >Search Engine Optimization</a></h3>
-									<p>by Agency XX. </p>
-									<p>Dapatkan diskon s/d 30%</p>
-								</div>
-							</div> <!-- /.card-style-five -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="card-style-five">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_43.jpg" alt="" class="img-meta">
-								<div class="hover-content">
-									<h3 class="font-recoleta title"><a >Email Marketing</a></h3>
-									<p>by Agency XX. </p>
-									<p>Dapatkan diskon s/d 30%</p>
-								</div>
-							</div> <!-- /.card-style-five -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="card-style-five">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_44.jpg" alt="" class="img-meta">
-								<div class="hover-content">
-									<h3 class="font-recoleta title"><a >FB/IG Ads</a></h3>
-									<p>by Agency XX. </p>
-									<p>Dapatkan diskon s/d 30%</p>
-								</div>
-							</div> <!-- /.card-style-five -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="card-style-five">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_44.jpg" alt="" class="img-meta">
-								<div class="hover-content">
-									<h3 class="font-recoleta title"><a >Jasa Konten Artikel</a></h3>
-									<p>by Agency XX. </p>
-									<p>Dapatkan diskon s/d 30%</p>
-								</div>
-							</div> <!-- /.card-style-five -->
-						</div> <!-- /.item -->
+						<?php foreach ($portofolio as $key => $value): ?>
+							<div class="item">
+								<div class="card-style-five">
+									<img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="" class="img-meta">
+									<div class="hover-content">
+										<h3 class="font-recoleta title"><a><?php echo $value['judul'] ?></a></h3>
+										<p><?php echo $value['agency'] ?></p>
+										<p><?php echo $value['tagline'] ?></p>
+									</div>
+								</div> <!-- /.card-style-five -->
+							</div> <!-- /.item -->
+						<?php endforeach ?>
 					</div>
 				</div> <!-- /.vcamp-feature-section-five -->
 
@@ -217,45 +163,15 @@
 		<div class="vcamp-feature-section-two mt-130 md-mt-110">
 			<div class="container">
 				<div class="row gx-5">
-					<div class="col-xxl-11 m-auto">
-						<div class="row gx-5">
-							<div class="col-lg-4 col-sm-6" data-aos="fade-up">
-								<div class="card-style-two">
-									<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_12.svg" alt="" class="tran3s"></div>
-									<h4 class="title">Nama Agency 1</h4>
-									<p class="pe-xxl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-								</div> <!-- /.card-style-two -->
-							</div>
-							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-								<div class="card-style-two">
-									<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_13.svg" alt="" class="tran3s"></div>
-									<h4 class="title">Nama Agency 2</h4>
-									<p class="pe-xxl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-								</div> <!-- /.card-style-two -->
-							</div>
-							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-								<div class="card-style-two">
-									<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_14.svg" alt="" class="tran3s"></div>
-									<h4 class="title">Nama Agency 3</h4>
-									<p class="pe-xxl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-								</div> <!-- /.card-style-two -->
-							</div>
-							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-								<div class="card-style-two">
-									<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_14.svg" alt="" class="tran3s"></div>
-									<h4 class="title">Nama Agency 4</h4>
-									<p class="pe-xxl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-								</div> <!-- /.card-style-two -->
-							</div>
-							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-								<div class="card-style-two">
-									<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_14.svg" alt="" class="tran3s"></div>
-									<h4 class="title">Nama Agency 5</h4>
-									<p class="pe-xxl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-								</div> <!-- /.card-style-two -->
-							</div>
+					<?php foreach ($agency as $key => $value): ?>
+						<div class="col-lg-4 col-sm-6" data-aos="fade-up">
+							<div class="card-style-two">
+								<div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['logo'] ?>" alt="" class="tran3s"></div>
+								<h4 class="title"><?php echo $value['judul'] ?></h4>
+								<p class="pe-xxl-5"><?php echo $value['isi'] ?></p>
+							</div> <!-- /.card-style-two -->
 						</div>
-					</div>
+					<?php endforeach ?>
 				</div>
 			</div>
 		</div> <!-- /.vcamp-feature-section-two -->

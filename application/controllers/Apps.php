@@ -6,6 +6,7 @@ class Apps extends CI_Controller {
 	public function index()
 	{
 		$data['title']='Layanan - Apps';
+		$data['portofolio']=$this->M_Layanan->apps();
 		$this->load->view('website/v_apps',$data);
 	}
 

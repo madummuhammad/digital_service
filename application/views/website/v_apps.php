@@ -125,54 +125,23 @@
 
 				<div class="slider-wrapper">
 					<div class="feedback_slider_three">
-						<div class="item">
-							<div class="block-wrapper">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_15.jpg" alt="" class="screen">
-								<div class="overlay-content d-flex align-items-end">
-									<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
-										<span>www.uiart.com</span>
-										<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
-									</a>
-								</div> <!-- /.overlay-content -->
-							</div> <!-- /.block-wrapper -->
-						</div>
-						<div class="item">
-							<div class="block-wrapper">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_16.jpg" alt="" class="screen">
-								<div class="overlay-content d-flex align-items-end">
-									<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
-										<span>www.todo.com</span>
-										<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
-									</a>
-								</div> <!-- /.overlay-content -->
-							</div> <!-- /.block-wrapper -->
-						</div>
-						<div class="item">
-							<div class="block-wrapper">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_17.jpg" alt="" class="screen">
-								<div class="overlay-content d-flex align-items-end">
-									<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
-										<span>www.icon8.com</span>
-										<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
-									</a>
-								</div> <!-- /.overlay-content -->
-							</div> <!-- /.block-wrapper -->
-						</div>
-						<div class="item">
-							<div class="block-wrapper">
-								<img src="<?php echo base_url('') ?>assets/images/media/img_16.jpg" alt="" class="screen">
-								<div class="overlay-content d-flex align-items-end">
-									<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
-										<span>www.todo.com</span>
-										<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
-									</a>
-								</div> <!-- /.overlay-content -->
-							</div> <!-- /.block-wrapper -->
-						</div>
+						<?php foreach ($portofolio as $key => $value): ?>
+							<div class="item">
+								<div class="block-wrapper">
+									<img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="" class="screen">
+									<div class="overlay-content d-flex align-items-end">
+										<a href="<?php echo $value['link'] ?>" class="d-flex justify-content-between align-items-center">
+											<span><?php echo $value['link'] ?></span>
+											<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
+										</a>
+									</div> <!-- /.overlay-content -->
+								</div> <!-- /.block-wrapper -->
+							</div>
+						<?php endforeach ?>
 					</div> <!-- /.feedback_slider_three -->
 				</div> <!-- /.slider-wrapper -->
 
-				<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
+				<div class="text-center mt-40 lg-mt-20"><a href="" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
 			</div> <!-- /.inner-content -->
 		</div> <!-- /.feedback-section-five -->
 
