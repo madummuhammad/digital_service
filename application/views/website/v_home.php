@@ -346,7 +346,6 @@
                 <?php endforeach ?>
               </div>
             </div>
-            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klientambah"><i class="fas fa-plus"></i></button>
           </div>
         </div>
       </div> <!-- /.partner-section-two -->

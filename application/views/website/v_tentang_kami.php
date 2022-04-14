@@ -180,10 +180,6 @@
 							<?php foreach ($partner as $key => $value): ?>
 								<div class="col-sm-4 col-6">
 									<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
-									<div class="d-flex">
-										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partner<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
-										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partnerdelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
-									</div>
 								</div>
 							<?php endforeach ?>
 						</div>

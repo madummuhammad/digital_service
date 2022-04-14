@@ -8,7 +8,7 @@ Content body start
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Order Baru</h4>
+                        <h4 class="card-title">Selamat Datang, <?php echo $this->session->userdata('name') ?></h4>
                     </div>
                     <div class="card-body">
                         <!-- <div class="table-responsive">

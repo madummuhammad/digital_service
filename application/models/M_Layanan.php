@@ -3,135 +3,388 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_Layanan extends CI_Model {
 
-	public function create()
+	public function website()
 	{
-		$judul=$this->input->post('judul');
-		$icon=$this->input->post('icon');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
+		return $this->db->get('layanan_website_toko_online')->result_array();
+	}
 
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('icon','required'),
-			rules_array('content','required')
-		];
+	public function apps()
+	{
+		return $this->db->get('layanan_apps')->result_array();
+	}
 
-		$validasi=$this->form_validation->set_rules(rules($rules));
+	public function landing_page()
+	{
+		return $this->db->get('layanan_landing_page')->result_array();
+	}
 
-		$data=[
-			'judul'=>$judul,
-			'icon'=>$icon,
-			'content'=>$content,
-		];
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'layanan',
-				'icon'=>'error',
-				'title'=>'Tambah Section Layanan Gagal'
+	public function create_website()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='portofolio';
+		$link=form('link');
+
+		$gambar=upload_gambar($path, $type, $file_name);
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link,
+				'gambar'=>'default.png'
 			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
 		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->insert('service_ind',$data);
-				$this->db->insert('service_eng',$data);
-				$toast=[
-					'request'=>'layanan',
-					'icon'=>'success',
-					'title'=>'Tambah Section Layanan Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->insert('service_eng',$data);
-				$this->db->insert('service_ind',$data);
-				$toast=[
-					'request'=>'layanan',
-					'icon'=>'success',
-					'title'=>'Tambah Section Layanan Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		$this->db->insert('layanan_website_toko_online',$data);
+
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/website_dan_toko_online'));
+	}
+
+	public function update_website()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='portofolio';
+		$id=form('id');
+		$link=form('link');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_website_toko_online')->row_array();
+
+		$gambar=upload_gambar($path, $type, $file_name);
+
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['gambar'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
 			}
 		}
+		$this->db->where('id',$id);
+		$this->db->update('layanan_website_toko_online',$data);
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/website_dan_toko_online'));
+	}
+
+	public function delete_website()
+	{
+		$id=$this->input->post('id');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_website_toko_online')->row_array();
+
+		$this->db->where('id',$id);
+		$this->db->delete('layanan_website_toko_online');
+
+		if ($gambar_lama['gambar'] !== 'default.png') {
+			unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+		}
+		$toast=[
+			'request'=>'portofolio',
+			'icon'=>'warning',
+			'title'=>'Hapus Section portofolio Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/website_dan_toko_online'));
+	}
+
+	public function create_apps()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='portofolio';
+		$link=form('link');
+
+		$gambar=upload_gambar($path, $type, $file_name);
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link,
+				'gambar'=>'default.png'
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		$this->db->insert('layanan_apps',$data);
+
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/apps'));
+	}
+
+	public function update_apps()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='portofolio';
+		$id=form('id');
+		$link=form('link');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_apps')->row_array();
+
+		$gambar=upload_gambar($path, $type, $file_name);
+
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['gambar'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+			}
+		}
+		$this->db->where('id',$id);
+		$this->db->update('layanan_apps',$data);
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/apps'));
+	}
+
+	public function delete_apps()
+	{
+		$id=$this->input->post('id');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_apps')->row_array();
+
+		$this->db->where('id',$id);
+		$this->db->delete('layanan_apps');
+
+		if ($gambar_lama['gambar'] !== 'default.png') {
+			unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+		}
+		$toast=[
+			'request'=>'portofolio',
+			'icon'=>'warning',
+			'title'=>'Hapus Section portofolio Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/apps'));
+	}
+	
+	public function create_landing_page()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='landing_page';
+		$link=form('link');
+
+		$gambar=upload_gambar($path, $type, $file_name);
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link,
+				'gambar'=>'default.png'
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		$this->db->insert('layanan_landing_page',$data);
+
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/landing_page'));
+	}
+
+	public function update_landing_page()
+	{
+		$path='./assets/images/layanan/';
+		$type='jpg|png|jpeg';
+		$file_name='landing_page';
+		$id=form('id');
+		$link=form('link');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_landing_page')->row_array();
+
+		$gambar=upload_gambar($path, $type, $file_name);
+
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
+		}
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['gambar'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+			}
+		}
+		$this->db->where('id',$id);
+		$this->db->update('layanan_landing_page',$data);
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/landing_page'));
+	}
+
+	public function delete_landing_page()
+	{
+		$id=$this->input->post('id');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('layanan_landing_page')->row_array();
+
+		$this->db->where('id',$id);
+		$this->db->delete('layanan_landing_page');
+
+		if ($gambar_lama['gambar'] !== 'default.png') {
+			unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+		}
+		$toast=[
+			'request'=>'portofolio',
+			'icon'=>'warning',
+			'title'=>'Hapus Section portofolio Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/layanan/landing_page'));
+	}
+	public function create()
+	{
+		$path='./assets/images/portofolio/';
+		$type='jpg|png|jpeg';
+		$file_name='landing_page';
+		$id_jenis=form('jenis');
+		$link=form('link');
+
+		$gambar=upload_gambar($path, $type, $file_name);
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link,
+				'id_jenis'=>$id_jenis
+			];
+		} else {
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link,
+				'id_jenis'=>$id_jenis
+			];
+		}
+
+		if ($gambar == NULL) {
+			redirect(admin_url('website/portofolio'));
+		} else {
+			$this->db->insert('portofolio',$data);
+		}
+
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Tambah Logo Klien Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/portofolio'));
 	}
 
 	public function update()
 	{
-		$judul=$this->input->post('judul');
-		$icon=$this->input->post('icon');
-		$content=$this->input->post('content');
-		$bahasa=$this->input->post('_bahasa');
-		$id=$this->input->post('id');
+		$path='./assets/images/portofolio/';
+		$type='jpg|png|jpeg';
+		$file_name='portofolio';
+		$id=form('id');
+		$link=form('link');
+		$this->db->where('id',$id);
+		$gambar_lama=$this->db->get('portofolio')->row_array();
 
-		$rules=[
-			rules_array('judul','required'),
-			rules_array('icon','required'),
-			rules_array('content','required')
-		];
+		$gambar=upload_gambar($path, $type, $file_name);
 
-		$validasi=$this->form_validation->set_rules(rules($rules));
-
-		$data=[
-			'judul'=>$judul,
-			'icon'=>$icon,
-			'content'=>$content,
-		];
-		if ($validasi->run()==false) {
-			$toast=[
-				'request'=>'layanan',
-				'icon'=>'error',
-				'title'=>'Edit Section Layanan Gagal'
+		if ($gambar==NULL) {
+			$data=[
+				'link'=>$link
 			];
-			$this->session->set_flashdata($toast);
-			redirect('website/'.$bahasa);
 		} else {
-			if ($bahasa=='indonesia') {
-				$this->db->where('id',$id);
-				$this->db->update('service_ind',$data);
-				$this->db->where('id',$id);
-				$this->db->update('service_eng',['icon'=>$icon]);
-				$toast=[
-					'request'=>'layanan',
-					'icon'=>'success',
-					'title'=>'Edit Section Layanan Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/indonesia');
-			} elseif ($bahasa=='english') {
-				$this->db->where('id',$id);
-				$this->db->update('service_eng',$data);
-				$this->db->where('id',$id);
-				$this->db->update('service_ind',['icon'=>$icon]);
-				$toast=[
-					'request'=>'layanan',
-					'icon'=>'success',
-					'title'=>'Edit Section Layanan Berhasil'
-				];
-				$this->session->set_flashdata($toast);
-				redirect('website/english');
-			} else{
-				redirect(admin_url());
-			}
+			$data=[
+				'gambar'=>$gambar,
+				'link'=>$link
+			];
 		}
+
+
+		if ($gambar !== NULL) {
+			if ($gambar_lama['gambar'] !== 'default.png') {
+				unlink(FCPATH . 'assets/images/portofolio/'.$gambar_lama['gambar']);
+			}
+			$this->db->where('id',$id);
+			$this->db->update('portofolio',$data);
+		}
+		$toast=[
+			'request'=>'banner',
+			'icon'=>'success',
+			'title'=>'Edit Banner Berhasil'
+		];
+		$this->session->set_flashdata($toast);
+		redirect(admin_url('website/portofolio'));
 	}
 
 	public function delete()
 	{
 		$id=$this->input->post('id');
-		$bahasa=$this->input->post('_bahasa');
 		$this->db->where('id',$id);
-		$this->db->delete('service_eng');
+		$gambar_lama=$this->db->get('portofolio')->row_array();
+
 		$this->db->where('id',$id);
-		$this->db->delete('service_ind');
+		$this->db->delete('portofolio');
+
+		if ($gambar_lama['gambar'] !== 'default.png') {
+			unlink(FCPATH . 'assets/images/portofolio/'.$gambar_lama['gambar']);
+		}
 		$toast=[
-			'request'=>'layanan',
+			'request'=>'portofolio',
 			'icon'=>'warning',
-			'title'=>'Hapus Section Layanan Berhasil'
+			'title'=>'Hapus Section portofolio Berhasil'
 		];
 		$this->session->set_flashdata($toast);
-		redirect(base_url('website/'.$bahasa));
+		redirect(admin_url('website/portofolio'));
 	}
 }

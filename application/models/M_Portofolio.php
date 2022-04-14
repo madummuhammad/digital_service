@@ -65,7 +65,8 @@ class M_Portofolio extends CI_Model {
 
 		if ($gambar==NULL) {
 			$data=[
-				'link'=>$link
+				'link'=>$link,
+				'gambar'=>'default.png'
 			];
 		} else {
 			$data=[
@@ -79,9 +80,9 @@ class M_Portofolio extends CI_Model {
 			if ($gambar_lama['gambar'] !== 'default.png') {
 				unlink(FCPATH . 'assets/images/portofolio/'.$gambar_lama['gambar']);
 			}
-			$this->db->where('id',$id);
-			$this->db->update('portofolio',$data);
 		}
+		$this->db->where('id',$id);
+		$this->db->update('portofolio',$data);
 		$toast=[
 			'request'=>'banner',
 			'icon'=>'success',

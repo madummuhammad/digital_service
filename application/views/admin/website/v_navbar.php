@@ -30,13 +30,13 @@
                   <?php endif ?> dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Layanan</a>
                     <ul class="dropdown-menu">
-                      <li><a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='website_dan_toko_online'): ?>
+                      <li><a href="<?php echo base_url('adminsystem/website/layanan/website_dan_toko_online') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='website_dan_toko_online'): ?>
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Website & Toko Online</span></a></li>
-                      <li><a href="<?php echo base_url('service/apps') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='apps'): ?>
+                      <li><a href="<?php echo base_url('adminsystem/website/layanan/apps') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='apps'): ?>
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Apps</span></a></li>
-                      <li><a href="<?php echo base_url('service/landing_page') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='landing_page'): ?>
+                      <li><a href="<?php echo base_url('adminsystem/website/layanan/landing_page') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='landing_page'): ?>
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Landing Page</span></a></li>
                       <li><a href="<?php echo base_url('service/promo_digital_marketing') ?>" class="dropdown-item <?php if ($this->uri->segment(1)=='service' AND $this->uri->segment(2)=='promo_digital_marketing'): ?>

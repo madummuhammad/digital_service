@@ -6,6 +6,7 @@ class Website_dan_toko_online extends CI_Controller {
 	public function index()
 	{
 		$data['title']='Layanan - Website dan Toko Online';
+		$data['portofolio']=$this->M_Layanan->website();
 		$this->load->view('website/v_website_dan_toko_online',$data);
 	}
 

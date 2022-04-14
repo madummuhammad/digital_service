@@ -68,6 +68,10 @@ $route['adminsystem/website/tentang_kami']='admin/tentang_kami/index';
 $route['adminsystem/website/tentang_kami/partner']='admin/tentang_kami/partner';
 $route['adminsystem/website/portofolio']='admin/portofolio/index';
 
+$route['adminsystem/website/layanan/website_dan_toko_online']='admin/layanan/website';
+$route['adminsystem/website/layanan/apps']='admin/layanan/apps';
+$route['adminsystem/website/layanan/landing_page']='admin/layanan/landing_page';
+
 $route['adminsystem/harga/(:any)/(:any)']='admin/harga/index/$1/$2';
 $route['adminsystem/harga/sub_fitur/(:any)/(:any)']='admin/harga/sub_fitur/$1/$2';
 $route['adminsystem/harga/isi_fitur/(:any)/(:any)']='admin/harga/isi_fitur/$1/$2';

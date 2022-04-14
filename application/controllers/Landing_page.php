@@ -6,6 +6,7 @@ class Landing_page extends CI_Controller {
 	public function index()
 	{
 		$data['title']='Layanan - Landing Page';
+		$data['portofolio']=$this->M_Layanan->landing_page();
 		$this->load->view('website/v_landing_page',$data);
 	}
 
