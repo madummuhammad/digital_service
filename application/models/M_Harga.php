@@ -45,15 +45,36 @@ class M_Harga extends CI_Model {
 		$id_produk=$this->uri->segment(5);
 		$sub_fitur=form('sub_fitur');
 		$id_paket=$this->uri->segment(4);
-
-		$data=[
-			'nama'=>$sub_fitur,
-			'id_harga_fitur'=>$id_harga_fitur
+		$rules=[
+			rules_array('sub_fitur','required'),
+			rules_array('id_harga_fitur','required')
 		];
 
-		$this->db->insert('sub_fitur',$data);
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur gagal di tambah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			$data=[
+				'nama'=>$sub_fitur,
+				'id_harga_fitur'=>$id_harga_fitur
+			];
+
+			$this->db->insert('sub_fitur',$data);
+			$message=[
+				'type'=>'success',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur berhasil di tambah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function sub_fitur_update()
@@ -62,15 +83,36 @@ class M_Harga extends CI_Model {
 		$id_sub_fitur=form('id_sub_fitur');
 		$id_produk=$this->uri->segment(5);
 		$id_paket=$this->uri->segment(4);
-
-		$data=[
-			'nama'=>$sub_fitur
+		$rules=[
+			rules_array('sub_fitur','required'),
+			rules_array('id_sub_fitur','required')
 		];
 
-		$this->db->where('id_sub_fitur',$id_sub_fitur);
-		$this->db->update('sub_fitur',$data);
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur gagal di ubah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			$data=[
+				'nama'=>$sub_fitur
+			];
+
+			$this->db->where('id_sub_fitur',$id_sub_fitur);
+			$this->db->update('sub_fitur',$data);
+			$message=[
+				'type'=>'success',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur berhasil di ubah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function isi_fitur_coret()
@@ -100,11 +142,31 @@ class M_Harga extends CI_Model {
 		$id_produk=$this->uri->segment(5);
 		$id_paket=$this->uri->segment(4);
 
+		$rules=[
+			rules_array('id','required')
+		];
 
-		$this->db->where('id_sub_fitur',$id_sub_fitur);
-		$this->db->delete('sub_fitur');
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur gagal dihapus'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			$this->db->where('id_sub_fitur',$id_sub_fitur);
+			$this->db->delete('sub_fitur');
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Sub fitur berhasil dihapus'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function isi_fitur_create()
@@ -114,18 +176,39 @@ class M_Harga extends CI_Model {
 		$id_paket=$this->uri->segment(4);
 		$id_produk=$this->uri->segment(5);
 		$coret=form('coret');
-		if ($coret ==NULL) {
-			$coret=0;
-		};
-		$data=[
-			'isi'=>$isi,
-			'id_sub_fitur'=>$id_sub_fitur,
-			'coret'=>$coret
+		$rules=[
+			rules_array('id_sub_fitur','required'),
+			rules_array('isi','required')
 		];
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		$this->db->insert('isi_fitur',$data);
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur gagal ditambah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			if ($coret ==NULL) {
+				$coret=0;
+			};
+			$data=[
+				'isi'=>$isi,
+				'id_sub_fitur'=>$id_sub_fitur,
+				'coret'=>$coret
+			];
+			$message=[
+				'type'=>'success',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur berhasil ditambah'
+			];
+			$this->session->set_flashdata($message);
+			$this->db->insert('isi_fitur',$data);
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function isi_fitur_update()
@@ -134,14 +217,36 @@ class M_Harga extends CI_Model {
 		$isi=form('isi');
 		$id_paket=$this->uri->segment(4);
 		$id_produk=$this->uri->segment(5);
-		$data=[
-			'isi'=>$isi,
+
+		$rules=[
+			rules_array('id','required'),
+			rules_array('isi','required')
 		];
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		$this->db->where('id_isi_fitur',$id_isi_fitur);
-		$this->db->update('isi_fitur',$data);
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur gagal diubah'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			$data=[
+				'isi'=>$isi,
+			];
+			$message=[
+				'type'=>'success',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur berhasil diubah'
+			];
+			$this->session->set_flashdata($message);
+			$this->db->where('id_isi_fitur',$id_isi_fitur);
+			$this->db->update('isi_fitur',$data);
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function isi_fitur_delete()
@@ -150,10 +255,31 @@ class M_Harga extends CI_Model {
 		$id_produk=$this->uri->segment(5);
 		$id_isi_fitur=form('id');
 
-		$this->db->where('id_isi_fitur',$id_isi_fitur);
-		$this->db->delete('isi_fitur');
+		$rules=[
+			rules_array('id','required')
+		];
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur gagal dihapus'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		} else{
+			$this->db->where('id_isi_fitur',$id_isi_fitur);
+			$this->db->delete('isi_fitur');
+
+			$message=[
+				'type'=>'error',
+				'message'=>'Tunggu sebentar...',
+				'request'=>'Isi fitur berhasil dihapus'
+			];
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$id_paket.'/'.$id_produk));
+		}
 	}
 
 	public function update()
@@ -163,21 +289,44 @@ class M_Harga extends CI_Model {
 		$harga=form('harga');
 		$id_harga_fitur=form('id_harga_fitur');
 
-		
+		$rules=[
+			rules_array('title[]','required'),
+			rules_array('tagline[]','required'),
+			rules_array('harga[]','required'),
+			rules_array('id_harga_fitur[]','required')
+		];
 
-		$jml=count($id_harga_fitur);
+		$validasi=$this->form_validation->set_rules(rules($rules));
 
-		for ($i=0; $i < $jml; $i++) {
-			$data=[
-				'nama'=>$title[$i],
-				'tagline'=>$tagline[$i],
-				'harga'=>$harga[$i]
+		if ($validasi->run()==false) {
+			$message=[
+				'type'=>'error',
+				'message'=>'Isi Form Dengan Benar',
+				'request'=>'Data Gagal Diubah'
 			];
-			$this->db->where('id_harga_fitur',$id_harga_fitur[$i]);
-			$this->db->update('harga_fitur',$data);
+			$this->session->set_flashdata($message);
+			redirect(admin_url('harga/'.$this->uri->segment(3).'/'.$this->uri->segment(4)));
+		} else {
+			$message=[
+				'type'=>'success',
+				'message'=>'Mohon tunggu sebentar...',
+				'request'=>'Data Berhasil Diubah'
+			];
+			$this->session->set_flashdata($message);
+			$jml=count($id_harga_fitur);
+
+			for ($i=0; $i < $jml; $i++) {
+				$data=[
+					'nama'=>$title[$i],
+					'tagline'=>$tagline[$i],
+					'harga'=>$harga[$i]
+				];
+				$this->db->where('id_harga_fitur',$id_harga_fitur[$i]);
+				$this->db->update('harga_fitur',$data);
+			}
+			redirect(admin_url('harga/'.$this->uri->segment(3).'/'.$this->uri->segment(4)));
 		}
 
-		redirect(admin_url('harga/'.$this->uri->segment(3).'/'.$this->uri->segment(4)));
 	}
 
 }

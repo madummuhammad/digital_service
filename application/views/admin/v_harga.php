@@ -190,12 +190,12 @@
                                 csrf_test_name:csrf
                             },
                             success: function(e){
-                                // Swal.fire({ 
-                                //     icon: 'success',
-                                //     title: 'Berhasil Dikonfirmasi',
-                                //     showConfirmButton: false,
-                                //     timer: 1000
-                                // });
+                                Swal.fire({ 
+                                    icon: 'success',
+                                    title: 'Berhasil Diubah',
+                                    showConfirmButton: false,
+                                    timer: 1000
+                                });
                                 setTimeout(function (){
                                     window.location.href="<?php echo admin_url('harga/isi_fitur/').$this->uri->segment(3).'/'.$this->uri->segment(4) ?>";
                                 }, 200);
@@ -203,4 +203,30 @@
                         });
                     }
                 }
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    <?php if (null !== $this->session->flashdata('message')): ?>
+                            toastr.<?php echo $this->session->flashdata('type') ?> (<?php echo "'".$this->session->flashdata('message')."'" ?>,<?php echo "'".$this->session->flashdata('request')."'" ?>, {
+                                timeOut: 1000,
+                                closeButton: !0,
+                                debug: !1,
+                                newestOnTop: !0,
+                                progressBar: !0,
+                                positionClass: "toast-top-center",
+                                preventDuplicates: !0,
+                                onclick: null,
+                                showDuration: "300",
+                                hideDuration: "1000",
+                                extendedTimeOut: "1000",
+                                showEasing: "swing",
+                                hideEasing: "linear",
+                                showMethod: "fadeIn",
+                                hideMethod: "fadeOut",
+                                tapToDismiss: !1
+                            })
+                 
+                    
+                    <?php endif ?>
+                })
             </script>
