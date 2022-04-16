@@ -136,7 +136,7 @@
 										<div class="modal-body">
 											<div class="row">
 												<div class="col-12">
-													<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="<?php echo $value['gambar'] ?>" data-toggle="gambar">
+													<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="<?php echo $value['gambar'] ?>" data-toggle="gambar" style="width: 15rem;">
 													<input type="file" name="gambar" class="form-control">
 													<label for="" class="mt-2">Link</label>
 													<input type="text" name="link" class="form-control mt-2" value="<?php echo $value['link'] ?>">
@@ -144,8 +144,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-											<button type="submit" class="btn btn-primary">Simpan</button>
+											<button type="submit" class="btn btn-outline-dark">Simpan</button>
 										</div>
 									</form>
 								</div>
@@ -163,8 +162,7 @@
 											<a type="button" class="close" data-bs-dismiss="modal">&times;</a>
 										</div>
 										<div class="modal-footer">
-											<button type="submit" class="btn btn-outline-primary">Hapus</button>
-											<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Batal</button>
+											<button type="submit" class="btn btn-outline-danger">Hapus</button>
 										</div>
 									</div>
 								</div>
@@ -187,7 +185,7 @@
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-12">
-												<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/portofolio/default.png" alt="" data-toggle="gambar">
+												<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/portofolio/default.png" alt="" data-toggle="gambar" style="width: 15rem;">
 												<input type="file" name="gambar" class="form-control mt-2">
 												<label for="" class="mt-2">Link</label>
 												<input type="text" name="link" class="form-control mt-2">
@@ -195,8 +193,7 @@
 										</div>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										<button type="submit" class="btn btn-primary">Simpan</button>
+										<button type="submit" class="btn btn-outline-dark">Simpan</button>
 									</div>
 								</form>
 							</div>

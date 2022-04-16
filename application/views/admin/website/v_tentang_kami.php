@@ -140,8 +140,7 @@
         					</div>
         				</div>
         				<div class="modal-footer">
-        					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        					<button type="submit" class="btn btn-primary">Simpan</button>
+        					<button type="submit" class="btn btn-outline-dark">Simpan</button>
         				</div>
         			</form>
         		</div>
@@ -249,8 +248,7 @@
 								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<button type="submit" class="btn btn-primary">Simpan</button>
+								<button type="submit" class="btn btn-outline-dark">Simpan</button>
 							</div>
 						</form>
 					</div>
@@ -268,8 +266,7 @@
 								<a type="button" class="close" data-bs-dismiss="modal">&times;</a>
 							</div>
 							<div class="modal-footer">
-								<button type="submit" class="btn btn-outline-primary">Hapus</button>
-								<button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Batal</button>
+								<button type="submit" class="btn btn-outline-danger">Hapus</button>
 							</div>
 						</div>
 					</div>
@@ -295,8 +292,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							<button type="submit" class="btn btn-primary">Simpan</button>
+							<button type="submit" class="btn btn-outline-dark">Simpan</button>
 						</div>
 					</form>
 				</div>
