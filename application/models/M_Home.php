@@ -71,6 +71,15 @@ class M_Home extends CI_Model {
 		return $data;
 	}
 
+	public function jml_klien()
+	{
+		$data=$this->db->get('home_klien')->result_array();
+		$jml=count($data);
+
+		$hasil=$jml/8;
+		return ceil($hasil);
+	}
+
 	public function kliencreate()
 	{
 		$path='./assets/images/logo/';
