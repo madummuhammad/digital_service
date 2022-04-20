@@ -336,49 +336,70 @@
             <div class="row">
               <div class="col-xl-11 m-auto">
                 <div class="feedback_slider_seven">
-                  <?php foreach ($klien as $row => $value): ?>
-                   <div class="item">
-                    <div class="testimonial-block-one">
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                  <?php for ($i=0; $i < $jml_klien; $i++) { 
+                    ?>
+                    <div class="item">
+                      <div class="partent-logos">
+                        <div class="row g-0">
+                         <?php foreach ($klien as $row => $value): ?>
+                          <?php if ($row+1 <=8*($i+1) AND $row+1>(8*($i+1))-8 ): ?>
+                          <div class="col-md-3 col-6">
+                            <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                          </div>
+                          <?php endif ?>
+                        <?php endforeach ?>
+                      </div>
                     </div>
                   </div>
-                <?php endforeach ?>
+                <?php } ?>
               </div>
-            </div>
+            <!--   <div class="feedback_slider_seven">
+                <?php foreach ($klien as $row => $value): ?>
+                 <div class="item">
+                  <div class="testimonial-block-one">
+                    <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                  </div>
+                  <div class="testimonial-block-one">
+                    <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                  </div>
+                </div>
+              <?php endforeach ?>
+            </div> -->
           </div>
         </div>
-      </div> <!-- /.partner-section-two -->
+      </div>
+    </div> <!-- /.partner-section-two -->
 
-      <div class="box-layout">
-        <div class="case-study-four border-top">
-          <div class="mixitUp-container">
-            <div class="mix">
-              <div class="case-block-four position-relative" style="background: #DFF2E9;">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xl-6 col-md-8">
-                      <div class="text-wrapper" data-aos="fade-right">
-                        <div class="icon d-flex align-items-center justify-content-center mb-20">
-                          <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
-                        </div>
-                        <blockquote>
-                          “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
-                        </blockquote>
-                        <div class="d-flex align-items-center info-meta">
-                          <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
-                          <div class="name">Rudi. <span>Asricon</span></div>
-                          <a href="http://www.asricon.com/" target="_blank" class="more"><i class="bi bi-chevron-right"></i></a>
-                        </div>
+    <div class="box-layout">
+      <div class="case-study-four border-top">
+        <div class="mixitUp-container">
+          <div class="mix">
+            <div class="case-block-four position-relative" style="background: #DFF2E9;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-md-8">
+                    <div class="text-wrapper" data-aos="fade-right">
+                      <div class="icon d-flex align-items-center justify-content-center mb-20">
+                        <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
+                      </div>
+                      <blockquote>
+                        “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
+                      </blockquote>
+                      <div class="d-flex align-items-center info-meta">
+                        <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
+                        <div class="name">Rudi. <span>Asricon</span></div>
+                        <a href="http://www.asricon.com/" target="_blank" class="more"><i class="bi bi-chevron-right"></i></a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
               </div>
+              <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
             </div>
           </div>
         </div>
       </div>
+    </div>
 
         <!-- =============================================
         Vcamp Feature Section Three

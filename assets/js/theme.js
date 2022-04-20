@@ -268,7 +268,7 @@
               prevArrow: $('.prev_b'),
               nextArrow: $('.next_b'),
               centerPadding: '0px',
-              slidesToShow: 3,
+              slidesToShow: 1,
               slidesToScroll: 1,
               autoplay: true,
               autoplaySpeed: 3000,
@@ -276,7 +276,7 @@
                 {
                   breakpoint: 1200,
                   settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1
                   }
                 },
                 {
