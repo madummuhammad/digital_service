@@ -90,7 +90,7 @@
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
 							<h2 class="title">Diskon hingga 30% untuk semua layanan <span>partner kami<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
-							<div class="text-center mt-80 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
+							<div class="text-center mt-80 lg-mt-20"><a class="theme-btn-four ripple-btn scrollto" data-target="#agency">Lihat lebih lanjut</a></div>
 						</div> <!-- /.title-style-seven -->
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
@@ -118,7 +118,7 @@
 					</div>
 				</div> <!-- /.vcamp-text-block-thirteen -->
 
-				<div class="vcamp-feature-section-five mt-100 lg-mt-80">
+				<div class="vcamp-feature-section-five mt-100 lg-mt-80" id="agency">
 					<div class="feature_slider_one">
 						<?php foreach ($portofolio as $key => $value): ?>
 							<div class="item">
@@ -145,7 +145,7 @@
 										<h2 class="title">Agency Digital Marketing Pilihan</h2>
 									</div>
 									<p class="meta-info-text text-lg">Kami tidak asal pilih. Semua mitra sudah memenuhi standar kualitas layanan kami.</p>
-									<a href="about-usV2.html" class="theme-btn-two">Lebih Lanjut</a>
+									<a class="theme-btn-two scrollto" data-target="#agencynext">Lebih Lanjut</a>
 								</div>
 							</div>
 							<div class="col-xxl-7 col-lg-6" data-aos="fade-right">
@@ -160,7 +160,7 @@
 				Vcamp Feature Section Two
 			============================================== 
 		-->
-		<div class="vcamp-feature-section-two mt-130 md-mt-110">
+		<div class="vcamp-feature-section-two mt-130 md-mt-110" id="agencynext">
 			<div class="container">
 				<div class="row gx-5">
 					<?php foreach ($agency as $key => $value): ?>
@@ -184,7 +184,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">

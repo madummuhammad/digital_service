@@ -8,9 +8,9 @@
           <div class="row">
             <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
               <div class="text-wrapper text-center">
-                <h1 class="hero-heading font-recoleta">Kami membuat <span>Website</span> yang Menjual.</h1>
-                <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Websiute yang "Communicate Clearly, Stand Out & Sell More" </p>
-                <a href="ui-headerV3.html" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
+                <h1 class="hero-heading font-recoleta">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
+                <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
+                <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
               </div> <!-- /.text-wrapper -->
             </div>
           </div>
@@ -19,7 +19,6 @@
     </div>
   </div> <!-- /.hero_slider_three -->
 </div> <!-- /.hero-banner-nine -->
-
       <!-- 
       =============================================
         Vcamp Text Block One
@@ -52,11 +51,11 @@
         Vcamp Feature Section Nine
       ============================================== 
     -->
-    <div class="vcamp-feature-section-nine pt-170 lg-pt-120" id="about">
+    <div class="vcamp-feature-section-nine pt-30 lg-pt-120" id="about">
       <div class="container">
         <div class="title-style-seven text-center pb-60 lg-pb-20">
           <p>Bukan cuma keren,</p>
-          <h2 class="title">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span>Cek di sini. <img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+          <h2 class="title">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
         </div> <!-- /.title-style-seven -->
       </div>
     </div> <!-- /.vcamp-feature-section-nine -->
@@ -70,13 +69,13 @@
         <img src="images/shape/shape_01.svg" alt="" class="shapes shape-one">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-4 col-lg-5" data-aos="fade-right">
+            <div class="col-xxl-4 col-lg-5 pe-5" data-aos="fade-right">
               <div class="title-style-one">
                 <div class="upper-title">Apa yang kami kerjakan</div>
-                <h2 class="title">Integrated Web Agency untuk Bisnis.</h2>
+                <h2 class="title fs-1 text-justify">Integrated Web Agency untuk Bisnis.</h2>
               </div>
-              <p class="meta-info-text text-lg">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
-              <a href="serviceV1.html" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
+              <p class="meta-info-text text-lg fs-5 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
+              <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
             </div>
 
             <div class="col-lg-7 ms-auto" data-aos="fade-left">
@@ -86,7 +85,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_04.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Website Development</h4>
                     <p>Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -94,7 +93,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_05.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Online Shop & Marketplace</h4>
                     <p>Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -102,7 +101,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_06.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Custom Apps & Software</h4>
                     <p>Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/apps') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -110,7 +109,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_07.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Landing Page Creation</h4>
                     <p>Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/landing_page') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
               </div>
@@ -306,12 +305,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 d-flex right-side">
+            <div class="col-lg-6 d-flex right-side" id="fitur-bisnis">
               <div class="content-wrapper w-100 h-100 position-relative">
-                <div class="text-wrapper position-relative me-auto" data-aos="fade-left">
+                <div class="text-wrapper position-relative me-auto pb-1" data-aos="fade-left">
                   <h2 class="title">Fitur Bisnis Untuk Website Anda. GRATIS</h2>
                   <p>Kami akan bantu settingkan layanan tambahan untuk membuat website Anda lebih siap "Menjual". </p>
-                  <a href="serviceV3.html" class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
+                  <a class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
                 </div> <!-- /.text-wrapper -->
               </div> <!-- /.content-wrapper -->
             </div> <!-- /.right-side -->
@@ -331,7 +330,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-8 col-sm-10 m-auto d-flex justify-content-lg-end">
-                <a href="ui-headerV3.html" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
+                <a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
               </div>
             </div>
             <div class="row">
@@ -368,7 +367,7 @@
                         <div class="d-flex align-items-center info-meta">
                           <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
                           <div class="name">Rudi. <span>Asricon</span></div>
-                          <a href="portfolio-detailsV1.html" class="more"><i class="bi bi-chevron-right"></i></a>
+                          <a href="http://www.asricon.com/" target="_blank" class="more"><i class="bi bi-chevron-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -394,7 +393,7 @@
               </div>
               <div class="col-lg-5 ms-auto" data-aos="fade-left">
                 <p class="meta-info-text text-lg ps-xxl-5 md-pt-20">Kami bekerja sama dengan agency Digital Marketing dengan keahlian di bidangnya masing-masing, untuk membantu menjadikan Website Anda lebih <span class="text-decoration-underline">menjual dan profitable.</span></p>
-                <a href="" class="theme-btn-one ripple-btn mt-2">Boleh Juga <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
+                <a href="<?php echo base_url('service/promo_digital_marketing') ?>" class="theme-btn-one ripple-btn mt-30">Boleh Juga <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -410,7 +409,7 @@
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-7 col-lg-6">
-              <h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+              <h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
               <p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
             </div>
             <div class="col-xl-5 col-lg-6">
@@ -443,7 +442,7 @@
     -->
     <div class="vcamp-text-block-five mt-170 lg-mt-120">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-block-mobile d-none-pc mb-40">
             <div class="text-wrapper">
               <div class="title-style-five">
@@ -451,14 +450,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 ms-auto px-5 px-mobile-3">
-            <div class="text-wrapper">
+          <div class="col-xl-6 col-lg-6 ms-auto px-mobile-3">
+            <div class="text-wrapper pe-4">
               <h4 class="fw-bold">Kami spesialis. Hanya Fokus pada Website & Apps</h4>
-              <p class="meta-info-text-two py-1">Kami membatasi jumlah klien yang kami terima setiap tahun untuk memastikan setiap klien memiliki customer experience yang baik. Kami siap merespon dengan cepat kebutuhan Anda.</p>
+              <p class="meta-info-text-two py-1 text-justify">Kami membatasi jumlah klien yang kami terima setiap tahun untuk memastikan setiap klien memiliki customer experience yang baik. Kami siap merespon dengan cepat kebutuhan Anda.</p>
             </div>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-none-mobile">
-            <div class="text-wrapper">
+          <div class="col-xl-6 col-lg-6 ms-auto d-none-mobile">
+            <div class="text-wrapper ps-4">
               <div class="title-style-five">
                 <h2 class="title">Mengapa memilih kami?</h2>
               </div>
@@ -639,7 +638,7 @@
                       </div>
                       <div class="col-md-6">
                         <p>Atau ada pertanyaan yang buat penasaran?</p>
-                        <a href="contactV3.html" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
+                        <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
                       </div>
                     </div>
                   </div>

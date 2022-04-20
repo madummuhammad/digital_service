@@ -25,7 +25,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<a href="contactV3.html" class="theme-btn-four ripple-btn float-lg-end">Pelajari Disini</a>
+												<a href="<?php echo base_url('service/apps') ?>" class="theme-btn-four ripple-btn float-lg-end">Pelajari Disini</a>
 											</div>
 										</div>
 									</div>
@@ -41,7 +41,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<a href="contactV3.html" class="theme-btn-four ripple-btn float-lg-end">Cek Disini</a>
+												<a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn float-lg-end">Cek Disini</a>
 											</div>
 										</div>
 									</div>
@@ -104,7 +104,7 @@
 															<?php endforeach ?>
 														</ul>
 													<?php endforeach ?>
-													<a href="#" class="trial-button">Diskusi Lebih Lanjut</a>
+													<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20order%20Custom%20Apps%20." target="_blank" class="trial-button">Diskusi Lebih Lanjut</a>
 												</div>
 											</div>
 										<?php endforeach ?>
@@ -128,7 +128,7 @@
 									</div>
 									<h4 class="text-white pb-3 font-recoleta">Data driven -  Cutting Edge Technology - Awsome Experience</h4>
 								</div>
-								<a href="contactV1.html" class="theme-btn-four ripple-btn">Hubungi Kami</a>
+								<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20order%20Custom%20Apps%20Premium." target="_blank" class="theme-btn-four ripple-btn">Hubungi Kami</a>
 							</div>
 						</div>
 					</div>

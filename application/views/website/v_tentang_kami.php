@@ -125,7 +125,7 @@
 					<div class="card-style-five">
 						<img src="<?php echo base_url('') ?>assets/images/media/img_41.jpg" alt="" class="img-meta">
 						<div class="hover-content">
-							<h3 class="font-recoleta title"><a >Professional WP expert</a></h3>
+							<h3 class="font-recoleta title"><a >Wordpress Expert</a></h3>
 							<p>Pakar wordpress yang bekerja dengan premium plugin untuk mengeksekusi desain & fitur custom web Anda</p>
 						</div>
 					</div> <!-- /.card-style-five -->
@@ -152,7 +152,7 @@
 					<div class="card-style-five">
 						<img src="<?php echo base_url('') ?>assets/images/media/img_44.jpg" alt="" class="img-meta">
 						<div class="hover-content">
-							<h3 class="font-recoleta title"><a >Cutting Edge FW for Apps</a></h3>
+							<h3 class="font-recoleta title"><a >Best Framework from Apps</a></h3>
 							<p>Kami membuat ERP, Online Courses, Sales tracking dashboard, HRIS dan lainnya. Dengan teknologi & framework terkini.</p>
 						</div>
 					</div> <!-- /.card-style-five -->
@@ -253,11 +253,11 @@
 							<div class="mx-4">
 								<div class="row align-items-center">
 									<div class="col-xxl-6 col-lg-6 col-md-6">
-										<h2 class="title font-recoleta text-center text-md-start">Punya ide project ?</h2>
+										<h2 class="title font-recoleta text-center text-md-start fs-50px">Punya ide project ?</h2>
 									</div>
 									<div class="col-lg-6 col-md-6 d-flex justify-content-md-end justify-content-center flex-column">
 										<p class="text-white">Atau ada pertanyaan yang buat penasaran ?</p>
-										<a href="contactV1.html" class="theme-btn-four ripple-btn sm-mt-30">Yuk Diskusi</a>
+										<a target="_blank" href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." class="theme-btn-four ripple-btn sm-mt-30">Yuk Diskusi</a>
 									</div>
 								</div>
 							</div>
