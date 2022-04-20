@@ -69,7 +69,7 @@
 										<div class="h-100 d-flex align-items-center">
 											<div class="text-center">
 												<p>Punya ide apps/software dengan kebutuhan khusus dan bingung mulai dari mana ?</p>
-												<a href="" class="fw-bold"><u>Hubungi Kami</u></a>
+												<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="fw-bold"><u>Hubungi Kami</u></a>
 											</div>
 										</div>
 									</div>
@@ -141,7 +141,7 @@
 					</div> <!-- /.feedback_slider_three -->
 				</div> <!-- /.slider-wrapper -->
 
-				<div class="text-center mt-40 lg-mt-20"><a href="" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
+				<div class="text-center mt-40 lg-mt-20"><a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat lebih banyak</a></div>
 			</div> <!-- /.inner-content -->
 		</div> <!-- /.feedback-section-five -->
 
@@ -162,7 +162,7 @@
 										<li>Data Analysis & Database Processing untuk kebutuhan Inovasi Layanan di  masa depan.</li>
 										<li>Training Plan untuk optimalisasi usability termasuk pemberian Source Code.</li>
 									</ul>
-									<a href="contactV2.html" class="theme-btn-twelve outline mt-45 lg-mt-30">Lihat portofolio kami</a>
+									<a href="<?php echo base_url('portofolio') ?>" class="theme-btn-twelve outline mt-45 lg-mt-30">Lihat portofolio kami</a>
 								</div> <!-- /.text-wrapper -->
 							</div>
 						</div>
@@ -184,7 +184,7 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title">Tahapan Proses Pembuatan Custom Apps/ Software.</h2>
+										<h2 class="title">Tahapan Pembuatan Custom Apps/ Software.</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">
@@ -251,7 +251,7 @@
 							</div>
 							<div class="col-lg-5 ms-auto" data-aos="fade-left">
 								<p class="meta-info-text text-lg ps-xxl-5 md-pt-20">Kami bekerja sama dengan agency Digital Marketing dengan keahlian di bidangnya masing-masing, untuk membantu menjadikan  Apps Anda lebih menjual dan profitable.</p>
-								<a class="fw-bold mt-4" href=""><u>Boleh juga ></u></a>
+								<a class="fw-bold mt-4" href="<?php echo base_url('service/promo_digital_marketing') ?>"><u>Boleh juga ></u></a>
 							</div>
 						</div>
 					</div>
@@ -265,7 +265,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">

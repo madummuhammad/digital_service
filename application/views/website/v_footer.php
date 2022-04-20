@@ -53,6 +53,7 @@
 
         <!-- Theme js -->
         <script src="<?php echo base_url('') ?>assets/js/theme.js"></script>
+        <script src="<?php echo base_url('') ?>assets/js/custom.js"></script>
       </div> <!-- /.main-page-wrapper -->
     </body>
     </html>

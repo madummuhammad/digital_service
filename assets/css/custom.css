@@ -7,6 +7,30 @@
   font-size: 0.6rem !important;
 }
 
+.fs-90px{
+  font-size: 90px !important;
+}
+
+.fs-80px{
+  font-size: 80px !important;
+}
+
+.fs-70px{
+  font-size: 70px !important;
+}
+
+.fs-60px{
+  font-size: 60px !important;
+}
+
+.fs-55px{
+  font-size: 55px !important;
+}
+
+.fs-50px{
+  font-size: 50px !important;
+}
+
 /*Display*/
 
 .d-block-pc{
@@ -130,4 +154,12 @@
 
 .pe-mobile-5 {
   padding-right: 3rem !important;
+}
+
+.text-justify{
+  text-align: justify !important;
+}
+
+.scrollto{
+  cursor: pointer;
 }

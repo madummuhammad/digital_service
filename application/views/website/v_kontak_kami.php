@@ -31,14 +31,14 @@
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-25">
 											<label>Nama</label>
-											<input type="text" placeholder="Rashed Kabir" name="name" required="required" data-error="Name is required.">
+											<input type="text" placeholder="Masukan Nama Anda" name="name" required="required" data-error="Name is required.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-25">
 											<label>Email</label>
-											<input type="email" placeholder="rshdkabir@gmail.com" name="email" required="required" data-error="Valid email is required.">
+											<input type="email" placeholder="Masukan Alamat Email Anda" name="email" required="required" data-error="Valid email is required.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
@@ -78,7 +78,7 @@
 							<div class="icon"><img src="images/icon/icon_18.svg" alt=""></div>
 							<div class="text">
 								<h5 class="title">Info Kontak</h5>
-								<p>Chat kami via Whatsapp atau Telepon di  <br><a href="tel:+62823-1194-3220" class="call">+62823-1194-3220</a></p>
+								<p>Chat kami via Whatsapp atau Telepon di  <br><a href="tel:+62878-8682-2468" class="call">0878-8682-2468</a></p>
 							</div>
 						</div> <!-- /.address-block-three -->
 						<div class="address-block-three d-flex">
@@ -95,7 +95,7 @@
 			<div class="map-area-one mt-150 lg-mt-100">
 				<div class="mapouter">
 					<div class="gmap_canvas">
-						<iframe class="gmap_iframe" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=dhaka collage&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+						<iframe class="gmap_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.517565669281!2d106.75157671419457!3d-6.3269095636683215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efba3f851edf%3A0x1125b6b7ea2d950c!2sNerada%20Estate!5e0!3m2!1sid!2sid!4v1650440493959!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
 						<div class="col-xxl-6 col-xl-7 col-lg-6">
-							<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+							<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 							<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 						</div>
 						<div class="col-xl-5 col-lg-6">

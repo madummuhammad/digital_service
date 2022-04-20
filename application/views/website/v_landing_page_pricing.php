@@ -25,7 +25,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<a href="contactV3.html" class="theme-btn-four ripple-btn float-lg-end">Pelajari Disini</a>
+												<a href="<?php echo base_url('service/landing_page') ?>" class="theme-btn-four ripple-btn float-lg-end">Pelajari Disini</a>
 											</div>
 										</div>
 									</div>
@@ -41,7 +41,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<a href="contactV3.html" class="theme-btn-four ripple-btn float-lg-end">Cek Disini</a>
+												<a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn float-lg-end">Cek Disini</a>
 											</div>
 										</div>
 									</div>
@@ -94,7 +94,7 @@
 															<?php endforeach ?>
 														</ul>
 													<?php endforeach ?>
-													<a href="#" class="trial-button">Pilih Paket Ini</a>
+													<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20order%20Landing%20Page%20." target="_blank" class="trial-button">Pilih Paket Ini</a>
 												</div>
 											</div>
 										<?php endforeach ?>

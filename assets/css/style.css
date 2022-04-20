@@ -331,7 +331,7 @@ body {
 .title-style-four.white-vr .title {color: #fff;}
 .title-style-five .title {
   font-family: 'gorditabold';
-  font-size: 68px;
+  font-size: 48px;
   line-height: 1.18em;
   margin-bottom: 0;
 }
@@ -361,11 +361,16 @@ body {
 .dark-bg .title-style-six .title {color: #fff;}
 .title-style-seven .title {
   font-family: 'gorditablack';
-  font-size: 100px;
-  line-height: 1em;
+  font-size: 60px !important;
+  line-height: 1.1em;
   letter-spacing: -2px;
   margin-bottom: 0;
 }
+
+.title-style-seven .title a:hover{
+  color: #565656;
+}
+
 .title-style-seven .title span {display: inline-block; position: relative;}
 .title-style-seven .title span img {
   position: absolute;
@@ -7503,7 +7508,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   padding: 150px 0;
 }
 .hero-banner-nine .hero-heading {
-  font-size: 120px;
+  font-size: 7em;
   line-height: 0.91em;
   letter-spacing: -0.5px;
   color: #fff;

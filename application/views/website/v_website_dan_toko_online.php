@@ -67,7 +67,7 @@
 								<div class="text-wrapper md-pb-40">
 									<div class="title-style-one white-vr">
 										<div class="upper-title mb-50">Mengapa kami ?</div>
-										<h2 class="title px-0">Website dengan jaminan Kualitas</h2>
+										<h2 class="title px-0 fs-60px">Website dengan jaminan Kualitas</h2>
 									</div>
 								</div>
 							</div>
@@ -119,7 +119,7 @@
 					</div> <!-- /.feedback_slider_three -->
 				</div> <!-- /.slider-wrapper -->
 
-				<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
+				<div class="text-center mt-40 lg-mt-20"><a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat lebih banyak</a></div>
 			</div> <!-- /.inner-content -->
 		</div> <!-- /.feedback-section-five -->
 
@@ -169,11 +169,6 @@
 					</div>
 				</div> <!-- /.vcamp-feature-section-eight -->
 
-
-				<div class="container my-5">
-					<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
-				</div>
-
 				<!--=============================================
 				Vcamp Text Block Twelve
 				============================================== -->
@@ -191,7 +186,7 @@
 										<li>Teknologi E-commerce  yang handal. Ex: Shopify, WooCommerce, & Magento.</li>
 										<li>Advance marketing tools & Fitur bisnis, agar Toko Online Anda lebih menjual.</li>
 									</ul>
-									<a href="contactV2.html" class="theme-btn-twelve outline mt-45 lg-mt-30">Lihat portofolio kami</a>
+									<a href="<?php echo base_url('portofolio') ?>" class="theme-btn-twelve outline mt-45 lg-mt-30">Lihat portofolio kami</a>
 								</div> <!-- /.text-wrapper -->
 							</div>
 						</div>
@@ -251,7 +246,7 @@
 			<img src="<?php echo base_url('') ?>assets/images/shape/shape_39.svg" alt="" class="shapes shape-three">
 			<img src="<?php echo base_url('') ?>assets/images/shape/shape_37.svg" alt="" class="shapes shape-two">
 			<div class="container my-5">
-				<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Kontak Kami</a></div>
+				<div class="text-center mt-40 lg-mt-20"><a href="<?php echo base_url('kontak_kami') ?>" class="theme-btn-four ripple-btn">Kontak Kami</a></div>
 			</div>
 		</div> <!-- /.vcamp-feature-section-seven -->
 
@@ -261,8 +256,8 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120 dark-bg" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title text-white">Biaya Website/Toko Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
-							<a class="text-white py-5" href=""><u>Cek Di sini</u></a>
+							<h2 class="title text-white fs-1">Biaya Website/Toko Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
+							<a class="text-white py-5" href="<?php echo base_url('pricing/website_dan_toko_online') ?>"><u>Cek Di sini</u></a>
 						</div>
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
@@ -276,7 +271,7 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title">Tahapan Proses Pembuatan Website/Toko Online</h2>
+										<h2 class="title fs-60px">Tahapan Pembuatan Website/Toko Online</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">
@@ -337,13 +332,13 @@
 						<div class="row align-items-center mb-75 lg-mb-50 md-mb-20">
 							<div class="col-xl-6 col-lg-5" data-aos="fade-right">
 								<div class="title-style-one">
-									<h2 class="title">Setelah Website selesai, lalu apa ?</h2>
+									<h2 class="title">Setelah Website selesai, <span>lalu apa ?</span></h2>
 									<p>Ada <u>Diskon Khusus</u> untuk Klien Kami</p>
 								</div>
 							</div>
 							<div class="col-lg-5 ms-auto" data-aos="fade-left">
 								<p class="meta-info-text text-lg ps-xxl-5 md-pt-20">Kami bekerja sama dengan agency Digital Marketing dengan keahlian di bidangnya masing-masing, untuk membantu menjadikan Website Anda jauh lebih menjual dan profitable.</p>
-								<a class="fw-bold mt-4" href=""><u>Boleh juga ></u></a>
+								<a class="fw-bold mt-4" href="<?php echo base_url('service/promo_digital_marketing') ?>"><u>Boleh juga ></u></a>
 							</div>
 						</div>
 					</div>
@@ -357,7 +352,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">

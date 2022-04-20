@@ -97,13 +97,13 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title"> Lebih Menjual dengan Copywriting yang Persuasif + Desain yang <span>menarik<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+							<h2 class="title"><span>Lebih Menjual dengan Copywriting yang Persuasif + Desain yang menarik<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
 							<p>Tinggal terima beres, dan nikmati sales conversion yang tinggi. InshaAllah</p>
 						</div> <!-- /.title-style-seven -->
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
 
-				<div class="hero-banner-one md-mt-140">
+				<div class="hero-banner-one md-mt-140 mt-100">
 					<div class="partner-slider-one md-mt-80">
 						<div class="container">
 							<p class="text-center">Sudah lebih dari 100 brand menggunakan jasa Landing Page kami</p>
@@ -128,7 +128,7 @@
 										<h2 class="title">Jadi dengan Landing Page, Anda bisa ...</h2>
 									</div>
 									<p class="meta-info-text text-lg">Dapatkan berbagai manfaat menarik dari Landing Page kami untuk mepromosikan produk/jasa Anda secara online</p>
-									<a href="about-usV2.html" class="theme-btn-three">Hubungi Kami <i class="fas fa-angle-right"></i></a>
+									<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-three">Hubungi Kami <i class="fas fa-angle-right"></i></a>
 								</div> <!-- /.text-wrapper -->
 							</div>
 							<div class="col-lg-6 ms-auto">
@@ -137,7 +137,7 @@
 										<div class="card-style-four mb-130 lg-mb-70">
 											<div class="icon d-flex align-items-end"><img src="<?php echo base_url('') ?>assets/images/icon/icon_29.svg" alt="" class="tran3s"></div>
 											<h4 class="title">Fokus Menjual, Efisiensi Waktu</h4>
-											<p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
+											<p>Hasil lebih optimal, dikerjakan oleh ahlinya. Anda fokus pada follow up dan pelayanan.</p>
 										</div> <!-- /.card-style-four -->
 									</div>
 									<div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
@@ -175,7 +175,7 @@
 								<h2 class="title">Landing Page yang terus berkembang</h2>
 							</div>
 							<p>Kami akan terus berinovasi terkait pendekatan desain, teknologi dan tentunya copywriting untuk menghadirkan pengalaman terbaik serta tingkat konversi yang lebih tinggi.</p>
-							<a href="portfolioV1.html" class="theme-btn-three white-vr">Lihat Portofolio Landing Page <i class="fas fa-angle-right"></i></a>
+							<a href="<?php echo base_url('portofolio') ?>" class="theme-btn-three white-vr">Lihat Portofolio Landing Page <i class="fas fa-angle-right"></i></a>
 						</div><!--  /.text-wrapper -->
 
 						<div class="slider-wrapper">
@@ -309,13 +309,13 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120 dark-bg" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title text-white">Biaya Website/Toko Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
-							<a class="text-white py-5" href=""><u>Cek Di sini</u></a>
+							<h2 class="title text-white">Biaya Landing Page Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
+							<a class="text-white py-5" href="<?php echo base_url('pricing/landing_page') ?>"><u>Cek Di sini</u></a>
 						</div>
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
 
-				<div class="vcamp-feature-section-three lg-mt-150 md-mt-120">
+				<div class="vcamp-feature-section-three lg-mt-150 mt-100 md-mt-120">
 					<div class="container">
 						<div class="row align-items-center mb-75 lg-mb-50 md-mb-20">
 							<div class="col-xl-6 col-lg-5" data-aos="fade-right">
@@ -326,7 +326,7 @@
 							</div>
 							<div class="col-lg-5 ms-auto" data-aos="fade-left">
 								<p class="meta-info-text text-lg ps-xxl-5 md-pt-20">Kami bekerja sama dengan agency Digital Marketing dengan keahlian di bidangnya masing-masing, untuk membantu menjadikan  Apps Anda lebih menjual dan profitable.</p>
-								<a class="fw-bold mt-4" href=""><u>Boleh juga ></u></a>
+								<a class="fw-bold mt-4" href="<?php echo base_url('service/promo_digital_marketing') ?>"><u>Boleh juga ></u></a>
 							</div>
 						</div>
 					</div>
@@ -340,7 +340,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
