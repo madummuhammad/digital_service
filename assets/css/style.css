@@ -3955,7 +3955,9 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 }
 .inside-hero-three.dark-bg p {color: #fff;}
 /*^^^^^^^^^^^^^^^^^^^^^ Vcamp Feature Section Five ^^^^^^^^^^^^^^^^^^^^^^^^*/
-.card-style-five {position: relative; z-index: 5; overflow: hidden;}
+.card-style-five {
+  position: relative; z-index: 5; overflow: hidden;
+}
 .card-style-five:before {
   content: '';
   position: absolute;

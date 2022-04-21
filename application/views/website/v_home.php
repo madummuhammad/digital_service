@@ -336,7 +336,7 @@
             <div class="row">
               <div class="col-xl-11 m-auto">
                 <div class="slider_seven">
-                  <!-- <button class="prev_b"><i class="bi bi-caret-left"></i></button> -->
+                  <button type="button" data-role="none" class="prev_b text-dark" aria-label="Previous" role="button" style="display: block;"><i class="bi bi-caret-left"></i></button>
                   <div class="feedback_slider_seven">
                     <?php for ($i=0; $i < $jml_klien; $i++) { 
                       ?>
@@ -355,7 +355,7 @@
                   </div>
                 <?php } ?>
               </div>
-              <!-- <button class="next_b"><i class="bi bi-caret-right"></i></button> -->
+              <button type="button" data-role="none" class="next_b text-dark" aria-label="next" role="button" style="display: block;"><i class="bi bi-caret-right"></i></button>
             </div>
           </div>
         </div>
