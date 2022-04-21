@@ -21,6 +21,10 @@
           <i class="bi bi-arrow-up-short"></i>
         </button>
 
+        <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
 
 
 

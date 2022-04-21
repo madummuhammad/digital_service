@@ -163,3 +163,38 @@
 .scrollto{
   cursor: pointer;
 }
+
+.whatsapp{
+  /*color: #2EE462;*/
+  position: fixed;
+  left: 45px;
+  bottom: 20px;
+  width:35px;
+  height:35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99;
+  background: #2EE462;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp:hover{
+  color: #000000;
+}
+
+.whatsapp:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}

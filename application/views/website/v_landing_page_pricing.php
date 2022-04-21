@@ -125,7 +125,7 @@
 											</div>
 											<div class="col-md-6">
 												<p>Atau ada pertanyaan yang buat penasaran?</p>
-												<a href="contactV3.html" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
+												<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
 											</div>
 										</div>
 									</div>
