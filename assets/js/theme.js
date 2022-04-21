@@ -276,7 +276,7 @@ if($(".feedback_slider_seven").length) {
     arrows: true,
     prevArrow: $('.prev_b'),
     nextArrow: $('.next_b'),
-    centerPadding: '0px',
+    centerPadding: 'px',
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -491,14 +491,14 @@ if($(".feature_slider_one").length) {
     centerPadding: '0px',
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
+    autoplay: false,
+    centerMode: false,
     autoplaySpeed: 3000,
     responsive: [
     {
       breakpoint: 1400,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 4
       }
     },
     {

@@ -203,4 +203,23 @@
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
-.feedback
+.slider_seven{
+  position: relative;
+}
+
+.slider_seven .prev_b{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 11;
+  font-size: 30px;
+}
+
+.slider_seven .next_b{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  font-size: 30px;
+}

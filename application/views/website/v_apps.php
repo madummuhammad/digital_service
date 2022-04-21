@@ -169,9 +169,6 @@
 					</div>
 					<div class="right-img-meta">
 						<img src="<?php echo base_url('') ?>assets/images/media/img_71.png" alt="" class="w-100 main-img">
-						<a class="fancybox video-icon d-flex align-items-center justify-content-center" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0" tabindex="0">
-							<img src="<?php echo base_url('') ?>assets/images/icon/icon_41.svg" alt="">
-						</a>
 					</div> <!-- /.right-img-meta -->
 				</div> <!-- /.vcamp-text-block-twelve -->
 
