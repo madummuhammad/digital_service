@@ -75,6 +75,7 @@ $route['adminsystem/website/layanan/landing_page_logo']='admin/layanan/landing_p
 $route['adminsystem/website/layanan/digital_marketing']='admin/layanan/digital_marketing';
 $route['adminsystem/website/layanan/digital_marketing_logo']='admin/layanan/digital_marketing_logo';
 $route['adminsystem/website/layanan/agency']='admin/layanan/agency';
+$route['adminsystem/website/kontak_kami']='admin/kontak_kami/index';
 
 $route['adminsystem/harga/(:any)/(:any)']='admin/harga/index/$1/$2';
 $route['adminsystem/harga/sub_fitur/(:any)/(:any)']='admin/harga/sub_fitur/$1/$2';

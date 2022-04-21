@@ -190,7 +190,7 @@
 									<li>Agency partner kami berisi talenta expert, berpengalaman dan certified</li>
 									<li>Data driven, market research, creative approach & A/B Testing.</li>
 									<li>Powerfull Copywriting, Proven Method dan Recent Technologies/Platform</li>
-									<li>Optimisasi Campaign untuk improve Return On Investment (ROI).</li>
+									<li>Optimasi Campaign untuk improve Return On Investment (ROI).</li>
 								</ul>
 							</div>
 						</div>
@@ -443,7 +443,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">

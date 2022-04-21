@@ -5,19 +5,19 @@
     <div class="item">
       <div class="bg-wrapper d-flex align-items-center justify-content-center" style="background-image:url(<?php echo base_url('') ?>assets/images/media/img_73.jpg);">
         <div class="container">
-          <div class="row">
-            <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
-              <div class="text-wrapper text-center">
-                <h1 class="hero-heading font-recoleta">Kami membuat <span>Website</span> yang Menjual.</h1>
-                <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Websiute yang "Communicate Clearly, Stand Out & Sell More" </p>
-                <a href="ui-headerV3.html" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
-              </div> <!-- /.text-wrapper -->
-            </div>
+         <div class="row">
+          <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
+            <div class="text-wrapper text-center">
+              <h1 class="hero-heading font-recoleta">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
+              <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
+              <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
+            </div> <!-- /.text-wrapper -->
           </div>
         </div>
-      </div> <!-- /.bg-wrapper -->
-    </div>
-  </div> <!-- /.hero_slider_three -->
+      </div>
+    </div> <!-- /.bg-wrapper -->
+  </div>
+</div> <!-- /.hero_slider_three -->
 </div> <!-- /.hero-banner-nine -->
 
       <!-- 
@@ -94,7 +94,7 @@
       <div class="container">
         <div class="title-style-seven text-center pb-60 lg-pb-20">
           <p>Bukan cuma keren,</p>
-          <h2 class="title">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span>Cek di sini. <img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+          <h2 class="title">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
         </div> <!-- /.title-style-seven -->
       </div>
     </div> <!-- /.vcamp-feature-section-nine -->
@@ -108,13 +108,13 @@
         <img src="images/shape/shape_01.svg" alt="" class="shapes shape-one">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-4 col-lg-5" data-aos="fade-right">
+            <div class="col-xxl-4 col-lg-5 pe-5" data-aos="fade-right">
               <div class="title-style-one">
                 <div class="upper-title">Apa yang kami kerjakan</div>
-                <h2 class="title">Integrated Web Agency untuk Bisnis.</h2>
+                <h2 class="title fs-1 text-justify">Integrated Web Agency untuk Bisnis.</h2>
               </div>
-              <p class="meta-info-text text-lg">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
-              <a href="serviceV1.html" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
+              <p class="meta-info-text text-lg fs-5 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
+              <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
             </div>
 
             <div class="col-lg-7 ms-auto" data-aos="fade-left">
@@ -124,7 +124,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_04.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Website Development</h4>
                     <p>Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -132,7 +132,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_05.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Online Shop & Marketplace</h4>
                     <p>Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -140,7 +140,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_06.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Custom Apps & Software</h4>
                     <p>Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/apps') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
@@ -148,7 +148,7 @@
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_07.svg" alt="" class="tran3s"></div>
                     <h4 class="title">Landing Page Creation</h4>
                     <p>Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
-                    <a href="serviceV1.html" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
+                    <a href="<?php echo base_url('service/landing_page') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
               </div>
@@ -376,12 +376,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 d-flex right-side">
+            <div class="col-lg-6 d-flex right-side" id="fitur-bisnis">
               <div class="content-wrapper w-100 h-100 position-relative">
-                <div class="text-wrapper position-relative me-auto" data-aos="fade-left">
+                <div class="text-wrapper position-relative me-auto pb-1" data-aos="fade-left">
                   <h2 class="title">Fitur Bisnis Untuk Website Anda. GRATIS</h2>
                   <p>Kami akan bantu settingkan layanan tambahan untuk membuat website Anda lebih siap "Menjual". </p>
-                  <a href="serviceV3.html" class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
+                  <a class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
                 </div> <!-- /.text-wrapper -->
               </div> <!-- /.content-wrapper -->
             </div> <!-- /.right-side -->
@@ -401,92 +401,56 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-8 col-sm-10 m-auto d-flex justify-content-lg-end">
-                <a href="ui-headerV3.html" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
+                <a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
               </div>
             </div>
             <div class="row">
               <div class="col-xl-11 m-auto">
                 <div class="feedback_slider_seven">
-                  <?php foreach ($klien as $row => $value): ?>
-                   <div class="item">
-                    <div class="testimonial-block-one">
-                      <div class="d-flex">
-                        <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klien<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
-                        <button class="mx-1" data-bs-toggle="modal" data-bs-target="#kliendelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
-                      </div>
-                      <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                  <?php for ($i=0; $i < $jml_klien; $i++) { 
+                    ?>
+                    <div class="item">
+                      <div class="partent-logos">
+                        <div class="row g-0">
+                         <?php foreach ($klien as $row => $value): ?>
+                          <?php if ($row+1 <=8*($i+1) AND $row+1>(8*($i+1))-8 ): ?>
+                          <div class="col-md-3 col-6">
+                            <div class="d-flex">
+                              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klien<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
+                              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#kliendelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
+                            </div>
+                            <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                          </div>
+                        <?php endif ?>
+                      <?php endforeach ?>
                     </div>
                   </div>
-                <?php endforeach ?>
-              </div>
+                </div>
+              <?php } ?>
             </div>
-            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klientambah"><i class="fas fa-plus"></i></button>
           </div>
+          <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klientambah"><i class="fas fa-plus"></i></button>
         </div>
-      </div> <!-- /.partner-section-two -->
+      </div>
+    </div> <!-- /.partner-section-two -->
 
-      <?php foreach ($klien as $row => $value): ?>
-        <div class="modal fade" tabindex="-1" id="klien<?php echo $value['id'] ?>">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <form action="<?php echo admin_url('website/klien') ?>" method="POST" enctype="multipart/form-data">
-                <?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
-                <?php echo method('_patch') ?>
-                <?php echo get_id($value['id']) ?>
-                <div class="modal-header">
-                  <h5 class="modal-title">Edit Klien</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <img class="img-fuid" src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" data-toggle="gambar" style="width: 10rem;">
-                      <input type="file" name="gambar" class="form-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-outline-primary">Simpan</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <form action="<?php echo admin_url('website/klien') ?>" method="POST">
-          <div class="modal fade" id="kliendelete<?php echo $value['id'] ?>">
-            <div class="modal-dialog modal-dialog-centered">
-              <?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
-              <?php echo method('_get') ?>
-              <?php echo get_id($value['id']) ?>
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Konfirmasi Hapus</h4>
-                  <a type="button" class="close" data-bs-dismiss="modal">&times;</a>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-outline-danger">Hapus</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      <?php endforeach ?>
-      <div class="modal fade" tabindex="-1" id="klientambah">
+    <?php foreach ($klien as $row => $value): ?>
+      <div class="modal fade" tabindex="-1" id="klien<?php echo $value['id'] ?>">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <form action="<?php echo admin_url('website/klien') ?>" method="POST" enctype="multipart/form-data">
               <?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
-              <?php echo method('_post') ?>
+              <?php echo method('_patch') ?>
+              <?php echo get_id($value['id']) ?>
               <div class="modal-header">
-                <h5 class="modal-title">Tambah Klien</h5>
+                <h5 class="modal-title">Edit Klien</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="row">
                   <div class="col-12">
-                    <img data-toggle="gambar" class="img-fluid w-25 mb-4" src="<?php echo base_url('') ?>assets/images/logo/default.png" alt="">
-                    <input type="file" class="form-control" name="gambar">
+                    <img class="img-fuid" src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" data-toggle="gambar" style="width: 10rem;">
+                    <input type="file" name="gambar" class="form-control">
                   </div>
                 </div>
               </div>
@@ -497,37 +461,82 @@
           </div>
         </div>
       </div>
-
-      <div class="box-layout">
-        <div class="case-study-four border-top">
-          <div class="mixitUp-container">
-            <div class="mix">
-              <div class="case-block-four position-relative" style="background: #DFF2E9;">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xl-6 col-md-8">
-                      <div class="text-wrapper" data-aos="fade-right">
-                        <div class="icon d-flex align-items-center justify-content-center mb-20">
-                          <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
-                        </div>
-                        <blockquote>
-                          “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
-                        </blockquote>
-                        <div class="d-flex align-items-center info-meta">
-                          <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
-                          <div class="name">Rudi. <span>Asricon</span></div>
-                          <a href="portfolio-detailsV1.html" class="more"><i class="bi bi-chevron-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
+      <form action="<?php echo admin_url('website/klien') ?>" method="POST">
+        <div class="modal fade" id="kliendelete<?php echo $value['id'] ?>">
+          <div class="modal-dialog modal-dialog-centered">
+            <?php echo  form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
+            <?php echo method('_get') ?>
+            <?php echo get_id($value['id']) ?>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Konfirmasi Hapus</h4>
+                <a type="button" class="close" data-bs-dismiss="modal">&times;</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-outline-danger">Hapus</button>
               </div>
             </div>
           </div>
         </div>
+      </form>
+    <?php endforeach ?>
+    <div class="modal fade" tabindex="-1" id="klientambah">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form action="<?php echo admin_url('website/klien') ?>" method="POST" enctype="multipart/form-data">
+            <?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
+            <?php echo method('_post') ?>
+            <div class="modal-header">
+              <h5 class="modal-title">Tambah Klien</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <img data-toggle="gambar" class="img-fluid w-25 mb-4" src="<?php echo base_url('') ?>assets/images/logo/default.png" alt="">
+                  <input type="file" class="form-control" name="gambar">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-outline-primary">Simpan</button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
+
+    <div class="box-layout">
+      <div class="case-study-four border-top">
+        <div class="mixitUp-container">
+          <div class="mix">
+            <div class="case-block-four position-relative" style="background: #DFF2E9;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-md-8">
+                    <div class="text-wrapper" data-aos="fade-right">
+                      <div class="icon d-flex align-items-center justify-content-center mb-20">
+                        <img src="<?php echo base_url('') ?>assets/images/icon/icon_50.svg" alt="">
+                      </div>
+                      <blockquote>
+                        “Tim Ansol cukup detail dan mampu memahami kebutuhan digital bisnis kami. Mulai dari desain sampai copywriting, hasilnya memuaskan.”
+                      </blockquote>
+                      <div class="d-flex align-items-center info-meta">
+                        <img src="<?php echo base_url('') ?>assets/images/media/img_02.jpg" alt="" class="avatar">
+                        <div class="name">Rudi. <span>Asricon</span></div>
+                        <a href="portfolio-detailsV1.html" class="more"><i class="bi bi-chevron-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="<?php echo base_url('') ?>assets/images/media/img_50.png" alt="" class="screen screen-right" data-aos="fade-left">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
         <!-- =============================================
         Vcamp Feature Section Three
@@ -542,7 +551,7 @@
               </div>
               <div class="col-lg-5 ms-auto" data-aos="fade-left">
                 <p class="meta-info-text text-lg ps-xxl-5 md-pt-20">Kami bekerja sama dengan agency Digital Marketing dengan keahlian di bidangnya masing-masing, untuk membantu menjadikan Website Anda lebih <span class="text-decoration-underline">menjual dan profitable.</span></p>
-                <a href="" class="theme-btn-one ripple-btn mt-2">Boleh Juga <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
+                <a href="<?php echo base_url('service/promo_digital_marketing') ?>" class="theme-btn-one ripple-btn mt-30">Boleh Juga <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -557,32 +566,32 @@
       <div class="d-flex align-items-center justify-content-center h-100">
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-xxl-6 col-xl-7 col-lg-6">
-              <h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
-              <p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
-            </div>
-            <div class="col-xl-5 col-lg-6">
-              <div class="form-style-four md-mt-40">
-                <h3>Plus Voucher Diskon Pembuatan Website senilai Rp 100.000</h3>
-                <form action="inc/contact.php" id="contact-form"  data-toggle="validator">
-                  <div class="messages"></div>
-                  <div class="row controls">
-                    <div class="col-12">
-                      <div class="input-group-meta form-group mb-15">
-                        <label>Masukkan Email Anda </label>
-                        <input type="email" placeholder="febrinanda@gmail.com" name="email" required="required" data-error="Valid email is required.">
-                        <div class="help-block with-errors"></div>
-                      </div>
+           <div class="col-xxl-6 col-xl-7 col-lg-6">
+            <h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
+            <p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="form-style-four md-mt-40">
+              <h3>Plus Voucher Diskon Pembuatan Website senilai Rp 100.000</h3>
+              <form action="inc/contact.php" id="contact-form"  data-toggle="validator">
+                <div class="messages"></div>
+                <div class="row controls">
+                  <div class="col-12">
+                    <div class="input-group-meta form-group mb-15">
+                      <label>Masukkan Email Anda </label>
+                      <input type="email" placeholder="febrinanda@gmail.com" name="email" required="required" data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
                     </div>
-                    <div class="col-12"><button class="theme-btn-one ripple-btn fs-8 px-0 mt-10">Download Landing Page & Voucher Diskon</button></div>
                   </div>
-                </form>
-              </div> <!-- /.form-style-four -->
-            </div>
+                  <div class="col-12"><button class="theme-btn-one ripple-btn fs-8 px-0 mt-10">Download Landing Page & Voucher Diskon</button></div>
+                </div>
+              </form>
+            </div> <!-- /.form-style-four -->
           </div>
         </div>
       </div>
-    </div> <!-- /.hero-banner-ten -->
+    </div>
+  </div> <!-- /.hero-banner-ten -->
 
         <!--
       =====================================================
@@ -591,7 +600,7 @@
     -->
     <div class="vcamp-text-block-five mt-170 lg-mt-120">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-block-mobile d-none-pc mb-40">
             <div class="text-wrapper">
               <div class="title-style-five">
@@ -787,7 +796,7 @@
                       </div>
                       <div class="col-md-6">
                         <p>Atau ada pertanyaan yang buat penasaran?</p>
-                        <a href="contactV3.html" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
+                        <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
                       </div>
                     </div>
                   </div>

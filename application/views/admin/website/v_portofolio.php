@@ -87,6 +87,9 @@
 										</form>
 									<?php endforeach ?>
 								</div> <!-- /.mixitUp-container -->
+								<div class="mt-4 py-4">
+									<h3 class="font-recoleta text-center">Dan Masih Banyak Lagi</h3>
+								</div>
 								<div class="d-flex justify-content-center">
 									<button class="mx-1 mt-4" data-bs-toggle="modal" data-bs-target="#portofoliotambah"><i class="fas fa-plus"></i> Tambah Portofolio</button>
 								</div>
