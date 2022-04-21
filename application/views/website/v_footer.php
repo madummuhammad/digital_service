@@ -3,10 +3,10 @@
             <div class="d-lg-flex align-items-center justify-content-between">
               <div class="logo text-center"><a href="index.html"><img src="<?php echo base_url('') ?>assets/images/logo/logo_ansol_light.png" alt="" style="width:127px"></a></div>
               <ul class="style-none footer-nav d-flex flex-wrap justify-content-center md-pt-20 md-pb-30">
-                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="<?php echo base_url('tentang_kami') ?>">Tentang Kami</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Ketentuan Layanan</a></li>
-                <li><a href="#">Kontak Kami</a></li>
+                <li><a href="<?php echo base_url('kontak_kami') ?>">Kontak Kami</a></li>
               </ul>
               <ul class="d-flex justify-content-center social-icon style-none">
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
