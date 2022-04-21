@@ -62,7 +62,7 @@
           $(".email").on('click',function(){
             var email=$('.form-email').val();
             var csrf=$("input[name=csrf_test_name]").val();
-            var method=$('_post').val();
+            var method='_post';
             $.ajax({
               url: "<?php echo base_url() ?>",
               type:'POST',
