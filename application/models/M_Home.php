@@ -147,4 +147,23 @@ class M_Home extends CI_Model {
 		redirect(admin_url('website'));
 	}
 
+	public function email()
+	{
+		$email=form('email');
+		
+		$htmlContent = '<h3>Hi, '.$email.'</h3>';
+		$htmlContent .= '<p>Terimakasih, kami akan segera kirimkan template
+		Landing Page dan Voucher via Email</p><br>';
+		$htmlContent .= '<p>Terimakasih</p>';
+
+
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
+		$this->email->to($email);
+		$this->email->from('reply@ansol.com','Ansol');
+		$this->email->subject('Download Landing Page & Voucher Diskon');
+		$this->email->message($htmlContent);
+		$this->email->send();
+	}
+
 }

@@ -58,6 +58,30 @@
         <!-- Theme js -->
         <script src="<?php echo base_url('') ?>assets/js/theme.js"></script>
         <script src="<?php echo base_url('') ?>assets/js/custom.js"></script>
+        <script>
+          $(".email").on('click',function(){
+            var email=$('.form-email').val();
+            var csrf=$("input[name=csrf_test_name]").val();
+            var method=$('_post').val();
+            $.ajax({
+              url: "<?php echo base_url() ?>",
+              type:'POST',
+              data:{
+                email:email,
+                _post:method,
+                csrf_test_name:csrf
+              },
+              success: function(e){
+                setTimeout(function (){
+                  $(".form-email-group").append('<p class="fs-7 text-success text-center">Terimakasih, kami akan segera kirimkan template Landing Page dan Voucher via Email</p>');
+                }, 100);
+                setTimeout(function (){
+                  window.location.href="<?php echo base_url() ?>";
+                }, 500);
+              }
+            });
+          })
+        </script>
       </div> <!-- /.main-page-wrapper -->
     </body>
     </html>
