@@ -37,6 +37,9 @@
 										</div>
 									<?php endforeach ?>
 								</div> <!-- /.mixitUp-container -->
+								<div class="mt-4 py-4">
+									<h3 class="font-recoleta text-center">Dan Masih Banyak Lagi</h3>
+								</div>
 							</div>
 						</div>
 					</div>

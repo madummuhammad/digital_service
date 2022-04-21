@@ -68,7 +68,7 @@
                   <li class="nav-item <?php if ($this->uri->segment(1)=='kontak_kami'): ?>
                     <?php echo 'active' ?>
                   <?php endif ?>">
-                    <a class="nav-link" href="<?php echo base_url('kontak_kami') ?>">Kontak Kami</a>
+                    <a class="nav-link" href="<?php echo admin_url('website/kontak_kami') ?>">Kontak Kami</a>
                   </li>
                 </ul>
               </div>

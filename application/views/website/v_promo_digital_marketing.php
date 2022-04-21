@@ -111,7 +111,7 @@
 									<li>Agency partner kami berisi talenta expert, berpengalaman dan certified</li>
 									<li>Data driven, market research, creative approach & A/B Testing.</li>
 									<li>Powerfull Copywriting, Proven Method dan Recent Technologies/Platform</li>
-									<li>Optimisasi Campaign untuk improve Return On Investment (ROI).</li>
+									<li>Optimasi Campaign untuk improve Return On Investment (ROI).</li>
 								</ul>
 							</div>
 						</div>

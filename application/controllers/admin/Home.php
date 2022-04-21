@@ -21,6 +21,7 @@ class Home extends CI_Controller {
 			$data['counter']=$this->M_Home->counter();
 			$data['section2']=$this->M_Home->section2();
 			$data['klien']=$this->M_Home->klien();
+			$data['jml_klien']=$this->M_Home->jml_klien();
 			$data['title']='Home';
 			$this->load->view('admin/website/v_home',$data);
 		}

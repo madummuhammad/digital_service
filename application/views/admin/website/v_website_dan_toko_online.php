@@ -67,7 +67,7 @@
 								<div class="text-wrapper md-pb-40">
 									<div class="title-style-one white-vr">
 										<div class="upper-title mb-50">Mengapa kami ?</div>
-										<h2 class="title px-0">Website dengan jaminan Kualitas</h2>
+										<h2 class="title px-0 fs-60px">Website dengan jaminan Kualitas</h2>
 									</div>
 								</div>
 							</div>
@@ -201,7 +201,7 @@
 					</div>
 				</div> <!-- /.slider-wrapper -->
 
-				<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
+				<div class="text-center mt-40 lg-mt-20"><a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat lebih banyak</a></div>
 			</div> <!-- /.inner-content -->
 		</div> <!-- /.feedback-section-five -->
 
@@ -250,11 +250,6 @@
 						</div>
 					</div>
 				</div> <!-- /.vcamp-feature-section-eight -->
-
-
-				<div class="container my-5">
-					<div class="text-center mt-40 lg-mt-20"><a href="portfolioV2.html" class="theme-btn-four ripple-btn">Lihat lebih lanjut</a></div>
-				</div>
 
 				<!--=============================================
 				Vcamp Text Block Twelve
@@ -358,7 +353,7 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title">Tahapan Proses Pembuatan Website/Toko Online</h2>
+										<h2 class="title fs-60px">Tahapan Pembuatan Website/Toko Online</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">
@@ -419,7 +414,7 @@
 						<div class="row align-items-center mb-75 lg-mb-50 md-mb-20">
 							<div class="col-xl-6 col-lg-5" data-aos="fade-right">
 								<div class="title-style-one">
-									<h2 class="title">Setelah Website selesai, lalu apa ?</h2>
+									<h2 class="title">Setelah Website selesai, <span>lalu apa ?</span></h2>
 									<p>Ada <u>Diskon Khusus</u> untuk Klien Kami</p>
 								</div>
 							</div>
@@ -439,7 +434,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
@@ -485,7 +480,7 @@
 											</div>
 											<div class="col-md-6">
 												<p>Atau ada pertanyaan yang buat penasaran?</p>
-												<a href="contactV3.html" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
+												<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk Diskusi</a>
 											</div>
 										</div>
 									</div>
