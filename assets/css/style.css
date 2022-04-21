@@ -76,7 +76,18 @@
   z-index: 100;
   text-align: center;
 }
-.ctn-preloader .animation-preloader .icon {display: inline-block; position: relative;}
+.ctn-preloader .animation-preloader .icon 
+{
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+}
+
+.ctn-preloader .animation-preloader .icon img 
+{
+  width: 200px;
+}
+
 .ctn-preloader .animation-preloader .icon span {
   animation: spinner 1.5s infinite linear;
   border-radius: 50%;

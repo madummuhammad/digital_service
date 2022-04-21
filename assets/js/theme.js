@@ -273,7 +273,7 @@ if($(".feedback_slider_six").length) {
 if($(".feedback_slider_seven").length) {
   $('.feedback_slider_seven').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     prevArrow: $('.prev_b'),
     nextArrow: $('.next_b'),
     centerPadding: '0px',

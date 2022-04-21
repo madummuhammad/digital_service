@@ -184,7 +184,7 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title">Tahapan Pembuatan Custom Apps/ Software.</h2>
+										<h2 class="title fs-60px">Tahapan Pembuatan Custom Apps/ Software.</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">

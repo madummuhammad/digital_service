@@ -152,7 +152,7 @@
 					<div class="card-style-five">
 						<img src="<?php echo base_url('') ?>assets/images/media/img_44.jpg" alt="" class="img-meta">
 						<div class="hover-content">
-							<h3 class="font-recoleta title"><a >Best Framework from Apps</a></h3>
+							<h3 class="font-recoleta title"><a >Best Framework for Apps</a></h3>
 							<p>Kami membuat ERP, Online Courses, Sales tracking dashboard, HRIS dan lainnya. Dengan teknologi & framework terkini.</p>
 						</div>
 					</div> <!-- /.card-style-five -->

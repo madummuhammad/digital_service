@@ -7,7 +7,7 @@
       <header class="theme-main-menu sticky-menu theme-menu-one">
         <div class="inner-content">
           <div class="d-flex align-items-center justify-content-between">
-            <div class="logo"><a href="index.html"><img src="<?php echo base_url('') ?>assets/images/logo/vCamp_01.png" alt="" width="127"></a></div>
+            <div class="logo"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url('') ?>assets/images/logo/logo_ansol.png" alt="" width="127"></a></div>
             <nav class="navbar navbar-expand-lg">
               <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>

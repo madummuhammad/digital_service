@@ -8,7 +8,7 @@
           <div class="row">
             <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
               <div class="text-wrapper text-center">
-                <h1 class="hero-heading font-recoleta">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
+                <h1 class="hero-heading font-recoleta fs-90px">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
                 <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
                 <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
               </div> <!-- /.text-wrapper -->
@@ -72,43 +72,43 @@
             <div class="col-xxl-4 col-lg-5 pe-5" data-aos="fade-right">
               <div class="title-style-one">
                 <div class="upper-title">Apa yang kami kerjakan</div>
-                <h2 class="title fs-1 text-justify">Integrated Web Agency untuk Bisnis.</h2>
+                <h2 class="title fs-2 text-justify">Integrated Web Agency untuk Bisnis.</h2>
               </div>
-              <p class="meta-info-text text-lg fs-5 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
+              <p class="meta-info-text text-lg fs-6 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
               <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
             </div>
 
             <div class="col-lg-7 ms-auto" data-aos="fade-left">
-              <div class="row">
+              <div class="row ps-5">
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_04.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Website Development</h4>
-                    <p>Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
+                    <h4 class="title fs-5">Website Development</h4>
+                    <p class="fs-6">Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
                     <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_05.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Online Shop & Marketplace</h4>
-                    <p>Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
+                    <h4 class="title fs-5">Online Shop & Marketplace</h4>
+                    <p class="fs-6">Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
                     <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_06.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Custom Apps & Software</h4>
-                    <p>Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
+                    <h4 class="title fs-5">Custom Apps & Software</h4>
+                    <p class="fs-6">Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
                     <a href="<?php echo base_url('service/apps') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_07.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Landing Page Creation</h4>
-                    <p>Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
+                    <h4 class="title fs-5">Landing Page Creation</h4>
+                    <p class="fs-6">Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
                     <a href="<?php echo base_url('service/landing_page') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
@@ -335,17 +335,19 @@
             </div>
             <div class="row">
               <div class="col-xl-11 m-auto">
-                <div class="feedback_slider_seven">
-                  <?php for ($i=0; $i < $jml_klien; $i++) { 
-                    ?>
-                    <div class="item">
-                      <div class="partent-logos">
-                        <div class="row g-0">
-                         <?php foreach ($klien as $row => $value): ?>
-                          <?php if ($row+1 <=8*($i+1) AND $row+1>(8*($i+1))-8 ): ?>
-                          <div class="col-md-3 col-6">
-                            <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
-                          </div>
+                <div class="slider_seven">
+                  <!-- <button class="prev_b"><i class="bi bi-caret-left"></i></button> -->
+                  <div class="feedback_slider_seven">
+                    <?php for ($i=0; $i < $jml_klien; $i++) { 
+                      ?>
+                      <div class="item">
+                        <div class="partent-logos">
+                          <div class="row g-0">
+                           <?php foreach ($klien as $row => $value): ?>
+                            <?php if ($row+1 <=8*($i+1) AND $row+1>(8*($i+1))-8 ): ?>
+                            <div class="col-md-3 col-6">
+                              <div class="logo d-flex align-items-center justify-content-center"><a><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                            </div>
                           <?php endif ?>
                         <?php endforeach ?>
                       </div>
@@ -353,18 +355,8 @@
                   </div>
                 <?php } ?>
               </div>
-            <!--   <div class="feedback_slider_seven">
-                <?php foreach ($klien as $row => $value): ?>
-                 <div class="item">
-                  <div class="testimonial-block-one">
-                    <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
-                  </div>
-                  <div class="testimonial-block-one">
-                    <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
-                  </div>
-                </div>
-              <?php endforeach ?>
-            </div> -->
+              <!-- <button class="next_b"><i class="bi bi-caret-right"></i></button> -->
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
          <div class="row">
           <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
             <div class="text-wrapper text-center">
-              <h1 class="hero-heading font-recoleta">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
+              <h1 class="hero-heading font-recoleta fs-90px">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
               <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
               <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
             </div> <!-- /.text-wrapper -->

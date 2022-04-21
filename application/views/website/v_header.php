@@ -20,7 +20,7 @@
   <meta name="msapplication-navbutton-color" content="#202020">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
-  <title><?php echo $title ?></title>
+  <title>Jasa Website & Apps Profesional dengan Fitur Bisnis</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="56x56" href="<?php echo base_url('') ?>assets/images/fav-icon/icon.png">
   <!-- Main style sheet -->
@@ -39,19 +39,22 @@
           <div id="preloader">
             <div id="ctn-preloader" class="ctn-preloader">
               <div class="animation-preloader">
-                <div class="icon"><img src="<?php echo base_url('') ?>assets/images/logo/vCamp.svg" alt="" class="m-auto d-block"> <span></span></div>
+                <div class="icon"><img src="<?php echo base_url('') ?>assets/images/logo/logo_ansol.png" alt="" class="m-auto d-block"></div>
                 <div class="txt-loading mt-4">
-                  <span data-text-preloader="C" class="letters-loading">
-                    C
-                  </span>
                   <span data-text-preloader="A" class="letters-loading">
                     A
                   </span>
-                  <span data-text-preloader="M" class="letters-loading">
-                    M
+                  <span data-text-preloader="N" class="letters-loading">
+                    N
                   </span>
-                  <span data-text-preloader="P" class="letters-loading">
-                    P
+                  <span data-text-preloader="S" class="letters-loading">
+                    S
+                  </span>
+                  <span data-text-preloader="O" class="letters-loading">
+                    O
+                  </span>
+                  <span data-text-preloader="L" class="letters-loading">
+                    L
                   </span>
                 </div>
               </div>  
