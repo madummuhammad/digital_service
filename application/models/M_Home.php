@@ -160,7 +160,7 @@ class M_Home extends CI_Model {
 		$config['mailtype'] = 'html';
 		$this->email->initialize($config);
 		$this->email->to($email);
-		$this->email->from('reply@ansol.com','Ansol');
+		$this->email->from('ansol@ansol.id','Ansol');
 		$this->email->subject('Download Landing Page & Voucher Diskon');
 		$this->email->message($htmlContent);
 		$this->email->send();
