@@ -75,9 +75,9 @@
                 setTimeout(function (){
                   $(".form-email-group").append('<p class="fs-7 text-success text-center">Terimakasih, kami akan segera kirimkan template Landing Page dan Voucher via Email</p>');
                 }, 100);
-                setTimeout(function (){
-                  window.location.href="<?php echo base_url() ?>";
-                }, 500);
+                // setTimeout(function (){
+                //   window.location.href="<?php echo base_url() ?>";
+                // }, 500);
               }
             });
           })

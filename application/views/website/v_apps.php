@@ -268,17 +268,18 @@
 								<div class="col-xl-5 col-lg-6">
 									<div class="form-style-four md-mt-40">
 										<h3>Plus Voucher Diskon Pembuatan Website senilai Rp 100.000</h3>
-										<form action="inc/contact.php" id="contact-form"  data-toggle="validator">
+										<form action="<?php echo base_url() ?>" id="contact-fom" method="POST">
+											<?php echo method('_post') ?>
+											<?php echo form_hidden($this->security->get_csrf_token_name(), $this->security->get_csrf_hash());  ?>
 											<div class="messages"></div>
 											<div class="row controls">
 												<div class="col-12">
-													<div class="input-group-meta form-group mb-15">
-														<label>Masukan Email Anda*</label>
-														<input type="email" placeholder="febrinanda@gmail.com" name="email" required="required" data-error="Valid email is required.">
-														<div class="help-block with-errors"></div>
+													<div class="input-group-meta form-email-group form-group mb-15">
+														<label>Masukkan Email Anda </label>
+														<input type="email" class="form-email" placeholder="febrinanda@gmail.com" name="email" required="required" data-error="Valid email is required.">
 													</div>
 												</div>
-												<div class="col-12"><button class="theme-btn-one ripple-btn px-0 fs-8">Download Landing Page & Voucher Diskon</button></div>
+												<div class="col-12"><button type="button" class="theme-btn-one ripple-btn fs-8 px-0 mt-10 email">Download Landing Page & Voucher Diskon</button></div>
 											</div>
 										</form>
 									</div>
