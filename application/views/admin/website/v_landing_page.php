@@ -3,7 +3,7 @@
 			<!-- =============================================
 				Inside Page Banner
 				============================================== -->
-				<div class="inside-hero-two mb-3" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+				<div class="inside-hero-two" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
 					<div class="container">
 						<h2 class="page-title">Landing Page Creation</h2>
 						<p>Bangun Landing Page yang Persuasif. Yang Lebih Menjual.</p>
@@ -42,11 +42,11 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-xxl-6 col-xl-7 col-lg-5">
-								<div class="text-wrapper">
-									<div class="title-style-five">
+								<div class="text-wrapper pe-4rem">
+									<div class="title-style-five pe-4rem">
 										<!-- <div class="upper-title">About us</div> -->
-										<h2 class="title">Tenang, kami punya solusinya</h2>
-										<p>Kami siap buatkan Landing Page berkonversi tinggi untuk bisnis Anda</p>
+										<h2 class="title text-justify">Tenang, kami punya solusinya</h2>
+										<p class="text-justify">Kami siap buatkan Landing Page berkonversi tinggi untuk bisnis Anda</p>
 									</div>
 								</div>
 							</div>

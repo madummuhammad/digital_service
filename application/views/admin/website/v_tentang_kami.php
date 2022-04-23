@@ -185,7 +185,7 @@
 					<div class="card-style-five">
 						<img src="<?php echo base_url('') ?>assets/images/media/img_44.jpg" alt="" class="img-meta">
 						<div class="hover-content">
-							<h3 class="font-recoleta title"><a >Best Framework from Apps</a></h3>
+							<h3 class="font-recoleta title"><a >Best Framework for Apps</a></h3>
 							<p>Kami membuat ERP, Online Courses, Sales tracking dashboard, HRIS dan lainnya. Dengan teknologi & framework terkini.</p>
 						</div>
 					</div> <!-- /.card-style-five -->
@@ -212,7 +212,7 @@
 						<div class="row">
 							<?php foreach ($partner as $key => $value): ?>
 								<div class="col-sm-4 col-6">
-									<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+									<div class="logo d-flex align-items-center"><a><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
 									<div class="d-flex">
 										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partner<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
 										<button class="mx-1" data-bs-toggle="modal" data-bs-target="#partnerdelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
