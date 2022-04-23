@@ -20,7 +20,7 @@
   <meta name="msapplication-navbutton-color" content="#202020">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
-  <title><?php echo $title ?></title>
+  <title>Jasa Website & Apps Profesional dengan Fitur Bisnis</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="56x56" href="<?php echo base_url('') ?>assets/images/fav-icon/icon.png">
   <!-- Main style sheet -->
