@@ -31,20 +31,20 @@
             <div class="text-wrapper pt-0">
               <p class="meta-info-text text-lg pt-0 pb-0">Kami sudah membuat lebih dari</p>
               <div class="title-style-two mt-0">
-                <h3 class="title">200 website keren & 50 custom apps </h3>
-              </div>
-              <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 0 tahun terakhir ini. Klien happy, kami pun puas.</p>
-              <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="left-img-meta">
-        <img src="<?php echo base_url('') ?>assets/images/media/img_04.jpg" alt="">
-        <img src="<?php echo base_url('') ?>assets/images/shape/shape_04.svg" alt="" class="shapes shape-one">
-      </div>
-      <img src="<?php echo base_url('') ?>assets/images/shape/shape_05.svg" alt="" class="shapes shape-two">
-    </div> <!-- /.vcamp-text-block-one -->
+                <h3 class="title"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
+             </div>
+             <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 0 tahun terakhir ini. Klien happy, kami pun puas.</p>
+             <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="left-img-meta">
+      <img src="<?php echo base_url('') ?>assets/images/media/img_04.jpg" alt="">
+      <img src="<?php echo base_url('') ?>assets/images/shape/shape_04.svg" alt="" class="shapes shape-one">
+    </div>
+    <img src="<?php echo base_url('') ?>assets/images/shape/shape_05.svg" alt="" class="shapes shape-two">
+  </div> <!-- /.vcamp-text-block-one -->
 
       <!-- 
       =============================================

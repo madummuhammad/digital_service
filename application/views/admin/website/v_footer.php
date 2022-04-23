@@ -1,7 +1,7 @@
         <div class="vcamp-footer-three dark-bg">
           <div class="container">
             <div class="d-lg-flex align-items-center justify-content-between">
-              <div class="logo text-center"><a href="index.html"><img src="<?php echo base_url('') ?>assets/images/logo/vCamp_02.png" alt="" style="width:127px"></a></div>
+              <div class="logo text-center"><a href="index.html"><img src="<?php echo base_url('') ?>assets/images/logo/logo_ansol_light.png" alt="" style="width:127px"></a></div>
               <ul class="style-none footer-nav d-flex flex-wrap justify-content-center md-pt-20 md-pb-30">
                 <li><a href="#">Tentang Kami</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -20,6 +20,10 @@
         <button class="scroll-top">
           <i class="bi bi-arrow-up-short"></i>
         </button>
+
+        <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
 
 
 

@@ -179,7 +179,7 @@
 						<div class="row">
 							<?php foreach ($partner as $key => $value): ?>
 								<div class="col-sm-4 col-6">
-									<div class="logo d-flex align-items-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+									<div class="logo d-flex align-items-center"><a><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
 								</div>
 							<?php endforeach ?>
 						</div>

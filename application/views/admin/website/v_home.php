@@ -111,43 +111,43 @@
             <div class="col-xxl-4 col-lg-5 pe-5" data-aos="fade-right">
               <div class="title-style-one">
                 <div class="upper-title">Apa yang kami kerjakan</div>
-                <h2 class="title fs-1 text-justify">Integrated Web Agency untuk Bisnis.</h2>
+                <h2 class="title fs-2 text-justify">Integrated Web Agency untuk Bisnis.</h2>
               </div>
-              <p class="meta-info-text text-lg fs-5 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
+              <p class="meta-info-text text-lg fs-6 text-justify">Kami mendukung transformasi digital bisnis Anda dengan kreativitas dan teknologi inovatif. Stay Relevant, Grow Bigger.</p>
               <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="theme-btn-one ripple-btn">Pelajari Lebih Lanjut <img src="<?php echo base_url('') ?>assets/images/icon/icon_03.svg" alt=""></a>
             </div>
 
             <div class="col-lg-7 ms-auto" data-aos="fade-left">
-              <div class="row">
+              <div class="row ps-5">
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_04.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Website Development</h4>
-                    <p>Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
+                    <h4 class="title fs-5">Website Development</h4>
+                    <p class="fs-6">Layanan desain, content hingga  development untuk website baru atau redesign/perbaikan website lama Anda</p>
                     <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_05.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Online Shop & Marketplace</h4>
-                    <p>Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
+                    <h4 class="title fs-5">Online Shop & Marketplace</h4>
+                    <p class="fs-6">Datangkan lebih banyak customer online dengan fitur online shop yang lengkap dan terintegrasi.</p>
                     <a href="<?php echo base_url('service/website_dan_toko_online') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_06.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Custom Apps & Software</h4>
-                    <p>Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
+                    <h4 class="title fs-5">Custom Apps & Software</h4>
+                    <p class="fs-6">Buat aplikasi mobile atau software fungsional dengan fitur custom sesuai kebutuhan bisnis dan customer  Anda. </p>
                     <a href="<?php echo base_url('service/apps') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>
                 <div class="col-sm-6">
                   <div class="card-style-one">
                     <div class="icon d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/icon/icon_07.svg" alt="" class="tran3s"></div>
-                    <h4 class="title">Landing Page Creation</h4>
-                    <p>Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
+                    <h4 class="title fs-5">Landing Page Creation</h4>
+                    <p class="fs-6">Tingkatkan konversi prospek Anda dengan Landing page yang impresif dan "lebih menjual"</p>
                     <a href="<?php echo base_url('service/landing_page') ?>" class="arrow-icon"><img src="<?php echo base_url('') ?>assets/images/icon/icon_08.svg" alt="" class="tran3s"></a>
                   </div> <!-- /.card-style-one -->
                 </div>

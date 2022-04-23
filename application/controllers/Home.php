@@ -12,6 +12,7 @@ class Home extends CI_Controller {
 			$data['title']='Home';
 			$data['counter']=$this->M_Home->counter();
 			$data['jml_klien']=$this->M_Home->jml_klien();
+			$data['section2']=$this->M_Home->section2();
 			$this->load->view('website/v_home',$data);
 		}
 	}
