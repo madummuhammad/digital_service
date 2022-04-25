@@ -8,7 +8,7 @@
           <div class="row">
             <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
               <div class="text-wrapper text-center">
-                <h1 class="hero-heading font-recoleta fs-90px">Kami membuat <span id="changing">Website</span> yang Menjual.</h1>
+                <h1 class="hero-heading font-recoleta fs-90px">Kami membuat <br><span id="changing">Website</span> yang<br> Menjual.</h1>
                 <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
                 <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
               </div> <!-- /.text-wrapper -->
@@ -33,7 +33,7 @@
               <div class="title-style-two mt-0">
                 <h3 class="title"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
              </div>
-             <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 0 tahun terakhir ini. Klien happy, kami pun puas.</p>
+             <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
              <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>
            </div>
          </div>
