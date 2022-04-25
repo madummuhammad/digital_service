@@ -57,6 +57,16 @@
 																	<input type="file" name="gambar" class="form-control">
 																	<label for="" class="mt-2">Link</label>
 																	<input type="text" name="link" class="form-control mt-2" value="<?php echo $value['link'] ?>">
+																	<label for="" class="mt-2">Kategori</label>
+																	<select class="form-select mt-2" aria-label="Default select example" name="jenis">
+																		<?php foreach ($jenis_portofolio as $key => $values): ?>
+																			<option <?php if ($values['id_jenis']==$value['id_jenis']): ?>
+																				<?php echo 'selected' ?>
+																			<?php endif ?> value="<?php echo $values['id_jenis'] ?>">
+																				<?php echo $values['jenis'] ?>
+																			</option>
+																		<?php endforeach ?>
+																	</select>
 																</div>
 															</div>
 														</div>
@@ -67,6 +77,8 @@
 												</div>
 											</div>
 										</div>
+									<?php endforeach ?>
+									<?php foreach ($portofolio as $key => $value): ?>
 										<form action="<?php echo admin_url('website/portofolio') ?>" method="POST">
 											<div class="modal fade" id="portofoliodelete<?php echo $value['id'] ?>">
 												<div class="modal-dialog modal-dialog-centered">

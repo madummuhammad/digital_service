@@ -56,6 +56,7 @@ class M_Portofolio extends CI_Model {
 		$path='./assets/images/portofolio/';
 		$type='jpg|png|jpeg';
 		$file_name='portofolio';
+		$id_jenis=form('jenis');
 		$id=form('id');
 		$link=form('link');
 		$this->db->where('id',$id);
@@ -66,14 +67,16 @@ class M_Portofolio extends CI_Model {
 		if ($gambar==NULL) {
 			$data=[
 				'link'=>$link,
-				'gambar'=>'default.png'
+				'id_jenis'=>$id_jenis,
 			];
 		} else {
 			$data=[
 				'gambar'=>$gambar,
+				'id_jenis'=>$id_jenis,
 				'link'=>$link
 			];
 		}
+
 
 
 		if ($gambar !== NULL) {
