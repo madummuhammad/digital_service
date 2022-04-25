@@ -415,11 +415,11 @@
                          <?php foreach ($klien as $row => $value): ?>
                           <?php if ($row+1 <=8*($i+1) AND $row+1>(8*($i+1))-8 ): ?>
                           <div class="col-md-3 col-6">
-                            <div class="d-flex">
+                            <div class="d-flex mb-4">
                               <button class="mx-1" data-bs-toggle="modal" data-bs-target="#klien<?php echo $value['id'] ?>"><i class="fas fa-edit"></i></button>
                               <button class="mx-1" data-bs-toggle="modal" data-bs-target="#kliendelete<?php echo $value['id'] ?>"><i class="fas fa-trash"></i></button>
                             </div>
-                            <div class="logo d-flex align-items-center justify-content-center"><a href="#"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></a></div>
+                            <div class="logo d-flex align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" class="tran3s"></div>
                           </div>
                         <?php endif ?>
                       <?php endforeach ?>
