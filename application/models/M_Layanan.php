@@ -87,6 +87,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/landing_page'));
 	}
@@ -264,6 +265,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/apps'));
 	}
@@ -355,6 +357,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/landing_page'));
 	}
@@ -458,6 +461,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/digital_marketing'));
 	}
@@ -532,6 +536,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/digital_marketing'));
 	}
@@ -623,6 +628,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/digital_marketing'));
 	}
