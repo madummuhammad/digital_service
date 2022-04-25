@@ -172,6 +172,7 @@ class M_Layanan extends CI_Model {
 			'icon'=>'success',
 			'title'=>'Edit Banner Berhasil'
 		];
+		clearstatcache();
 		$this->session->set_flashdata($toast);
 		redirect(admin_url('website/layanan/website_dan_toko_online'));
 	}
