@@ -107,7 +107,7 @@ class M_Layanan extends CI_Model {
 
 	public function create_website()
 	{
-		$path='./assets/images/layanan/';
+		$path='./assets/images/layanan/website';
 		$type='jpg|png|jpeg';
 		$file_name='portofolio';
 		$link=form('link');
@@ -138,7 +138,7 @@ class M_Layanan extends CI_Model {
 
 	public function update_website()
 	{
-		$path='./assets/images/layanan/';
+		$path='./assets/images/layanan/website';
 		$type='jpg|png|jpeg';
 		$file_name='portofolio';
 		$id=form('id');
@@ -159,9 +159,10 @@ class M_Layanan extends CI_Model {
 			];
 		}
 
+
 		if ($gambar !== NULL) {
 			if ($gambar_lama['gambar'] !== 'default.png') {
-				unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+				unlink(FCPATH . 'assets/images/layanan/website/'.$gambar_lama['gambar']);
 			}
 		}
 		$this->db->where('id',$id);
@@ -185,7 +186,7 @@ class M_Layanan extends CI_Model {
 		$this->db->delete('layanan_website_toko_online');
 
 		if ($gambar_lama['gambar'] !== 'default.png') {
-			unlink(FCPATH . 'assets/images/layanan/'.$gambar_lama['gambar']);
+			unlink(FCPATH . 'assets/images/layanan/website/'.$gambar_lama['gambar']);
 		}
 		$toast=[
 			'request'=>'portofolio',

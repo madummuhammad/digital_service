@@ -110,7 +110,7 @@
 									<button class="mx-1" data-bs-toggle="modal" data-bs-target="#portofoliodelete<?php echo $key ?>"><i class="fas fa-trash"></i></button>
 								</div>
 								<div class="block-wrapper">
-									<img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="" class="screen">
+									<img src="<?php echo base_url('') ?>assets/images/layanan/website/<?php echo $value['gambar'] ?>" alt="" class="screen">
 									<div class="overlay-content d-flex align-items-end">
 										<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
 											<span><?php echo $value['link'] ?></span>
@@ -136,7 +136,7 @@
 										<div class="modal-body">
 											<div class="row">
 												<div class="col-12">
-													<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="<?php echo $value['gambar'] ?>" data-toggle="gambar" style="width: 15rem;">
+													<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/layanan/website/<?php echo $value['gambar'] ?>" alt="<?php echo $value['gambar'] ?>" data-toggle="gambar" style="width: 15rem;">
 													<input type="file" name="gambar" class="form-control">
 													<label for="" class="mt-2">Link</label>
 													<input type="text" name="link" class="form-control mt-2" value="<?php echo $value['link'] ?>">

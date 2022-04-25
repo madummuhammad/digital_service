@@ -106,7 +106,7 @@
 						<?php foreach ($portofolio as $key => $value): ?>
 							<div class="item">
 								<div class="block-wrapper">
-									<img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="" class="screen">
+									<img src="<?php echo base_url('') ?>assets/images/layanan/website/<?php echo $value['gambar'] ?>" alt="" class="screen">
 									<div class="overlay-content d-flex align-items-end">
 										<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
 											<span><?php echo $value['link'] ?></span>
