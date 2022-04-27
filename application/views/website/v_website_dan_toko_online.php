@@ -344,13 +344,13 @@
 				<!--=============================================
 				Theme Hero Banner
 				============================================== -->
-				<div class="hero-banner-ten py-5">
+				<div class="hero-banner-ten py-5 mt-mobile-5">
 					<div class="d-flex align-items-center justify-content-center h-100">
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px">Gratis 3 Template Landing Page Exclusive</h1>
-									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px text-center-mobile">Gratis 3 Template Landing Page Exclusive</h1>
+									<p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
 									<div class="form-style-four md-mt-40">

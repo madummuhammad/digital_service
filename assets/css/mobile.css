@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
 	/*Display*/
 	.d-block-mobile{
-		display: block;
+		display: block !important;
 	}
 
 	.d-none-mobile{
@@ -107,5 +107,9 @@
 
 	.partnerSliderOne .slick-dots{
 		display: block;
+	}
+
+	.whatsapp{
+		left: 10px;
 	}
 }

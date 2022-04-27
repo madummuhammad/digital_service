@@ -57,7 +57,7 @@
       <div class="container">
         <div class="title-style-seven text-center">
           <p>Bukan cuma keren,</p>
-          <h2 class="title fs-mobile-30px">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
+          <h2 class="title fs-60px fs-mobile-30px">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
         </div> <!-- /.title-style-seven -->
       </div>
     </div> <!-- /.vcamp-feature-section-nine -->
@@ -428,7 +428,7 @@
         Theme Hero Banner
       ============================================== 
     -->
-    <div class="hero-banner-ten">
+    <div class="hero-banner-ten mt-mobile-5">
       <div class="d-flex align-items-center justify-content-center h-100">
         <div class="container">
           <div class="row justify-content-between align-items-center">
