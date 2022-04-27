@@ -42,11 +42,11 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-xxl-6 col-xl-7 col-lg-5">
-								<div class="text-wrapper pe-4rem">
-									<div class="title-style-five pe-4rem">
+								<div class="text-wrapper pe-4rem pe-mobile-0">
+									<div class="title-style-five pe-4rem pe-mobile-0">
 										<!-- <div class="upper-title">About us</div> -->
-										<h2 class="title text-justify">Tenang, kami punya solusinya</h2>
-										<p class="text-justify">Kami siap buatkan Landing Page berkonversi tinggi untuk bisnis Anda</p>
+										<h2 class="title text-justify text-center-mobile">Tenang, kami punya solusinya</h2>
+										<p class="text-justify text-center-mobile">Kami siap buatkan Landing Page berkonversi tinggi untuk bisnis Anda</p>
 									</div>
 								</div>
 							</div>
@@ -97,7 +97,7 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title"><span>Lebih Menjual dengan Copywriting yang Persuasif + Desain yang menarik<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+							<h2 class="title fs-mobile-40px"><span>Lebih Menjual dengan Copywriting yang Persuasif + Desain yang menarik<img class="d-none-mobile" src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
 							<p>Tinggal terima beres, dan nikmati sales conversion yang tinggi. InshaAllah</p>
 						</div> <!-- /.title-style-seven -->
 					</div>
@@ -199,7 +199,7 @@
 				</div> <!-- /.feedback-section-three -->
 
 
-				<div class="vcamp-feature-section-eight mt-200 lg-mt-120 mb-50">
+				<div class="vcamp-feature-section-eight mt-200 lg-mt-120 mb-50 mb-mobile-3">
 					<div class="container">
 						<div class="row">
 							<div class="col-xxl-11 m-auto">
@@ -284,7 +284,7 @@
 			<!--=====================================================
 				Vcamp Text Block Thirteen
 				=====================================================-->
-				<div class="vcamp-text-block-thirteen mb-130 lg-pt-100 lg-mb-80">
+				<div class="vcamp-text-block-thirteen mb-130 lg-mb-80">
 					<div class="container">
 						<div class="img-media mb-80 lg-mb-40"><img src="images/media/img_89.jpg" alt="" class="w-100"></div>
 						<div class="row">
@@ -315,12 +315,12 @@
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
 
-				<div class="vcamp-feature-section-three lg-mt-150 mt-100 md-mt-120">
+				<div class="vcamp-feature-section-three lg-mt-150 mt-100 md-mt-120 mb-mobile-5">
 					<div class="container">
 						<div class="row align-items-center mb-75 lg-mb-50 md-mb-20">
 							<div class="col-xl-6 col-lg-5" data-aos="fade-right">
 								<div class="title-style-one">
-									<h2 class="title">Setelah Landing Page selesai, <span>lalu apa</span>?</h2>
+									<h2 class="title mb-mobile-5">Setelah Landing Page selesai, <span>lalu apa</span>?</h2>
 									<p>Ada <u>Diskon Khusus</u> untuk Klien Kami</p>
 								</div>
 							</div>
@@ -340,7 +340,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">

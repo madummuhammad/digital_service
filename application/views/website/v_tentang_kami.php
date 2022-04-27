@@ -23,7 +23,7 @@
 						<div class="text-wrapper">
 							<div class="title-style-five">
 								<!-- <div class="upper-title">About us</div> -->
-								<h2 class="title">Talenta digital dengan passion global</h2>
+								<h2 class="title fs-mobile-30px">Talenta digital dengan passion global</h2>
 							</div>
 						</div>
 					</div>
@@ -170,12 +170,12 @@
 				<div class="row align-items-center">
 					<div class="col-xl-5 col-lg-4 col-md-8">
 						<div class="title-style-one">
-							<h2 class="title">Partner kami untuk <span>pertumbuhan</span> bisnis Anda.</h2>
+							<h2 class="title text-center-mobile">Partner kami untuk <span>pertumbuhan</span> bisnis Anda.</h2>
 						</div>
 					</div>
 
 					<div class="col-xl-6 col-lg-7 ms-auto">
-						<p class="info-text">Boosting up website Anda dengan layanan Digital Marketing Partner Kami</p>
+						<p class="info-text text-center-mobile">Boosting up website Anda dengan layanan Digital Marketing Partner Kami</p>
 						<div class="row">
 							<?php foreach ($partner as $key => $value): ?>
 								<div class="col-sm-4 col-6">
@@ -253,11 +253,13 @@
 							<div class="mx-4">
 								<div class="row align-items-center">
 									<div class="col-xxl-6 col-lg-6 col-md-6">
-										<h2 class="title font-recoleta text-center text-md-start fs-50px">Punya ide project ?</h2>
+										<h2 class="title font-recoleta text-center text-md-start fs-50px fs-mobile-35px">Punya ide project ?</h2>
 									</div>
-									<div class="col-lg-6 col-md-6 d-flex justify-content-md-end justify-content-center flex-column">
-										<p class="text-white">Atau ada pertanyaan yang buat penasaran ?</p>
-										<a target="_blank" href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." class="theme-btn-four ripple-btn sm-mt-30">Yuk Diskusi</a>
+									<div class="col-lg-6 col-md-6 d-flex justify-content-md-end justify-content-center flex-column mt-mobile-4">
+										<p class="text-white text-center-mobile">Atau ada pertanyaan yang buat penasaran ?</p>
+										<div class="d-flex-mobile justify-content-center-mobile">
+											<a target="_blank" href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." class="theme-btn-four ripple-btn sm-mt-30">Yuk Diskusi</a>
+										</div>
 									</div>
 								</div>
 							</div>

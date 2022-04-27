@@ -101,6 +101,7 @@ if ($(".mixitUp-container").length) {
 // ------------------------ Partner Slider One
 if($(".partnerSliderOne").length) {
   $('.partnerSliderOne').slick({
+    dots:true,
     centerMode: true,
     centerPadding: '0px',
     arrows: false,

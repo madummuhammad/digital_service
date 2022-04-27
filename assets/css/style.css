@@ -372,7 +372,7 @@ body {
 .dark-bg .title-style-six .title {color: #fff;}
 .title-style-seven .title {
   font-family: 'gorditablack';
-  font-size: 60px !important;
+  font-size: 60px;
   line-height: 1.1em;
   letter-spacing: -2px;
   margin-bottom: 0;

@@ -21,11 +21,11 @@
 								<div class="row align-items-center mb-80 lg-mb-20">
 									<div class="col-lg-5 col-md-6">
 										<div class="title-style-four">
-											<h2 class="title">Website Development</h2>
+											<h2 class="title text-center-mobile">Website Development</h2>
 										</div>
 									</div>
 									<div class="col-lg-5 col-md-6 ms-auto">
-										<p class="text-lg theme-mb-0 sm-mt-20">Kami siap membangun website bernilai bisnis yang bisa mendatangkan traffic lebih baik, dengan bounce rate yang rendah.</p>
+										<p class="text-lg theme-mb-0 sm-mt-20 text-center-mobile">Kami siap membangun website bernilai bisnis yang bisa mendatangkan traffic lebih baik, dengan bounce rate yang rendah.</p>
 									</div>
 								</div>
 
@@ -66,7 +66,7 @@
 							<div class="col-xl-6 col-lg-5">
 								<div class="text-wrapper md-pb-40">
 									<div class="title-style-one white-vr">
-										<div class="upper-title mb-50">Mengapa kami ?</div>
+										<div class="upper-title mb-50 text-center-mobile">Mengapa kami ?</div>
 										<h2 class="title px-0 fs-60px">Website dengan jaminan Kualitas</h2>
 									</div>
 								</div>
@@ -133,11 +133,11 @@
 								<div class="row align-items-center mb-80 lg-mb-20">
 									<div class="col-lg-5 col-md-6">
 										<div class="title-style-four">
-											<h2 class="title">Toko Online</h2>
+											<h2 class="title text-center-mobile">Toko Online</h2>
 										</div>
 									</div>
 									<div class="col-lg-5 col-md-6 ms-auto">
-										<p class="text-lg theme-mb-0 sm-mt-20">Tingkatkan omset Anda secara progresif setiap tahunnya. Kami siapkan Toko online menarik dengan fitur lengkap & payment sistem yang aman.</p>
+										<p class="text-lg theme-mb-0 sm-mt-20 text-center-mobile">Tingkatkan omset Anda secara progresif setiap tahunnya. Kami siapkan Toko online menarik dengan fitur lengkap & payment sistem yang aman.</p>
 									</div>
 								</div>
 
@@ -268,11 +268,11 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title fs-60px">Tahapan Pembuatan Website/Toko Online</h2>
+										<h2 class="title fs-60px fs-mobile-30px text-center-mobile">Tahapan Pembuatan Website/Toko Online</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">
-									<p class="text-lg theme-mb-0 sm-mt-20">Tingkatkan omset Anda secara progresif setiap tahunnya. Kami siapkan Toko online menarik dengan fitur lengkap & payment sistem yang aman.</p>
+									<p class="text-lg theme-mb-0 sm-mt-20 text-center-mobile">Tingkatkan omset Anda secara progresif setiap tahunnya. Kami siapkan Toko online menarik dengan fitur lengkap & payment sistem yang aman.</p>
 								</div>
 							</div>
 							<div class="img-meta mb-60 lg-mb-40"><img src="images/media/img_91.jpg" alt=""></div>
@@ -349,7 +349,7 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px">Gratis 3 Template Landing Page Exclusive</h1>
 									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
