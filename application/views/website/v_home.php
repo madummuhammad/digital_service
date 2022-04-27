@@ -8,7 +8,7 @@
           <div class="row">
             <div class="col-xxl-8 col-xl-10 col-md-8 m-auto">
               <div class="text-wrapper text-center">
-                <h1 class="hero-heading font-recoleta fs-90px">Kami membuat <br><span id="changing">Website</span> yang<br> Menjual.</h1>
+                <h1 class="hero-heading font-recoleta fs-90px fs-mobile-45px">Kami membuat <br><span id="changing">Website</span> yang<br> Menjual.</h1>
                 <p class="hero-sub-heading text-lg">Kami peduli dengan bisnis Anda. Kami akan siapkan Website yang "Communicate Clearly, Stand Out & Sell More" </p>
                 <a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20Tanya%20info%20soal%20jasa%20Website/Toko%20Online/Apps/Landing%20Page." target="_blank" class="theme-btn-four ripple-btn">Yuk, diskusi dengan kami</a>
               </div> <!-- /.text-wrapper -->
@@ -29,22 +29,24 @@
         <div class="row">
           <div class="col-xxl-5 col-xl-6 col-lg-7 ms-auto">
             <div class="text-wrapper pt-0">
-              <p class="meta-info-text text-lg pt-0 pb-0">Kami sudah membuat lebih dari</p>
+              <p class="meta-info-text text-lg pt-0 pb-0 text-center-mobile">Kami sudah membuat lebih dari</p>
               <div class="title-style-two mt-0">
-                <h3 class="title"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
-             </div>
-             <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
-             <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="left-img-meta">
-      <img src="<?php echo base_url('') ?>assets/images/media/img_04.jpg" alt="">
-      <img src="<?php echo base_url('') ?>assets/images/shape/shape_04.svg" alt="" class="shapes shape-one">
-    </div>
-    <img src="<?php echo base_url('') ?>assets/images/shape/shape_05.svg" alt="" class="shapes shape-two">
-  </div> <!-- /.vcamp-text-block-one -->
+                <h3 class="title text-center-mobile"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
+              </div>
+              <p class="meta-info-text text-lg pt-1 pb-1 text-center-mobile">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
+              <div class="d-flex-mobile justify-content-center">
+                <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left-img-meta">
+        <img src="<?php echo base_url('') ?>assets/images/media/img_04.jpg" alt="">
+        <img src="<?php echo base_url('') ?>assets/images/shape/shape_04.svg" alt="" class="shapes shape-one">
+      </div>
+      <img src="<?php echo base_url('') ?>assets/images/shape/shape_05.svg" alt="" class="shapes shape-two">
+    </div> <!-- /.vcamp-text-block-one -->
 
       <!-- 
       =============================================
@@ -53,9 +55,9 @@
     -->
     <div class="vcamp-feature-section-nine pt-30 lg-pt-120" id="about">
       <div class="container">
-        <div class="title-style-seven text-center pb-60 lg-pb-20">
+        <div class="title-style-seven text-center">
           <p>Bukan cuma keren,</p>
-          <h2 class="title">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
+          <h2 class="title fs-mobile-30px">Website Anda juga akan dilengkapi dengan fitur penunjang bisnis digital. <span><a class="scrollto" data-target="#fitur-bisnis">Cek di sini.<img src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></a></span></h2>
         </div> <!-- /.title-style-seven -->
       </div>
     </div> <!-- /.vcamp-feature-section-nine -->
@@ -241,81 +243,90 @@
         =====================================================-->
         <div class="vcamp-text-block-four mt-200 lg-mt-120">
           <div class="row g-0">
-            <div class="col-lg-6 ms-auto px-5">
-              <div class="accordion accordion-style-one md-mt-30" id="accordionOne">
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Google Analytics
-                    </button>
-                  </div>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
-                    <div class="accordion-body">
-                      <p>Anda bisa cek jumlah pengunjung, waktu ramai pengunjung,  konten website yang paling diminati hingga perilaku pengunjung ketika berselancar di website Anda. Data tersebut tentunya sangat insightful untuk bisnis Anda.</p>
-                    </div>
+           <div class="col-lg-6 right-side d-none-pc d-block-mobile" id="fitur-bisnis">
+            <div class="content-wrapper w-100 h-100 position-relative">
+              <div class="text-wrapper position-relative me-auto pb-1" data-aos="fade-left">
+                <h2 class="title">Fitur Bisnis Untuk Website Anda. GRATIS</h2>
+                <p>Kami akan bantu settingkan layanan tambahan untuk membuat website Anda lebih siap "Menjual". </p>
+                <a class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-auto px-5">
+            <div class="accordion accordion-style-one md-mt-30" id="accordionOne">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Google Analytics
+                  </button>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
+                  <div class="accordion-body">
+                    <p>Anda bisa cek jumlah pengunjung, waktu ramai pengunjung,  konten website yang paling diminati hingga perilaku pengunjung ketika berselancar di website Anda. Data tersebut tentunya sangat insightful untuk bisnis Anda.</p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Google My Business
-                    </button>
-                  </div>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
-                    <div class="accordion-body">
-                      <p>Bisnis Anda akan muncul di Google Maps ketika calon customer melakukan pencarian di Google. Anda bisa update alamat, profil, jam operasional, produk/jasa, hingga promosi terbaru. </p>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Google My Business
+                  </button>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
+                  <div class="accordion-body">
+                    <p>Bisnis Anda akan muncul di Google Maps ketika calon customer melakukan pencarian di Google. Anda bisa update alamat, profil, jam operasional, produk/jasa, hingga promosi terbaru. </p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Google Ads Management
-                    </button>
-                  </div>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
-                    <div class="accordion-body">
-                      <p>Kami bantu Anda untuk datangkan customer ke website dengan setting dan kelola iklan Google Ads selama 1 bulan pertama</p>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Google Ads Management
+                  </button>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
+                  <div class="accordion-body">
+                    <p>Kami bantu Anda untuk datangkan customer ke website dengan setting dan kelola iklan Google Ads selama 1 bulan pertama</p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                      Google Search Console
-                    </button>
-                  </div>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionOne">
-                    <div class="accordion-body">
-                      <p>Kontrol performa website di pencarian Google,  keyword terpopuler, trafik website organik, kinerja website di perangkat mobile, dan masih banyak lainnya.</p>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    Google Search Console
+                  </button>
+                </div>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionOne">
+                  <div class="accordion-body">
+                    <p>Kontrol performa website di pencarian Google,  keyword terpopuler, trafik website organik, kinerja website di perangkat mobile, dan masih banyak lainnya.</p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Promo Digital Marketing
-                    </button>
-                  </div>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOne">
-                    <div class="accordion-body">
-                      <p>Diskon khusus dari rekanan kami  untuk jasa SEO, jasa Google Ads, jasa Email marketing, jasa Sosial media management dan jasa Artikel Website. Pelajari Lebih Lanjut</p>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Promo Digital Marketing
+                  </button>
+                </div>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOne">
+                  <div class="accordion-body">
+                    <p>Diskon khusus dari rekanan kami  untuk jasa SEO, jasa Google Ads, jasa Email marketing, jasa Sosial media management dan jasa Artikel Website. Pelajari Lebih Lanjut</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 d-flex right-side" id="fitur-bisnis">
-              <div class="content-wrapper w-100 h-100 position-relative">
-                <div class="text-wrapper position-relative me-auto pb-1" data-aos="fade-left">
-                  <h2 class="title">Fitur Bisnis Untuk Website Anda. GRATIS</h2>
-                  <p>Kami akan bantu settingkan layanan tambahan untuk membuat website Anda lebih siap "Menjual". </p>
-                  <a class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
-                </div> <!-- /.text-wrapper -->
-              </div> <!-- /.content-wrapper -->
-            </div> <!-- /.right-side -->
           </div>
-        </div> <!-- /.vcamp-text-block-four -->
+          <div class="col-lg-6 right-side d-none-mobile d-block-pc" id="fitur-bisnis">
+            <div class="content-wrapper w-100 h-100 position-relative">
+              <div class="text-wrapper position-relative me-auto pb-1" data-aos="fade-left">
+                <h2 class="title">Fitur Bisnis Untuk Website Anda. GRATIS</h2>
+                <p>Kami akan bantu settingkan layanan tambahan untuk membuat website Anda lebih siap "Menjual". </p>
+                <a class="more-button ripple-btn"><i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.vcamp-text-block-four -->
 
         <!--=====================================================
         Partner Section Two
@@ -326,10 +337,10 @@
             <div class="row d-flex justify-content-between">
               <div class="col-lg-6 col-md-8 col-sm-10 m-auto">
                 <div class="title-style-one text-start">
-                  <h2 class="title">Berikut beberapa <span>klien</span> kami:</h2>
+                  <h2 class="title text-center-mobile">Berikut beberapa <span>klien</span> kami:</h2>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-8 col-sm-10 m-auto d-flex justify-content-lg-end">
+              <div class="col-lg-6 col-md-8 col-sm-10 m-auto d-flex justify-content-lg-end justify-content-center-mobile mt-mobile-4">
                 <a href="<?php echo base_url('portofolio') ?>" class="theme-btn-four ripple-btn">Lihat Portofolio Kami</a>
               </div>
             </div>
@@ -422,8 +433,8 @@
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-7 col-lg-6">
-              <h1 class="hero-heading font-recoleta fs-70px">Gratis 3 Template Landing Page Exclusive</h1>
-              <p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+              <h1 class="hero-heading font-recoleta fs-70px text-center-mobile fs-mobile-45px">Gratis 3 Template Landing Page Exclusive</h1>
+              <p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
             </div>
             <div class="col-xl-5 col-lg-6">
               <div class="form-style-four md-mt-40">
@@ -460,14 +471,14 @@
           <div class="col-xxl-6 col-xl-6 col-lg-6 ms-auto d-block-mobile d-none-pc mb-40">
             <div class="text-wrapper">
               <div class="title-style-five">
-                <h2 class="title">Mengapa memilih kami?</h2>
+                <h2 class="title text-center-mobile">Mengapa memilih kami?</h2>
               </div>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 ms-auto px-mobile-3">
             <div class="text-wrapper pe-4">
-              <h4 class="fw-bold">Kami spesialis. Hanya Fokus pada Website & Apps</h4>
-              <p class="meta-info-text-two py-1 text-justify">Kami membatasi jumlah klien yang kami terima setiap tahun untuk memastikan setiap klien memiliki customer experience yang baik. Kami siap merespon dengan cepat kebutuhan Anda.</p>
+              <h4 class="fw-bold text-center-mobile">Kami spesialis. Hanya Fokus pada Website & Apps</h4>
+              <p class="meta-info-text-two py-1 text-justify text-center-mobile">Kami membatasi jumlah klien yang kami terima setiap tahun untuk memastikan setiap klien memiliki customer experience yang baik. Kami siap merespon dengan cepat kebutuhan Anda.</p>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 ms-auto d-none-mobile">
