@@ -32,18 +32,19 @@
 														<span><?php echo $value['link'] ?></span>
 														<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="<?php echo $value['gambar'] ?>">
 													</a>
-												</div> <!-- /.overlay-content -->
-											</div> <!-- /.case-block-three -->
+												</div>
+											</div>
 										</div>
 									<?php endforeach ?>
-								</div> <!-- /.mixitUp-container -->
+								</div>
 								<div class="mt-4 py-4">
 									<h3 class="font-recoleta text-center">Dan Masih Banyak Lagi</h3>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> <!-- /.case-study-three -->
+				</div>
+
 
 			<!--=====================================================
 				Vcamp Fancy Banner Three

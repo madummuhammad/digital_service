@@ -4115,8 +4115,15 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   border-color: #000;
   color: #fff;
 }
-.case-block-three {overflow: hidden; margin-top: 50px;}
-.case-block-three .screen {width: 100%;}
+.case-block-three {
+  overflow: hidden;
+  margin-top: 50px;
+  height: 440px !important;
+}
+.case-block-three .screen {
+  width: 100%;
+  overflow-y: hidden;
+}
 .case-block-three .overlay-content {
   position: absolute;
   height: 285px;
