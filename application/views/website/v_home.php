@@ -310,7 +310,7 @@
                 </div>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOne">
                   <div class="accordion-body">
-                    <p>Diskon khusus dari rekanan kami  untuk jasa SEO, jasa Google Ads, jasa Email marketing, jasa Sosial media management dan jasa Artikel Website. Pelajari Lebih Lanjut</p>
+                    <p>Diskon khusus dari rekanan kami  untuk jasa SEO, jasa Google Ads, jasa Email marketing, jasa Sosial media management dan jasa Artikel Website.<span><a href="<?php echo base_url('service/promo_digital_marketing') ?>">Pelajari Lebih Lanjut</a></span></p>
                   </div>
                 </div>
               </div>
