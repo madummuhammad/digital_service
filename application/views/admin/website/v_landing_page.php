@@ -106,7 +106,7 @@
 				<div class="hero-banner-one md-mt-140 mt-100">
 					<div class="partner-slider-one md-mt-80">
 						<div class="container">
-							<p class="text-center">Sudah lebih dari 100 brand menggunakan jasa Landing Page kami</p>
+							<p class="text-center">Sudah banyak brand menggunakan jasa Landing Page kami</p>
 							<div class="partnerSliderOne">
 								<?php foreach ($logo as $key => $value): ?>
 									<div class="item">
@@ -139,7 +139,7 @@
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-12">
-												<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/logo/<?php echo $value['logo'] ?>" alt="" data-toggle="gambar" style="width: 15rem;">
+												<img class="img-fluid" src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['logo'] ?>" alt="" data-toggle="gambar" style="width: 15rem;">
 												<input type="file" name="gambar" class="form-control">
 											</div>
 										</div>
