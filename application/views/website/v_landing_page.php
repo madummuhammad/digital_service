@@ -97,7 +97,7 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title fs-mobile-40px"><span>Lebih Menjual dengan Copywriting yang Persuasif + Desain yang menarik<img class="d-none-mobile" src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+							<h2 class="title fs-60px fs-mobile-40px"><span>Lebih Menjual dengan Copywriting yang Persuasif + Desain yang menarik<img class="d-none-mobile" src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
 							<p>Tinggal terima beres, dan nikmati sales conversion yang tinggi. InshaAllah</p>
 						</div> <!-- /.title-style-seven -->
 					</div>
@@ -106,7 +106,7 @@
 				<div class="hero-banner-one md-mt-140 mt-100">
 					<div class="partner-slider-one md-mt-80">
 						<div class="container">
-							<p class="text-center">Sudah lebih dari 100 brand menggunakan jasa Landing Page kami</p>
+							<p class="text-center">Sudah banyak brand menggunakan jasa Landing Page kami</p>
 							<div class="partnerSliderOne">
 								<?php foreach ($logo as $key => $value): ?>
 									<div class="item">
@@ -309,7 +309,7 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120 dark-bg" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title text-white">Biaya Landing Page Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
+							<h2 class="title text-white fs-60px fs-mobile-40px">Biaya Landing Page Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
 							<a class="text-white py-5" href="<?php echo base_url('pricing/landing_page') ?>"><u>Cek Di sini</u></a>
 						</div>
 					</div>
@@ -340,8 +340,8 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px text-center-mobile">Gratis 3 Template Landing Page Exclusive</h1>
-									<p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-55px">Gratis 3 Template Landing Page Exclusive</h1>
+									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
 									<div class="form-style-four md-mt-40">

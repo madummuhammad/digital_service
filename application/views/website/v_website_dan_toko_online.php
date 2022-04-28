@@ -108,7 +108,7 @@
 								<div class="block-wrapper">
 									<img src="<?php echo base_url('') ?>assets/images/layanan/website/<?php echo $value['gambar'] ?>" alt="" class="screen">
 									<div class="overlay-content d-flex align-items-end">
-										<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">
+										<a target="_blank" href="<?php echo $value['link'] ?>" class="d-flex justify-content-between align-items-center">
 											<span><?php echo $value['link'] ?></span>
 											<img src="<?php echo base_url('') ?>assets/images/icon/icon_28.svg" alt="">
 										</a>
@@ -268,7 +268,7 @@
 							<div class="row align-items-center mb-10 lg-mb-40">
 								<div class="col-md-6">
 									<div class="title-style-nine">
-										<h2 class="title fs-60px fs-mobile-30px text-center-mobile">Tahapan Pembuatan Website/Toko Online</h2>
+										<h2 class="title fs-60px fs-mobile-40px text-center-mobile">Tahapan Pembuatan Website/Toko Online</h2>
 									</div>
 								</div>
 								<div class="col-xl-5 col-md-6 ms-auto">
@@ -349,8 +349,8 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px text-center-mobile">Gratis 3 Template Landing Page Exclusive</h1>
-									<p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-55px">Gratis 3 Template Landing Page Exclusive</h1>
+									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
 									<div class="form-style-four md-mt-40">
