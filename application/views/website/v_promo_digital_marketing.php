@@ -89,7 +89,7 @@
 				<div class="vcamp-feature-section-nine pt-170 lg-pt-120" id="about">
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
-							<h2 class="title">Diskon hingga 30% untuk semua layanan <span>partner kami<img class="d-none-mobile" src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
+							<h2 class="title fs-60px fs-mobile-40px"><span>Diskon hingga 30% untuk semua layanan partner kami<img class="d-none-mobile" src="<?php echo base_url('') ?>assets/images/shape/shape_53.svg" alt=""></span></h2>
 							<div class="text-center mt-80 lg-mt-20"><a class="theme-btn-four ripple-btn scrollto" data-target="#agency">Lihat lebih lanjut</a></div>
 						</div> <!-- /.title-style-seven -->
 					</div>
@@ -184,8 +184,8 @@
 						<div class="container">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-xxl-6 col-xl-7 col-lg-6">
-									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px text-center-mobile">Gratis 3 Template Landing Page Exclusive</h1>
-									<p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+									<h1 class="hero-heading font-recoleta fs-70px fs-mobile-55px">Gratis 3 Template Landing Page Exclusive</h1>
+									<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 								</div>
 								<div class="col-xl-5 col-lg-6">
 									<div class="form-style-four md-mt-40">

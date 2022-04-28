@@ -79,6 +79,7 @@
 							<div class="text">
 								<h5 class="title">Info Kontak</h5>
 								<p>Chat kami via Whatsapp atau Telepon di  <br><a href="tel:+62878-8682-2468" class="call">0878-8682-2468</a></p>
+								<p>Email: Project@ansol.id</p>
 							</div>
 						</div> <!-- /.address-block-three -->
 						<div class="address-block-three">
@@ -111,8 +112,8 @@
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
 						<div class="col-xxl-6 col-xl-7 col-lg-6">
-							<h1 class="hero-heading font-recoleta fs-70px fs-mobile-45px text-center-mobile">Gratis 3 Template Landing Page Exclusive</h1>
-							<p class="hero-sub-heading pe-xl-5 text-center-mobile">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
+							<h1 class="hero-heading font-recoleta fs-70px fs-mobile-55px">Gratis 3 Template Landing Page Exclusive</h1>
+							<p class="hero-sub-heading pe-xl-5">Yang bisa dipakai untuk keperluan iklan atau informasi bisnismu. Bisa kami bantu install ke domain dan hosting supaya online.</p>
 						</div>
 						<div class="col-xl-5 col-lg-6">
 							<div class="form-style-four md-mt-40">
