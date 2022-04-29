@@ -151,16 +151,16 @@ class M_Home extends CI_Model {
 	{
 		$email=form('email');
 		
-		$htmlContent = '<h3>Hi, '.$email.'</h3>';
-		$htmlContent .= '<p>Terimakasih, kami akan segera kirimkan template
-		Landing Page dan Voucher via Email</p><br>';
+		$htmlContent = '<h3>Download Landing Page</h3>';
+		$htmlContent = '<p>Dari: '.$email.'</p>';
+		$htmlContent .= '<p>Segera kirimkan template Landing Page dan Voucher via Email berikut : '.$email.'</p><br>';
 		$htmlContent .= '<p>Terimakasih</p>';
 
 
 		$config['mailtype'] = 'html';
 		$this->email->initialize($config);
-		$this->email->to($email);
-		$this->email->from('ansol@ansol.id','Ansol');
+		$this->email->to('project@ansol.id');
+		$this->email->from('reply@ansol.id','Reply');
 		$this->email->subject('Download Landing Page & Voucher Diskon');
 		$this->email->message($htmlContent);
 		$this->email->send();

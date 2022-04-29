@@ -81,6 +81,38 @@
               }
             });
           })
+
+          $("#send-message").on('click',function(){
+            var email=$('#message .email').val();
+            var nama=$('#message .nama').val();
+            var layanan=$('#message .layanan').val();
+            var pesan=$('#message .pesan').val();
+            var csrf=$("input[name=csrf_test_name]").val();
+            var method='_post';
+            $.ajax({
+              url: "<?php echo base_url('kontak_kami') ?>",
+              type:'POST',
+              data:{
+                nama:nama,
+                layanan:layanan,
+                pesan:pesan,
+                email:email,
+                _post:method,
+                csrf_test_name:csrf
+              },
+              success: function(e){
+                setTimeout(function (){
+                  $("#message .alert-message").append(`
+                    <div class="alert alert-success fw-bold" role="alert">
+                    Pesan anda telah terkirim
+                    </div>`);
+                }, 100);
+                // setTimeout(function (){
+                //   window.location.href="<?php echo base_url() ?>";
+                // }, 500);
+              }
+            });
+          })
         </script>
       </div> <!-- /.main-page-wrapper -->
     </body>

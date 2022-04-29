@@ -25,13 +25,13 @@
 				<div class="row align-items-center">
 					<div class="col-md-6">
 						<div class="form-style-three ps-0 sm-pb-80">
-							<form action="">
+							<form action="" id="message">
 								<div class="messages"></div>
 								<div class="row controls">
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-25">
 											<label>Nama</label>
-											<input type="text" placeholder="Masukan Nama Anda" name="name" required="required" data-error="Name is required.">
+											<input type="text" placeholder="Masukan Nama Anda" name="nama" required="required" data-error="Name is required.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
@@ -45,7 +45,7 @@
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-40">
 											<label>Pilih Layanan*</label>
-											<select class="theme-select-menu" placeholder="Pilih layanan...." name="category" required="required">
+											<select class="theme-select-menu" placeholder="Pilih layanan...." name="layanan" required="required">
 												<option value="">Pilih layanan....</option>
 												<option value="Digital Marketing">Website & Toko Online</option>
 												<option value="Website Design">Custom Apps</option>
@@ -57,11 +57,14 @@
 									</div>
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-35">
-											<textarea placeholder="Pesan Anda" name="message" required="required" data-error="Please,leave us a message."></textarea>
+											<textarea placeholder="Pesan Anda" name="pesan" required="required" data-error="Please,leave us a message."></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<div class="col-12"><button class="theme-btn-one ripple-btn w-100">Kirim</button></div>
+									<div class="col-12 alert-message">
+
+									</div>
+									<div class="col-12"><button type="button" id="send-message" class="theme-btn-one ripple-btn w-100">Kirim</button></div>
 								</div>
 							</form>
 						</div> <!-- /.form-style-three -->
