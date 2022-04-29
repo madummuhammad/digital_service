@@ -9,12 +9,12 @@ class M_Kontak extends CI_Model {
 		$nama=form('nama');
 		$layanan=form('layanan');
 		$pesan=form('pesan');
-		
-		$htmlContent = '<h3>Message</h3>';
-		$htmlContent = '<p>Dari: '.$nama.'</p>';
-		$htmlContent = '<p>Lmail: '.$email.'</p>';
-		$htmlContent = '<p>Layanan: '.$layanan.'</p>';
-		$htmlContent = '<p>Pesan: '.$pesan.'</p>';
+
+		$htmlContent = '<p>Hi Ansol, saya '.$nama.'</p>';
+		$htmlContent .= '<p>Dengan email : '.$email.'</p>';
+		$htmlContent .= '<p>Layanan : '.$layanan.'</p>';
+		$htmlContent .= '<p>Pean saya : '.$pesan.'</p><br>';
+		$htmlContent .= '<p>Terimakasih</p>';
 
 
 		$config['mailtype'] = 'html';
