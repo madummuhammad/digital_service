@@ -21,7 +21,7 @@
 											<div class="col-md-6">
 												<div class="title-style-three sm-pb-20">
 													<p>Sebelum cek harga,</p>
-													<h4 class="title fs-2">Sudah Pelajari Layanan Kami  ?</h4>
+													<h4 class="title fs-2 fs-mobile-3">Sudah Pelajari Layanan Kami  ?</h4>
 												</div>
 											</div>
 											<div class="col-md-6">
@@ -37,7 +37,7 @@
 										<div class="row align-items-center">
 											<div class="col-md-6">
 												<div class="title-style-three sm-pb-20">
-													<h4 class="title fs-2">Sudah Cek Portofolio Kami  ?</h4>
+													<h4 class="title fs-2 fs-mobile-3">Sudah Cek Portofolio Kami  ?</h4>
 												</div>
 											</div>
 											<div class="col-md-6">

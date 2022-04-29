@@ -21,7 +21,7 @@
 											<div class="col-md-6">
 												<div class="title-style-three sm-pb-20">
 													<p>Sebelum cek harga,</p>
-													<h4 class="title fs-2">Sudah Pelajari Layanan Kami  ?</h4>
+													<h4 class="title fs-2 fs-mobile-3">Sudah Pelajari Layanan Kami  ?</h4>
 												</div>
 											</div>
 											<div class="col-md-6">
@@ -37,7 +37,7 @@
 										<div class="row align-items-center">
 											<div class="col-md-6">
 												<div class="title-style-three sm-pb-20">
-													<h4 class="title fs-2">Sudah Cek Portofolio Kami  ?</h4>
+													<h4 class="title fs-2 fs-mobile-3">Sudah Cek Portofolio Kami  ?</h4>
 												</div>
 											</div>
 											<div class="col-md-6">
@@ -61,7 +61,7 @@
 				<div class="row">
 					<div class="col-xxl-9 col-xl-10 col-lg-8 col-md-10 m-auto">
 						<div class="title-style-one text-center">
-							<h2 class="title">Paket Pembuatan Website & Toko Online/E-commerce</span></h2>
+							<h2 class="title">Paket Pembuatan Website & Toko Online</span></h2>
 						</div> <!-- /.title-style-six -->
 					</div>
 				</div>
@@ -128,9 +128,8 @@
 					<div class="bg-wrapper dark-bg">
 						<div class="row">
 							<div class="col-xxl-12 col-md-12 m-auto">
-								<h2 class="title font-recoleta">Website & Toko Online Premium ? Dengan Fitur Istimewa ? BISA !</h2>
+								<h2 class="title font-recoleta">Website & Toko Online Premium Dengan Fitur Khusus ? BISA !</h2>
 							</div>
-							<h4 class="text-white pb-3 font-recoleta">mulai IDR 10 juta</h4>
 						</div>
 						<a href="https://api.whatsapp.com/send?phone=6287886822468&text=Halo%20Ansol.Dev,%20saya%20mau%20order%20Website/Toko%20Online%20Premium." target="_blank" class="theme-btn-four ripple-btn">Hubungi Kami</a>
 					</div>
