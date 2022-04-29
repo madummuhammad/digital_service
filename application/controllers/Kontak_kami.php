@@ -5,7 +5,11 @@ class Kontak_kami extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']='Kontak Kami';
-		$this->load->view('website/v_kontak_kami',$data);
+		if ($this->input->post('_post') !== NULL) {
+			$this->M_Kontak->email();
+		} else {
+			$data['title']='Kontak Kami';
+			$this->load->view('website/v_kontak_kami',$data);
+		}
 	}
 }

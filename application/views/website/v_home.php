@@ -31,7 +31,7 @@
             <div class="text-wrapper pt-0">
               <p class="meta-info-text text-lg pt-0 pb-0 text-center-mobile">Kami sudah membuat lebih dari</p>
               <div class="title-style-two mt-0">
-                <h3 class="title text-center-mobile"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
+                <h3 class="title text-center-mobile fs-65px"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
               </div>
               <p class="meta-info-text text-lg pt-1 pb-1 text-center-mobile">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
               <div class="d-flex-mobile justify-content-center">
@@ -53,7 +53,7 @@
         Vcamp Feature Section Nine
       ============================================== 
     -->
-    <div class="vcamp-feature-section-nine pt-30 lg-pt-120" id="about">
+    <div class="vcamp-feature-section-nine pt-30 lg-pt-120 mt-4" id="about">
       <div class="container">
         <div class="title-style-seven text-center">
           <p>Bukan cuma keren,</p>
