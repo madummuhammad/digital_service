@@ -31,33 +31,33 @@
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-25">
 											<label>Nama</label>
-											<input type="text" placeholder="Masukan Nama Anda" name="nama" required="required" data-error="Name is required.">
+											<input class="nama" type="text" placeholder="Masukan Nama Anda" name="nama" required="required" data-error="Name is required.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-25">
 											<label>Email</label>
-											<input type="email" placeholder="Masukan Alamat Email Anda" name="email" required="required" data-error="Valid email is required.">
+											<input class="kontak-email" type="email" placeholder="Masukan Alamat Email Anda" name="email" required="required" data-error="Valid email is required.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-40">
 											<label>Pilih Layanan*</label>
-											<select class="theme-select-menu" placeholder="Pilih layanan...." name="layanan" required="required">
+											<select class="theme-select-menu layanan" placeholder="Pilih layanan...." name="layanan" required="required">
 												<option value="">Pilih layanan....</option>
-												<option value="Digital Marketing">Website & Toko Online</option>
-												<option value="Website Design">Custom Apps</option>
-												<option value="WordPress">Landing Page</option>
-												<option value="Web Analytics">Promo Digital Marketing</option>
+												<option value="Website & Toko Online">Website & Toko Online</option>
+												<option value="Custom Apps">Custom Apps</option>
+												<option value="Landing Page">Landing Page</option>
+												<option value="Promo Digital Marketing">Promo Digital Marketing</option>
 											</select>
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="input-group-meta form-group mb-35">
-											<textarea placeholder="Pesan Anda" name="pesan" required="required" data-error="Please,leave us a message."></textarea>
+											<textarea placeholder="Pesan Anda" class="pesan" name="pesan" required="required" data-error="Please,leave us a message."></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>

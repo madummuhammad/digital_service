@@ -63,6 +63,7 @@
             var email=$('.form-email').val();
             var csrf=$("input[name=csrf_test_name]").val();
             var method='_post';
+            alert(email)
             $.ajax({
               url: "<?php echo base_url() ?>",
               type:'POST',
@@ -83,7 +84,7 @@
           })
 
           $("#send-message").on('click',function(){
-            var email=$('#message .email').val();
+            var email=$('#message .kontak-email').val();
             var nama=$('#message .nama').val();
             var layanan=$('#message .layanan').val();
             var pesan=$('#message .pesan').val();
