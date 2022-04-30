@@ -32,7 +32,7 @@
             <div class="text-wrapper pt-0">
               <p class="meta-info-text text-lg pt-0 pb-0">Kami sudah membuat lebih dari</p>
               <div class="title-style-two mt-0">
-                <h3 class="title"><?php echo $section2['satu'] ?> <span><button data-bs-toggle="modal" data-bs-target="#home1"><i class="fas fa-edit"></i></button></span> website keren & <?php echo $section2['dua'] ?> <span><button data-bs-toggle="modal" data-bs-target="#home2"><i class="fas fa-edit"></i></button></span> custom apps </h3>
+                <h3 class="title text-center-mobile fs-65px fs-mobile-45px"><?php echo $section2['satu'] ?> <span><button data-bs-toggle="modal" data-bs-target="#home1"><i class="fas fa-edit"></i></button></span> website keren & <?php echo $section2['dua'] ?> <span><button data-bs-toggle="modal" data-bs-target="#home2"><i class="fas fa-edit"></i></button></span> custom apps </h3>
               </div>
               <p class="meta-info-text text-lg pt-1 pb-1">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
               <a  class="theme-btn-one ripple-btn fst-italic">-Semoga Anda salah satunya</a>

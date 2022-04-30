@@ -31,7 +31,7 @@
             <div class="text-wrapper pt-0">
               <p class="meta-info-text text-lg pt-0 pb-0 text-center-mobile">Kami sudah membuat lebih dari</p>
               <div class="title-style-two mt-0">
-                <h3 class="title text-center-mobile fs-65px"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
+                <h3 class="title text-center-mobile fs-65px fs-mobile-40px"><?php echo $section2['satu'] ?> website keren & <?php echo $section2['dua'] ?> custom apps </h3>
               </div>
               <p class="meta-info-text text-lg pt-1 pb-1 text-center-mobile">Selama lebih dari 2 tahun terakhir ini. Klien happy, kami pun puas.</p>
               <div class="d-flex-mobile justify-content-center">
