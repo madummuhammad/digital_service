@@ -76,15 +76,15 @@
 				Vcamp Fancy Banner Two
 			=====================================================
 		-->
-		<!-- <div class="container">
+		<div class="container">
 			<div class="fancy-banner-two sm mt-170 lg-mt-100" data-aos="fade-up">
 				<div class="inner-content h-100 position-relative d-flex align-items-center justify-content-center">
-					<a class="fancybox video-icon d-flex align-items-center justify-content-center" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0" tabindex="0">
+					<!-- <a class="fancybox video-icon d-flex align-items-center justify-content-center" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0" tabindex="0">
 						<img src="<?php echo base_url('') ?>assets/images/icon/icon_43.svg" alt="">
-					</a>
+					</a> -->
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 			<!--=====================================================
 				Counter Section Three
