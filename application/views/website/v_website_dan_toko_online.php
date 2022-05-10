@@ -254,7 +254,8 @@
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
 							<h2 class="title text-white fs-1">Biaya Website/Toko Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
-							<a class="text-white py-5" href="<?php echo base_url('pricing/website_dan_toko_online') ?>"><u>Cek Di sini</u></a>
+							<!-- <a class="text-white py-5" href="<?php echo base_url('pricing/website_dan_toko_online') ?>"><u>Cek Di sini</u></a> -->
+							<a class="text-white py-5"><u>Cek Di sini</u></a>
 						</div>
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
