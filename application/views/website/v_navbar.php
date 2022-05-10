@@ -49,7 +49,7 @@
                   <?php endif ?>">
                     <a class="nav-link" href="<?php echo base_url('portofolio') ?>">Portofolio</a>
                   </li>
-                  <li class="nav-item dropdown <?php if ($this->uri->segment(1)=='pricing'): ?>
+                 <!--  <li class="nav-item dropdown <?php if ($this->uri->segment(1)=='pricing'): ?>
                     <?php echo 'active' ?>
                   <?php endif ?>">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Paket & Harga</a>
@@ -64,7 +64,7 @@
                         <?php echo 'active' ?>
                       <?php endif ?>"><span>Landing Page</span></a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="nav-item <?php if ($this->uri->segment(1)=='kontak_kami'): ?>
                     <?php echo 'active' ?>
                   <?php endif ?>">
