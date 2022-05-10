@@ -310,7 +310,9 @@
 					<div class="container">
 						<div class="title-style-seven text-center pb-60 lg-pb-20">
 							<h2 class="title text-white fs-60px fs-mobile-40px">Biaya Landing Page Online Kami Sangat Worth It <img src="images/shape/shape_53.svg" alt=""></span></h2>
-							<a class="text-white py-5" href="<?php echo base_url('pricing/landing_page') ?>"><u>Cek Di sini</u></a>
+							<!-- <a class="text-white py-5" href="<?php echo base_url('pricing/landing_page') ?>"><u>Cek Di sini</u></a> -->
+
+							<a class="text-white py-5"><u>Cek Di sini</u></a>
 						</div>
 					</div>
 				</div> <!-- /.vcamp-feature-section-nine -->
