@@ -5,12 +5,13 @@
 				Inside Page Banner
 			============================================== 
 		-->
-		<div class="inside-hero-two" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_63.jpg);">
+		<div class="inside-hero-two">
+			<img src="<?php echo base_url('') ?>assets/images/media/foto_20.jpg">
 			<div class="container">
 				<h2 class="page-title">Kontak Kami</h2>
 				<p>Kami dengan senang hati merespon request, pertanyaan dan saran/kritik dari Anda</p>
 			</div>
-			<img src="<?php echo base_url('') ?>assets/images/shape/shape_24.svg" alt="" class="shapes shape-one">
+			<!-- <img src="<?php echo base_url('') ?>assets/images/shape/shape_24.svg" alt="" class="shapes shape-one"> -->
 		</div> <!-- /.inside-hero-two -->
 
 

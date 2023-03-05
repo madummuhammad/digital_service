@@ -3,12 +3,13 @@
 			<!-- =============================================
 				Inside Page Banner
 				============================================== -->
-				<div class="inside-hero-two" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+				<div class="inside-hero-two">
+					<img src="<?php echo base_url('') ?>assets/images/media/foto_11.jpg">
 					<div class="container">
 						<h2 class="page-title">Custom Apps & Software</h2>
 						<p>Bangun Engagement yang lebih kuat, Tumbuh secara Eksponensial, Tingkatkan Efisiensi Kerja dengan Apps & Software Yang Handal.</p>
 					</div>
-					<img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one">
+					<!-- <img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one"> -->
 				</div> <!-- /.inside-hero-two -->
 
 			<!--=====================================================
@@ -168,7 +169,7 @@
 						</div>
 					</div>
 					<div class="right-img-meta">
-						<img src="<?php echo base_url('') ?>assets/images/media/img_71.png" alt="" class="w-100 main-img">
+						<img src="<?php echo base_url('') ?>assets/images/media/foto_12.jpg" alt="" class="w-100 main-img">
 					</div> <!-- /.right-img-meta -->
 				</div> <!-- /.vcamp-text-block-twelve -->
 

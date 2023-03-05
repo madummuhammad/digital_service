@@ -1,11 +1,12 @@
 									<?php $this->load->view('website/v_header') ?>
 									<?php $this->load->view('website/v_navbar') ?>
-									<div class="inside-hero-two mb-3" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+									<div class="inside-hero-two mb-3">
+										<img src="<?php echo base_url('') ?>assets/images/media/foto_19.jpg">
 										<div class="container">
 											<h2 class="page-title">Portofolio</h2>
 											<p>Berikut beberapa hasil kerja, sebagian konten sudah diubah/fiktif demi privacy dan hak cipta</p>
 										</div>
-										<img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one">
+										<!-- <img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one"> -->
 									</div>
 
 									<div class="case-study-three full-width mt-150 lg-mt-120">
@@ -32,7 +33,7 @@
 															<?php foreach ($portofolio as $key => $value): ?>
 																<div class="mix filter<?php echo $value['id_jenis'] ?>">
 																	<div class="case-block-three position-relative">
-																	<!-- 	<img src="http://localhost/digital_service/assets/images/portofolio/portofolio1.jpg" alt="" class="screen"> -->
+																		<!-- 	<img src="http://localhost/digital_service/assets/images/portofolio/portofolio1.jpg" alt="" class="screen"> -->
 																		<img src="<?php echo base_url('') ?>assets/images/portofolio/<?php echo $value['gambar'] ?>" alt="" class="screen">
 																		<div class="overlay-content d-flex align-items-end">
 																			<a href="<?php echo $value['link'] ?>" target="_blank" class="d-flex justify-content-between align-items-center" tabindex="0">
@@ -50,10 +51,10 @@
 																	<ul class="pagination">
 																		<li class="page-item"><a class="page-link" href="<?php echo $pagination['prev_page'] ?>">Previous</a></li>
 																		<?php foreach ($pagination['links'] as $key => $value) {?>
-																		<li class="page-item <?php 
-																		if($pagination['current_page']==$key+1)
-																		echo 'active'
-																		 ?>"><a class="page-link" href="<?php echo $value['links'] ?>"><?php echo $key+1 ?></a></li>
+																			<li class="page-item <?php 
+																			if($pagination['current_page']==$key+1)
+																			echo 'active'
+																		?>"><a class="page-link" href="<?php echo $value['links'] ?>"><?php echo $key+1 ?></a></li>
 																	<?php } ?>
 																	<li class="page-item"><a class="page-link" href="<?php echo $pagination["next_page"] ?>">Next</a></li>
 																</ul>

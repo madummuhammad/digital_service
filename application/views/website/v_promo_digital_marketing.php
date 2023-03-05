@@ -3,12 +3,13 @@
 			<!-- =============================================
 				Inside Page Banner
 				============================================== -->
-				<div class="inside-hero-two mb-3" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+				<div class="inside-hero-two mb-3">
+					<img src="<?php echo base_url('') ?>assets/images/media/foto_14.jpg">
 					<div class="container">
 						<h2 class="page-title">Promo Digital MARKETING</h2>
 						<p>Perluas jangkauan bisnis Anda dengan campaign digital yang dikelola oleh agency partner kami. Tentunya dengan PROMO KHUSUS.</p>
 					</div>
-					<img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one">
+					<!-- <img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one"> -->
 				</div> <!-- /.inside-hero-two -->
 
 				<div class="hero-banner-one md-mt-140 mt-60">

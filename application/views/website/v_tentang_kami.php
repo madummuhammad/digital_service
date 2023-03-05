@@ -2,14 +2,15 @@
 <?php $this->load->view('website/v_navbar') ?>
 <!--=============================================
 				Inside Page Banner
-				============================================== -->
-				<div class="inside-hero-two" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+				============================================== -->				
+				<div class="inside-hero-two">
+					<img src="<?php echo base_url('') ?>assets/images/media/img_46.jpg">
 					<div class="container">
 						<h2 class="page-title">Tentang Kami</h2>
 						<p>Developer web berpengalaman, menggabungkan imajinasi dan teknologi untuk membuat visi digital Anda menjadi nyata</p>
 					</div>
-					<img src="images/shape/shape_24.svg" alt="" class="shapes shape-one">
-				</div> <!-- /.inside-hero-two -->
+					<!-- <img src="images/shape/shape_24.svg" alt="" class="shapes shape-one"> -->
+				</div> <!-- /.inside-hero-two -->	
 
 			<!--
 			=====================================================

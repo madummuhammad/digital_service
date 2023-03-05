@@ -3,12 +3,13 @@
 			<!-- =============================================
 				Inside Page Banner
 				============================================== -->
-				<div class="inside-hero-two" style="background-image: url(<?php echo base_url('') ?>assets/images/media/img_46.jpg);">
+				<div class="inside-hero-two">
+					<img src="<?php echo base_url('') ?>assets/images/media/foto_9.jpg">
 					<div class="container">
 						<h2 class="page-title">Website & Toko Online</h2>
 						<p>Mari bangun kredibilitas online dan kembangkan bisnis Anda dengan website/toko online yang lebih menjual</p>
 					</div>
-					<img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one">
+					<!-- <img src="<?php echo base_url('') ?>assets/images/shape/shape_38.svg" alt="" class="shapes shape-one"> -->
 				</div> <!-- /.inside-hero-two -->
 
 			<!--=====================================================
