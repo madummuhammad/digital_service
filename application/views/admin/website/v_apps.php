@@ -132,6 +132,7 @@
 									<button class="mx-1" data-bs-toggle="modal" data-bs-target="#portofoliodelete<?php echo $key ?>"><i class="fas fa-trash"></i></button>
 								</div>
 								<div class="block-wrapper">
+									<!-- <img src="https://ansol.id/assets/images/layanan/portofolio2.jpg" alt="" class="screen"> -->
 									<img src="<?php echo base_url('') ?>assets/images/layanan/<?php echo $value['gambar'] ?>" alt="" class="screen">
 									<div class="overlay-content d-flex align-items-end">
 										<a href="portfolio-detailsV1.html" class="d-flex justify-content-between align-items-center">

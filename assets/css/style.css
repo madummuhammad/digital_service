@@ -2412,9 +2412,11 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 .feedback_slider_three .block-wrapper .screen {width: 100%;}
 .feedback_slider_three .block-wrapper .overlay-content {
   position: absolute;
-  height: 285px;
+  /*height: 285px;*/
+  height: 90%;
   width: 100%;
   left: 0;
+  /*background: red;*/
   right: 0;
   bottom: 0;
   padding: 0 30px 35px;
