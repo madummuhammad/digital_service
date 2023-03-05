@@ -74,7 +74,10 @@
 							<div class="icon"><img src="images/icon/icon_17.svg" alt=""></div>
 							<div class="text">
 								<h5 class="title">Alamat Kami</h5>
-								<p>Nerada Estate Blok B4-12A, Cipayung, Ciputat, Tangerang Selatan. 15411</p>
+								<p>PT Roda Solusi Digital<br>
+									Infiniti Office, Belleza BSA 1st Floor Unit 106
+									Jl. Letjen Soepeno, Kebayoran Lama
+								Jakarta Selatan 12210</p>
 							</div>
 						</div> <!-- /.address-block-three -->
 						<div class="address-block-three mb-80 lg-mb-40">

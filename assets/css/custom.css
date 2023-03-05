@@ -140,3 +140,13 @@
 .partnerSliderOne .slick-dots li.slick-active button {
   background: var(--heading);
 }
+
+.pagination .page-item .page-link{
+  border: 1px solid black !important;
+  color: black;
+}
+
+.pagination .page-item.active .page-link{
+  background: black !important;
+  color: white;
+}

@@ -6,7 +6,95 @@ class M_Portofolio extends CI_Model {
 	public function index()
 	{
 		$this->db->join('portofolio_jenis','portofolio.id_jenis=portofolio_jenis.id_jenis');
+		$page=1;
+		if(isset($_GET['page'])){
+			$page=$_GET['page']*8-8;
+			$this->db->limit(8,$page);
+		} else{
+			$this->db->limit(8,$page);
+		}
+
+		if(isset($_GET['id_jenis'])){
+			$id_jenis=$_GET['id_jenis'];
+			$this->db->where('portofolio.id_jenis',$id_jenis);
+		}
+		$this->db->order_by('id','DESC');
 		return $this->db->get('portofolio')->result_array();
+	}
+
+	public function pagination()
+	{
+		if(isset($_GET['id_jenis'])){
+			$id_jenis=$_GET['id_jenis'];
+			$this->db->where('portofolio.id_jenis',$id_jenis);
+		}
+		$count_page=$this->db->get('portofolio')->num_rows();
+		$allpage=ceil($count_page/10);
+		$id_jenis='';
+
+		if(isset($_GET['id_jenis'])){
+			$id_jenis='id_jenis='.$_GET['id_jenis'];
+		}
+		$links=[];
+
+		for ($i=1; $i <= $allpage; $i++) {
+			$links[$i-1]=[
+				'links'=>base_url().'portofolio?'.$id_jenis.'&page='.$i
+			];
+		}
+
+		$page=1;
+		if(isset($_GET['page'])){
+			$page=$_GET['page'];
+		}
+
+		if($page-1==0){
+			$num_prev_page=$page;
+		} else {
+			if($page+1>=count($links)){
+				$num_prev_page=count($links)-1;
+			} else {
+				$num_prev_page=$page-1;
+			}
+
+		}
+
+		if($page+1>=count($links)){
+			$num_next_page=count($links);
+		} else {
+			$num_next_page=$page+1;
+		}
+
+		if(isset($_GET['id_jenis'])){
+			$next_page=base_url().'portofolio?id_jenis='.$_GET['id_jenis'].'&page='.$num_next_page;
+			$prev_page=base_url().'portofolio?id_jenis='.$_GET['id_jenis'].'&page='.$num_prev_page;
+		} else {			
+			$next_page=base_url().'portofolio?&page='.$num_next_page;
+			$prev_page=base_url().'portofolio?&page='.$num_prev_page;
+		}
+
+		// Current page
+
+		$current_page=$page;
+
+		if($page>=count($links)){
+			$current_page=count($links);
+		}
+
+		if($page<=1){
+			$current_page=1;
+		}
+
+
+
+		$data=[
+			'links'=>$links,
+			'current_page'=>$current_page,
+			'next_page'=>$next_page,
+			'prev_page'=>$prev_page,
+			'last_page'=>count($links)
+		];
+		return $data;
 	}
 
 	public function jenis()

@@ -4104,7 +4104,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 .card-style-six p { color: #4F4F4F; margin-bottom: 0;}
 /*^^^^^^^^^^^^^^^^^^^^^ Case Study Section Three ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .case-study-three {overflow: hidden;}
-.control-nav-one button {
+.control-nav-one a {
   display: inline-block;
   line-height: 48px;
   border-radius: 8px;
@@ -4113,7 +4113,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   margin: 0 0.8%;
   transition: all 0.3s ease-in-out;
 }
-.control-nav-one button.mixitup-control-active {
+.control-nav-one a.mixitup-control-active {
   background: #000;
   border-color: #000;
   color: #fff;
